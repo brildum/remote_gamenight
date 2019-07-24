@@ -1,13 +1,16 @@
 # frozen_string_literal: true
 
 namespace :jeopardy do
+  task :insert_clues, [:filename] do |_t, args|
+    insert_clues(args)
+  end
+
   task :fetch_clues, [:first_season, :last_season] do |_t, args|
     fetch_jeopardy_clues(args)
   end
 end
 
 def fetch_jeopardy_clues(args)
-  require 'pry'
   require 'csv'
   require 'logger'
   require 'nokogiri'
@@ -75,5 +78,27 @@ def fetch_jeopardy_clues(args)
 
       csv << [category, value, clue, answer]
     end
+  end
+end
+
+def insert_clues(args)
+  require 'csv'
+
+  require './app/services'
+  require './app/trivia/models'
+  services = Services.new
+
+  count = 0
+  CSV.foreach(args.filename) do |row|
+    Trivia::Clue.new(
+      category: Trivia::Category.find_or_create_by!(name: row[0].downcase),
+      value: row[1].to_i,
+      clue: row[2],
+      answer: row[3]
+    ).save!
+
+    count += 1
+
+    services.logger.info "#{count} clues inserted" if (count % 1000).zero?
   end
 end

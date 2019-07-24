@@ -12,7 +12,9 @@ group :development do
   gem 'sorbet'
 end
 
+gem 'activerecord', '5.2.3'
 gem 'faraday', '0.15.4'
 gem 'sinatra', '2.0.5'
 gem 'sinatra-contrib', '2.0.5'
 gem 'sorbet-runtime'
+gem 'sqlite3'

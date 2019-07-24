@@ -380,7 +380,7 @@ class Sinatra::Reloader::Watcher
   def update; end
   def updated?; end
 end
-class Anonymous_Struct_10 < Struct
+class Anonymous_Struct_13 < Struct
   def representation; end
   def representation=(_); end
   def self.[](*arg0); end
@@ -390,7 +390,7 @@ class Anonymous_Struct_10 < Struct
   def type; end
   def type=(_); end
 end
-class Sinatra::Reloader::Watcher::Element < Anonymous_Struct_10
+class Sinatra::Reloader::Watcher::Element < Anonymous_Struct_13
 end
 class Sinatra::Reloader::Watcher::List
   def ignore(path); end

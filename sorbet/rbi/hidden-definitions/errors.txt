@@ -136,7 +136,1379 @@
 # wrong constant name <todo sym>
 # uninitialized constant Abbrev
 # uninitialized constant Abbrev
+# wrong constant name <Class:AttrNames>
+# wrong constant name <static-init>
+# wrong constant name set_name_cache
+# wrong constant name <Class:ClassMethods>
+# wrong constant name attributes
+# wrong constant name initialize
+# wrong constant name attribute
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <Class:Tests>
+# wrong constant name test_errors_aref
+# wrong constant name test_model_naming
+# wrong constant name test_persisted?
+# wrong constant name test_to_key
+# wrong constant name test_to_param
+# wrong constant name test_to_partial_path
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name initialize
+# wrong constant name persisted?
+# wrong constant name <static-init>
+# wrong constant name aliased_table_for
+# wrong constant name aliases
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name create
+# wrong constant name initial_count_for
+# wrong constant name association_scope
+# wrong constant name create
+# wrong constant name create!
+# wrong constant name extensions
+# wrong constant name initialize
+# wrong constant name initialize_attributes
+# wrong constant name inversed_from
+# wrong constant name inversed_from_queries
+# wrong constant name klass
+# wrong constant name load_target
+# wrong constant name loaded!
+# wrong constant name loaded?
+# wrong constant name marshal_dump
+# wrong constant name marshal_load
+# wrong constant name options
+# wrong constant name owner
+# wrong constant name reflection
+# wrong constant name reload
+# wrong constant name remove_inverse_instance
+# wrong constant name reset
+# wrong constant name reset_scope
+# wrong constant name scope
+# wrong constant name set_inverse_instance
+# wrong constant name set_inverse_instance_from_queries
+# wrong constant name stale_target?
+# wrong constant name target
+# wrong constant name target=
+# wrong constant name target_scope
+# wrong constant name <static-init>
+# wrong constant name <Class:ReflectionProxy>
+# wrong constant name initialize
+# wrong constant name scope
+# wrong constant name value_transformation
+# wrong constant name aliased_table
+# wrong constant name all_includes
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name create
+# wrong constant name get_bind_values
+# wrong constant name scope
+# wrong constant name decrement_counters
+# wrong constant name default
+# wrong constant name handle_dependency
+# wrong constant name increment_counters
+# wrong constant name target_changed?
+# wrong constant name updated?
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# uninitialized constant ActiveRecord::Associations::Builder::CollectionAssociation::VALID_OPTIONS
+# wrong constant name <Class:JoinTableResolver>
+# wrong constant name association_name
+# wrong constant name initialize
+# wrong constant name lhs_model
+# wrong constant name middle_reflection
+# wrong constant name options
+# wrong constant name through_model
+# wrong constant name <Class:KnownClass>
+# wrong constant name <Class:KnownTable>
+# wrong constant name initialize
+# wrong constant name join_table
+# wrong constant name <static-init>
+# uninitialized constant ActiveRecord::Associations::Builder::HasAndBelongsToMany::JoinTableResolver::KnownTable::Elem
+# wrong constant name join_table
+# wrong constant name join_table=
+# wrong constant name <static-init>
+# wrong constant name []
+# wrong constant name members
+# wrong constant name <static-init>
+# wrong constant name build
+# wrong constant name <static-init>
+# uninitialized constant ActiveRecord::Associations::Builder::HasOne::VALID_OPTIONS
+# wrong constant name <static-init>
+# wrong constant name add_to_target
+# wrong constant name build
+# wrong constant name concat
+# wrong constant name delete
+# wrong constant name delete_all
+# wrong constant name destroy
+# wrong constant name destroy_all
+# wrong constant name empty?
+# wrong constant name find
+# wrong constant name find_from_target?
+# wrong constant name ids_reader
+# wrong constant name ids_writer
+# wrong constant name include?
+# wrong constant name null_scope?
+# wrong constant name reader
+# wrong constant name replace
+# wrong constant name size
+# wrong constant name transaction
+# wrong constant name writer
+# wrong constant name <static-init>
+# wrong constant name foreign_key_present?
+# wrong constant name <static-init>
+# wrong constant name handle_dependency
+# wrong constant name insert_record
+# wrong constant name <static-init>
+# wrong constant name concat_records
+# wrong constant name <static-init>
+# wrong constant name delete
+# wrong constant name handle_dependency
+# wrong constant name replace
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <Class:Aliases>
+# wrong constant name <Class:JoinAssociation>
+# wrong constant name <Class:JoinBase>
+# wrong constant name <Class:JoinPart>
+# wrong constant name alias_tracker
+# wrong constant name apply_column_aliases
+# wrong constant name initialize
+# wrong constant name instantiate
+# wrong constant name join_constraints
+# wrong constant name join_root
+# wrong constant name reflections
+# wrong constant name <Class:Column>
+# wrong constant name <Class:Table>
+# wrong constant name column_alias
+# wrong constant name column_aliases
+# wrong constant name columns
+# wrong constant name initialize
+# uninitialized constant ActiveRecord::Associations::JoinDependency::Aliases::Column::Elem
+# wrong constant name alias
+# wrong constant name alias=
+# wrong constant name name
+# wrong constant name name=
+# wrong constant name <static-init>
+# wrong constant name []
+# wrong constant name members
+# uninitialized constant ActiveRecord::Associations::JoinDependency::Aliases::Table::Elem
+# wrong constant name column_aliases
+# wrong constant name columns
+# wrong constant name columns=
+# wrong constant name node
+# wrong constant name node=
+# wrong constant name <static-init>
+# wrong constant name []
+# wrong constant name members
+# wrong constant name <static-init>
+# uninitialized constant ActiveRecord::Associations::JoinDependency::JoinAssociation::Elem
+# wrong constant name initialize
+# wrong constant name join_constraints
+# wrong constant name reflection
+# wrong constant name table=
+# wrong constant name tables
+# wrong constant name tables=
+# wrong constant name <static-init>
+# uninitialized constant ActiveRecord::Associations::JoinDependency::JoinBase::Elem
+# wrong constant name initialize
+# wrong constant name <static-init>
+# uninitialized constant ActiveRecord::Associations::JoinDependency::JoinPart::Elem
+# wrong constant name base_klass
+# wrong constant name children
+# wrong constant name column_names
+# wrong constant name each
+# wrong constant name each_children
+# wrong constant name extract_record
+# wrong constant name initialize
+# wrong constant name instantiate
+# wrong constant name match?
+# wrong constant name primary_key
+# wrong constant name table
+# wrong constant name table_name
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name make_tree
+# wrong constant name walk_tree
+# wrong constant name <Class:AlreadyLoaded>
+# wrong constant name <Class:Association>
+# wrong constant name <Class:ThroughAssociation>
+# wrong constant name preload
+# wrong constant name initialize
+# wrong constant name owners
+# wrong constant name preloaded_records
+# wrong constant name reflection
+# wrong constant name run
+# wrong constant name <static-init>
+# wrong constant name initialize
+# wrong constant name klass
+# wrong constant name model
+# wrong constant name owners
+# wrong constant name preload_scope
+# wrong constant name preloaded_records
+# wrong constant name reflection
+# wrong constant name run
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name build
+# wrong constant name force_reload_reader
+# wrong constant name reader
+# wrong constant name writer
+# wrong constant name <static-init>
+# wrong constant name source_reflection
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name dump
+# wrong constant name load
+# wrong constant name assert_valid_value
+# wrong constant name dump
+# wrong constant name initialize
+# wrong constant name load
+# wrong constant name object_class
+# wrong constant name object_class=
+# wrong constant name <static-init>
+# uninitialized constant ActiveRecord::ConnectionAdapters::AbstractAdapter::CALLBACK_FILTER_TYPES
+# wrong constant name add_column
+# wrong constant name add_foreign_key
+# wrong constant name adds
+# wrong constant name drop_foreign_key
+# wrong constant name foreign_key_adds
+# wrong constant name foreign_key_drops
+# wrong constant name initialize
+# wrong constant name name
+# wrong constant name <static-init>
+# uninitialized constant ActiveRecord::ConnectionAdapters::ChangeColumnDefinition::Elem
+# wrong constant name column
+# wrong constant name column=
+# wrong constant name name
+# wrong constant name name=
+# wrong constant name <static-init>
+# wrong constant name []
+# wrong constant name members
+# wrong constant name ==
+# wrong constant name attributes_for_hash
+# wrong constant name bigint?
+# wrong constant name collation
+# wrong constant name comment
+# wrong constant name default
+# wrong constant name default_function
+# wrong constant name encode_with
+# wrong constant name eql?
+# wrong constant name has_default?
+# wrong constant name human_name
+# wrong constant name init_with
+# wrong constant name initialize
+# wrong constant name limit
+# wrong constant name name
+# wrong constant name null
+# wrong constant name precision
+# wrong constant name scale
+# wrong constant name sql_type
+# wrong constant name sql_type_metadata
+# wrong constant name table_name
+# wrong constant name type
+# wrong constant name <static-init>
+# uninitialized constant ActiveRecord::ConnectionAdapters::ColumnDefinition::Elem
+# wrong constant name collation
+# wrong constant name collation=
+# wrong constant name comment
+# wrong constant name comment=
+# wrong constant name default
+# wrong constant name default=
+# wrong constant name limit
+# wrong constant name limit=
+# wrong constant name name
+# wrong constant name name=
+# wrong constant name null
+# wrong constant name null=
+# wrong constant name options
+# wrong constant name options=
+# wrong constant name precision
+# wrong constant name precision=
+# wrong constant name primary_key?
+# wrong constant name scale
+# wrong constant name scale=
+# wrong constant name sql_type
+# wrong constant name sql_type=
+# wrong constant name type
+# wrong constant name type=
+# wrong constant name <static-init>
+# wrong constant name []
+# wrong constant name members
+# wrong constant name bigint
+# wrong constant name binary
+# wrong constant name boolean
+# wrong constant name date
+# wrong constant name datetime
+# wrong constant name decimal
+# wrong constant name float
+# wrong constant name integer
+# wrong constant name json
+# wrong constant name numeric
+# wrong constant name primary_key
+# wrong constant name string
+# wrong constant name text
+# wrong constant name time
+# wrong constant name timestamp
+# wrong constant name virtual
+# wrong constant name <static-init>
+# uninitialized constant ActiveRecord::ConnectionAdapters::ForeignKeyDefinition::Elem
+# wrong constant name column
+# wrong constant name custom_primary_key?
+# wrong constant name defined_for?
+# wrong constant name from_table
+# wrong constant name from_table=
+# wrong constant name name
+# wrong constant name on_delete
+# wrong constant name on_update
+# wrong constant name options
+# wrong constant name options=
+# wrong constant name primary_key
+# wrong constant name to_table
+# wrong constant name to_table=
+# wrong constant name validate?
+# wrong constant name validated?
+# wrong constant name <static-init>
+# wrong constant name []
+# wrong constant name members
+# wrong constant name columns
+# wrong constant name comment
+# wrong constant name initialize
+# wrong constant name lengths
+# wrong constant name name
+# wrong constant name opclasses
+# wrong constant name orders
+# wrong constant name table
+# wrong constant name type
+# wrong constant name unique
+# wrong constant name using
+# wrong constant name where
+# wrong constant name <static-init>
+# wrong constant name add_record
+# wrong constant name closed?
+# wrong constant name joinable?
+# wrong constant name open?
+# wrong constant name state
+# wrong constant name <static-init>
+# wrong constant name commit
+# wrong constant name initialize
+# wrong constant name rollback
+# wrong constant name <static-init>
+# wrong constant name add_to
+# wrong constant name foreign_key
+# wrong constant name index
+# wrong constant name initialize
+# wrong constant name name
+# wrong constant name options
+# wrong constant name polymorphic
+# wrong constant name type
+# wrong constant name <static-init>
+# wrong constant name commit
+# wrong constant name initialize
+# wrong constant name rollback
+# wrong constant name <static-init>
+# wrong constant name belongs_to
+# wrong constant name change
+# wrong constant name change_default
+# wrong constant name column
+# wrong constant name column_exists?
+# wrong constant name foreign_key
+# wrong constant name foreign_key_exists?
+# wrong constant name index
+# wrong constant name index_exists?
+# wrong constant name initialize
+# wrong constant name name
+# wrong constant name references
+# wrong constant name remove
+# wrong constant name remove_belongs_to
+# wrong constant name remove_index
+# wrong constant name remove_references
+# wrong constant name remove_timestamps
+# wrong constant name rename
+# wrong constant name rename_index
+# wrong constant name timestamps
+# wrong constant name <static-init>
+# wrong constant name []
+# wrong constant name as
+# wrong constant name belongs_to
+# wrong constant name column
+# wrong constant name columns
+# wrong constant name comment
+# wrong constant name foreign_key
+# wrong constant name foreign_keys
+# wrong constant name index
+# wrong constant name indexes
+# wrong constant name indexes=
+# wrong constant name initialize
+# wrong constant name name
+# wrong constant name new_column_definition
+# wrong constant name options
+# wrong constant name primary_keys
+# wrong constant name references
+# wrong constant name remove_column
+# wrong constant name temporary
+# wrong constant name timestamps
+# wrong constant name add_record
+# wrong constant name before_commit_records
+# wrong constant name closed?
+# wrong constant name commit_records
+# wrong constant name connection
+# wrong constant name full_rollback?
+# wrong constant name initialize
+# wrong constant name joinable=
+# wrong constant name joinable?
+# wrong constant name open?
+# wrong constant name records
+# wrong constant name rollback_records
+# wrong constant name savepoint_name
+# wrong constant name state
+# wrong constant name <static-init>
+# wrong constant name begin_transaction
+# wrong constant name commit_transaction
+# wrong constant name current_transaction
+# wrong constant name initialize
+# wrong constant name open_transactions
+# wrong constant name rollback_transaction
+# wrong constant name within_new_transaction
+# wrong constant name <static-init>
+# wrong constant name add_child
+# wrong constant name commit!
+# wrong constant name committed?
+# wrong constant name completed?
+# wrong constant name finalized?
+# wrong constant name full_commit!
+# wrong constant name full_rollback!
+# wrong constant name fully_committed?
+# wrong constant name fully_completed?
+# wrong constant name fully_rolledback?
+# wrong constant name initialize
+# wrong constant name nullify!
+# wrong constant name rollback!
+# wrong constant name rolledback?
+# wrong constant name set_state
+# wrong constant name <static-init>
+# uninitialized constant ActiveRecord::InternalMetadata::ACTIONS
+# uninitialized constant ActiveRecord::InternalMetadata::BLACKLISTED_CLASS_METHODS
+# uninitialized constant ActiveRecord::InternalMetadata::CALLBACKS
+# uninitialized constant ActiveRecord::InternalMetadata::CALLBACK_FILTER_TYPES
+# uninitialized constant ActiveRecord::InternalMetadata::CALL_COMPILABLE_REGEXP
+# wrong constant name <Class:GeneratedAssociationMethods>
+# uninitialized constant ActiveRecord::InternalMetadata::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant ActiveRecord::InternalMetadata::NAME_COMPILABLE_REGEXP
+# uninitialized constant ActiveRecord::InternalMetadata::UNASSIGNABLE_KEYS
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name []
+# wrong constant name []=
+# wrong constant name create_table
+# wrong constant name <Class:Rails41>
+# wrong constant name <Class:Rails420>
+# wrong constant name <static-init>
+# wrong constant name convert
+# wrong constant name <static-init>
+# wrong constant name convert
+# wrong constant name <static-init>
+# wrong constant name convert
+# uninitialized constant ActiveRecord::LogSubscriber::BLACK
+# uninitialized constant ActiveRecord::LogSubscriber::BLUE
+# uninitialized constant ActiveRecord::LogSubscriber::BOLD
+# uninitialized constant ActiveRecord::LogSubscriber::CLEAR
+# uninitialized constant ActiveRecord::LogSubscriber::CYAN
+# uninitialized constant ActiveRecord::LogSubscriber::GREEN
+# uninitialized constant ActiveRecord::LogSubscriber::MAGENTA
+# uninitialized constant ActiveRecord::LogSubscriber::RED
+# uninitialized constant ActiveRecord::LogSubscriber::WHITE
+# uninitialized constant ActiveRecord::LogSubscriber::YELLOW
+# wrong constant name sql
+# wrong constant name <Class:CommandRecorder>
+# wrong constant name <Class:StraightReversions>
+# wrong constant name add_belongs_to
+# wrong constant name add_column
+# wrong constant name add_foreign_key
+# wrong constant name add_index
+# wrong constant name add_reference
+# wrong constant name add_timestamps
+# wrong constant name change_column
+# wrong constant name change_column_default
+# wrong constant name change_column_null
+# wrong constant name change_table
+# wrong constant name commands
+# wrong constant name commands=
+# wrong constant name create_join_table
+# wrong constant name create_table
+# wrong constant name delegate
+# wrong constant name delegate=
+# wrong constant name disable_extension
+# wrong constant name drop_join_table
+# wrong constant name drop_table
+# wrong constant name enable_extension
+# wrong constant name execute
+# wrong constant name execute_block
+# wrong constant name initialize
+# wrong constant name inverse_of
+# wrong constant name invert_add_belongs_to
+# wrong constant name invert_remove_belongs_to
+# wrong constant name record
+# wrong constant name remove_belongs_to
+# wrong constant name remove_column
+# wrong constant name remove_columns
+# wrong constant name remove_foreign_key
+# wrong constant name remove_index
+# wrong constant name remove_reference
+# wrong constant name remove_timestamps
+# wrong constant name rename_column
+# wrong constant name rename_index
+# wrong constant name rename_table
+# wrong constant name revert
+# wrong constant name reverting
+# wrong constant name reverting=
+# wrong constant name transaction
+# wrong constant name invert_add_column
+# wrong constant name invert_add_reference
+# wrong constant name invert_add_timestamps
+# wrong constant name invert_create_join_table
+# wrong constant name invert_create_table
+# wrong constant name invert_disable_extension
+# wrong constant name invert_drop_join_table
+# wrong constant name invert_drop_table
+# wrong constant name invert_enable_extension
+# wrong constant name invert_execute_block
+# wrong constant name invert_remove_column
+# wrong constant name invert_remove_reference
+# wrong constant name invert_remove_timestamps
+# wrong constant name invert_transaction
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# uninitialized constant ActiveRecord::Migration::Compatibility::V4_2::MigrationFilenameRegexp
+# wrong constant name <Class:TableDefinition>
+# wrong constant name add_belongs_to
+# wrong constant name add_reference
+# wrong constant name add_timestamps
+# wrong constant name index_exists?
+# wrong constant name remove_index
+# wrong constant name belongs_to
+# wrong constant name references
+# wrong constant name timestamps
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# uninitialized constant ActiveRecord::Migration::Compatibility::V5_0::MigrationFilenameRegexp
+# wrong constant name <Class:TableDefinition>
+# wrong constant name add_belongs_to
+# wrong constant name add_column
+# wrong constant name add_reference
+# wrong constant name change_table
+# wrong constant name create_join_table
+# wrong constant name belongs_to
+# wrong constant name primary_key
+# wrong constant name references
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# uninitialized constant ActiveRecord::Migration::Compatibility::V5_1::MigrationFilenameRegexp
+# wrong constant name change_column
+# wrong constant name create_table
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name find
+# wrong constant name any?
+# wrong constant name calculate
+# wrong constant name delete
+# wrong constant name delete_all
+# wrong constant name empty?
+# wrong constant name exists?
+# wrong constant name many?
+# wrong constant name none?
+# wrong constant name one?
+# wrong constant name or
+# wrong constant name pluck
+# wrong constant name to_sql
+# wrong constant name update_all
+# wrong constant name <static-init>
+# wrong constant name <Class:ArrayHandler>
+# wrong constant name <Class:AssociationQueryValue>
+# wrong constant name <Class:BaseHandler>
+# wrong constant name <Class:BasicObjectHandler>
+# wrong constant name <Class:PolymorphicArrayValue>
+# wrong constant name <Class:RangeHandler>
+# wrong constant name <Class:RelationHandler>
+# wrong constant name build
+# wrong constant name build_bind_attribute
+# wrong constant name build_from_hash
+# wrong constant name expand_from_hash
+# wrong constant name initialize
+# wrong constant name register_handler
+# wrong constant name resolve_column_aliases
+# wrong constant name table
+# wrong constant name <Class:NullPredicate>
+# wrong constant name call
+# wrong constant name initialize
+# wrong constant name predicate_builder
+# wrong constant name <static-init>
+# wrong constant name or
+# wrong constant name <static-init>
+# wrong constant name associated_table
+# wrong constant name initialize
+# wrong constant name queries
+# wrong constant name value
+# wrong constant name <static-init>
+# wrong constant name call
+# wrong constant name initialize
+# wrong constant name predicate_builder
+# wrong constant name <static-init>
+# wrong constant name call
+# wrong constant name initialize
+# wrong constant name predicate_builder
+# wrong constant name <static-init>
+# wrong constant name associated_table
+# wrong constant name initialize
+# wrong constant name queries
+# wrong constant name values
+# wrong constant name <static-init>
+# wrong constant name <Class:RangeWithBinds>
+# wrong constant name call
+# wrong constant name initialize
+# wrong constant name predicate_builder
+# wrong constant name exclude_end?
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name call
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name references
+# uninitialized constant ActiveRecord::Relation::DEFAULT_VALUES
+# uninitialized constant ActiveRecord::Relation::FROZEN_EMPTY_ARRAY
+# uninitialized constant ActiveRecord::Relation::FROZEN_EMPTY_HASH
+# uninitialized constant ActiveRecord::Relation::ONE_AS_ONE
+# uninitialized constant ActiveRecord::Relation::ORDER_IGNORE_MESSAGE
+# uninitialized constant ActiveRecord::Relation::STRUCTURAL_OR_METHODS
+# uninitialized constant ActiveRecord::Relation::VALID_DIRECTIONS
+# uninitialized constant ActiveRecord::Relation::VALID_UNSCOPING_VALUES
+# uninitialized constant ActiveRecord::Result::Elem
+# wrong constant name []
+# wrong constant name cast_values
+# wrong constant name collect!
+# wrong constant name column_types
+# wrong constant name columns
+# wrong constant name each
+# wrong constant name empty?
+# wrong constant name first
+# wrong constant name initialize
+# wrong constant name last
+# wrong constant name length
+# wrong constant name map!
+# wrong constant name rows
+# wrong constant name to_ary
+# wrong constant name to_hash
+# wrong constant name connection_handler
+# wrong constant name connection_handler=
+# wrong constant name sql_runtime
+# wrong constant name sql_runtime=
+# wrong constant name <static-init>
+# wrong constant name connection_handler
+# wrong constant name connection_handler=
+# wrong constant name sql_runtime
+# wrong constant name sql_runtime=
+# uninitialized constant ActiveRecord::Schema::MigrationFilenameRegexp
+# wrong constant name define
+# uninitialized constant ActiveRecord::SchemaMigration::ACTIONS
+# uninitialized constant ActiveRecord::SchemaMigration::BLACKLISTED_CLASS_METHODS
+# uninitialized constant ActiveRecord::SchemaMigration::CALLBACKS
+# uninitialized constant ActiveRecord::SchemaMigration::CALLBACK_FILTER_TYPES
+# uninitialized constant ActiveRecord::SchemaMigration::CALL_COMPILABLE_REGEXP
+# wrong constant name <Class:GeneratedAssociationMethods>
+# uninitialized constant ActiveRecord::SchemaMigration::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant ActiveRecord::SchemaMigration::NAME_COMPILABLE_REGEXP
+# uninitialized constant ActiveRecord::SchemaMigration::UNASSIGNABLE_KEYS
+# wrong constant name version
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name all_versions
+# wrong constant name create_table
+# wrong constant name drop_table
+# wrong constant name normalize_migration_number
+# wrong constant name normalized_versions
+# wrong constant name <Class:BindMap>
+# wrong constant name <Class:Params>
+# wrong constant name <Class:PartialQuery>
+# wrong constant name <Class:Query>
+# wrong constant name <Class:Substitute>
+# wrong constant name bind_map
+# wrong constant name execute
+# wrong constant name initialize
+# wrong constant name klass
+# wrong constant name query_builder
+# wrong constant name bind
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name bind
+# wrong constant name <static-init>
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name initialize
+# wrong constant name sql_for
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name create
+# wrong constant name partial_query
+# wrong constant name query
+# wrong constant name unsupported_value?
+# wrong constant name aggregated_with?
+# wrong constant name arel_attribute
+# wrong constant name arel_table
+# wrong constant name associated_table
+# wrong constant name associated_with?
+# wrong constant name association
+# wrong constant name association_foreign_key
+# wrong constant name association_foreign_type
+# wrong constant name association_join_foreign_key
+# wrong constant name association_join_primary_key
+# wrong constant name has_column?
+# wrong constant name initialize
+# wrong constant name klass
+# wrong constant name polymorphic_association?
+# wrong constant name reflect_on_aggregation
+# wrong constant name resolve_column_aliases
+# wrong constant name type
+# wrong constant name <static-init>
+# wrong constant name charset
+# wrong constant name charset_current
+# wrong constant name check_protected_environments!
+# wrong constant name check_schema_file
+# wrong constant name check_target_version
+# wrong constant name collation
+# wrong constant name collation_current
+# wrong constant name create
+# wrong constant name create_all
+# wrong constant name create_current
+# wrong constant name current_config
+# wrong constant name current_config=
+# wrong constant name database_configuration
+# wrong constant name database_configuration=
+# wrong constant name db_dir
+# wrong constant name db_dir=
+# wrong constant name drop
+# wrong constant name drop_all
+# wrong constant name drop_current
+# wrong constant name dump_schema_cache
+# wrong constant name env
+# wrong constant name env=
+# wrong constant name fixtures_path
+# wrong constant name fixtures_path=
+# wrong constant name load_schema
+# wrong constant name load_schema_current
+# wrong constant name load_seed
+# wrong constant name migrate
+# wrong constant name migrations_paths
+# wrong constant name migrations_paths=
+# wrong constant name purge
+# wrong constant name purge_all
+# wrong constant name purge_current
+# wrong constant name register_task
+# wrong constant name root
+# wrong constant name root=
+# wrong constant name schema_file
+# wrong constant name seed_loader
+# wrong constant name seed_loader=
+# wrong constant name structure_dump
+# wrong constant name structure_load
+# wrong constant name target_version
+# wrong constant name <static-init>
+# wrong constant name structure_dump_flags
+# wrong constant name structure_dump_flags=
+# wrong constant name structure_load_flags
+# wrong constant name structure_load_flags=
+# wrong constant name charset
+# wrong constant name collation
+# wrong constant name connection
+# wrong constant name create
+# wrong constant name drop
+# wrong constant name establish_connection
+# wrong constant name initialize
+# wrong constant name purge
+# wrong constant name structure_dump
+# wrong constant name structure_load
+# wrong constant name <static-init>
+# wrong constant name charset
+# wrong constant name clear_active_connections!
+# wrong constant name collation
+# wrong constant name connection
+# wrong constant name create
+# wrong constant name drop
+# wrong constant name establish_connection
+# wrong constant name initialize
+# wrong constant name purge
+# wrong constant name structure_dump
+# wrong constant name structure_load
+# wrong constant name <static-init>
+# wrong constant name charset
+# wrong constant name connection
+# wrong constant name create
+# wrong constant name drop
+# wrong constant name establish_connection
+# wrong constant name initialize
+# wrong constant name purge
+# wrong constant name structure_dump
+# wrong constant name structure_load
+# wrong constant name <static-init>
+# wrong constant name <Class:ClassMethods>
+# wrong constant name after_teardown
+# wrong constant name before_setup
+# wrong constant name enlist_fixture_connections
+# wrong constant name run_in_transaction?
+# wrong constant name setup_fixtures
+# wrong constant name teardown_fixtures
+# wrong constant name fixtures
+# wrong constant name set_fixture_class
+# wrong constant name setup_fixture_accessors
+# wrong constant name uses_transaction
+# wrong constant name uses_transaction?
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name add_filter
+# wrong constant name add_silencer
+# wrong constant name clean
+# wrong constant name filter
+# wrong constant name remove_filters!
+# wrong constant name remove_silencers!
+# wrong constant name <static-init>
+# wrong constant name <Class:Entry>
+# wrong constant name <Class:FileStore>
+# wrong constant name <Class:MemoryStore>
+# wrong constant name <Class:NullStore>
+# wrong constant name <Class:Store>
+# wrong constant name <Class:Strategy>
+# wrong constant name dup_value!
+# wrong constant name expired?
+# wrong constant name expires_at
+# wrong constant name expires_at=
+# wrong constant name initialize
+# wrong constant name mismatched?
+# wrong constant name size
+# wrong constant name value
+# wrong constant name version
+# wrong constant name <static-init>
+# wrong constant name cache_path
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name prune
+# wrong constant name pruning?
+# wrong constant name synchronize
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name cleanup
+# wrong constant name clear
+# wrong constant name decrement
+# wrong constant name delete
+# wrong constant name delete_matched
+# wrong constant name exist?
+# wrong constant name fetch
+# wrong constant name fetch_multi
+# wrong constant name increment
+# wrong constant name initialize
+# wrong constant name logger
+# wrong constant name logger=
+# wrong constant name mute
+# wrong constant name options
+# wrong constant name read
+# wrong constant name read_multi
+# wrong constant name silence
+# wrong constant name silence!
+# wrong constant name silence?
+# wrong constant name write
+# wrong constant name write_multi
+# wrong constant name <static-init>
+# wrong constant name logger
+# wrong constant name logger=
+# wrong constant name <Class:LocalCache>
+# wrong constant name cleanup
+# wrong constant name clear
+# wrong constant name decrement
+# wrong constant name increment
+# wrong constant name middleware
+# wrong constant name with_local_cache
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name expand_cache_key
+# wrong constant name lookup_store
+# wrong constant name <Class:ClassMethods>
+# wrong constant name <Class:Configuration>
+# wrong constant name config
+# wrong constant name config
+# wrong constant name configure
+# wrong constant name <static-init>
+# uninitialized constant ActiveSupport::Configurable::Configuration::Elem
+# uninitialized constant ActiveSupport::Configurable::Configuration::K
+# uninitialized constant ActiveSupport::Configurable::Configuration::V
+# wrong constant name compile_methods!
+# wrong constant name <static-init>
+# wrong constant name compile_methods!
+# wrong constant name <static-init>
+# uninitialized constant ActiveSupport::CurrentAttributes::CALLBACK_FILTER_TYPES
+# wrong constant name __callbacks
+# wrong constant name __callbacks?
+# wrong constant name _reset_callbacks
+# wrong constant name _run_reset_callbacks
+# wrong constant name attributes
+# wrong constant name attributes=
+# wrong constant name reset
+# wrong constant name set
+# wrong constant name <static-init>
+# wrong constant name __callbacks
+# wrong constant name __callbacks=
+# wrong constant name __callbacks?
+# wrong constant name _reset_callbacks
+# wrong constant name _reset_callbacks=
+# wrong constant name attribute
+# wrong constant name clear_all
+# wrong constant name instance
+# wrong constant name reset
+# wrong constant name reset_all
+# wrong constant name resets
+# wrong constant name set
+# uninitialized constant ActiveSupport::Deprecation::RAILS_GEM_ROOT
+# wrong constant name deprecation_horizon
+# wrong constant name deprecation_horizon=
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name hash_digest_class
+# wrong constant name hash_digest_class=
+# wrong constant name hexdigest
+# wrong constant name <Class:ISO8601Parser>
+# wrong constant name <Class:ISO8601Serializer>
+# wrong constant name <Class:ParsingError>
+# wrong constant name initialize
+# wrong constant name mode
+# wrong constant name mode=
+# wrong constant name parse!
+# wrong constant name parts
+# wrong constant name scanner
+# wrong constant name sign
+# wrong constant name sign=
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name initialize
+# wrong constant name serialize
+# wrong constant name <static-init>
+# wrong constant name <Class:PathHelper>
+# wrong constant name execute
+# wrong constant name execute_if_updated
+# wrong constant name initialize
+# wrong constant name updated?
+# wrong constant name existing_parent
+# wrong constant name filter_out_descendants
+# wrong constant name longest_common_subpath
+# wrong constant name normalize_extension
+# wrong constant name xpath
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# uninitialized constant ActiveSupport::ExecutionWrapper::CALLBACK_FILTER_TYPES
+# wrong constant name <Class:CompleteHook>
+# wrong constant name <Class:RunHook>
+# wrong constant name __callbacks
+# wrong constant name __callbacks?
+# wrong constant name _complete_callbacks
+# wrong constant name _run_callbacks
+# wrong constant name _run_complete_callbacks
+# wrong constant name _run_run_callbacks
+# wrong constant name complete!
+# wrong constant name run!
+# uninitialized constant ActiveSupport::ExecutionWrapper::CompleteHook::Elem
+# wrong constant name after
+# wrong constant name before
+# wrong constant name hook
+# wrong constant name hook=
+# wrong constant name <static-init>
+# wrong constant name []
+# wrong constant name members
+# uninitialized constant ActiveSupport::ExecutionWrapper::RunHook::Elem
+# wrong constant name before
+# wrong constant name hook
+# wrong constant name hook=
+# wrong constant name <static-init>
+# wrong constant name []
+# wrong constant name members
+# wrong constant name <static-init>
+# wrong constant name __callbacks
+# wrong constant name __callbacks=
+# wrong constant name __callbacks?
+# wrong constant name _complete_callbacks
+# wrong constant name _complete_callbacks=
+# wrong constant name _run_callbacks
+# wrong constant name _run_callbacks=
+# wrong constant name active
+# wrong constant name active=
+# wrong constant name active?
+# wrong constant name inherited
+# wrong constant name register_hook
+# wrong constant name run!
+# wrong constant name to_complete
+# wrong constant name to_run
+# wrong constant name wrap
+# uninitialized constant ActiveSupport::Executor::CALLBACK_FILTER_TYPES
+# uninitialized constant ActiveSupport::Executor::Null
+# wrong constant name <static-init>
+# wrong constant name execute
+# wrong constant name execute_if_updated
+# wrong constant name initialize
+# wrong constant name updated?
+# wrong constant name <static-init>
+# wrong constant name <Class:Stream>
+# uninitialized constant ActiveSupport::Gzip::Stream::Elem
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name compress
+# wrong constant name decompress
+# uninitialized constant ActiveSupport::InheritableOptions::Elem
+# uninitialized constant ActiveSupport::InheritableOptions::K
+# uninitialized constant ActiveSupport::InheritableOptions::V
+# wrong constant name inheritable_copy
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name generate_key
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name colorize_logging
+# wrong constant name colorize_logging=
+# wrong constant name debug
+# wrong constant name error
+# wrong constant name fatal
+# wrong constant name info
+# wrong constant name logger
+# wrong constant name unknown
+# wrong constant name warn
+# wrong constant name <Class:InvalidMessage>
+# wrong constant name <Class:NullSerializer>
+# wrong constant name <Class:NullVerifier>
+# wrong constant name encrypt_and_sign
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name dump
+# wrong constant name load
+# wrong constant name <static-init>
+# wrong constant name generate
+# wrong constant name verify
+# wrong constant name <static-init>
+# wrong constant name default_cipher
+# wrong constant name key_len
+# wrong constant name use_authenticated_message_encryption
+# wrong constant name use_authenticated_message_encryption=
+# wrong constant name <Class:InvalidSignature>
+# wrong constant name generate
+# wrong constant name valid_message?
+# wrong constant name verify
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <Class:Encryptor>
+# wrong constant name <Class:Verifier>
+# wrong constant name initialize
+# wrong constant name rotate
+# wrong constant name decrypt_and_verify
+# wrong constant name <static-init>
+# wrong constant name verified
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <Class:Codepoint>
+# wrong constant name <Class:UnicodeDatabase>
+# wrong constant name compose
+# wrong constant name decompose
+# wrong constant name default_normalization_form
+# wrong constant name default_normalization_form=
+# wrong constant name downcase
+# wrong constant name in_char_class?
+# wrong constant name normalize
+# wrong constant name pack_graphemes
+# wrong constant name reorder_characters
+# wrong constant name swapcase
+# wrong constant name tidy_bytes
+# wrong constant name unpack_graphemes
+# wrong constant name upcase
+# wrong constant name code
+# wrong constant name code=
+# wrong constant name combining_class
+# wrong constant name combining_class=
+# wrong constant name decomp_mapping
+# wrong constant name decomp_mapping=
+# wrong constant name decomp_type
+# wrong constant name decomp_type=
+# wrong constant name lowercase_mapping
+# wrong constant name lowercase_mapping=
+# wrong constant name swapcase_mapping
+# wrong constant name uppercase_mapping
+# wrong constant name uppercase_mapping=
+# wrong constant name <static-init>
+# wrong constant name boundary
+# wrong constant name boundary=
+# wrong constant name codepoints
+# wrong constant name codepoints=
+# wrong constant name composition_exclusion
+# wrong constant name composition_exclusion=
+# wrong constant name composition_map
+# wrong constant name composition_map=
+# wrong constant name cp1252
+# wrong constant name cp1252=
+# wrong constant name load
+# wrong constant name <static-init>
+# wrong constant name dirname
+# wrong constant name filename
+# wrong constant name <static-init>
+# wrong constant name execute
+# wrong constant name initialize
+# wrong constant name namespace
+# wrong constant name namespace=
+# wrong constant name namespace?
+# wrong constant name number
+# wrong constant name opts
+# wrong constant name validate_float
+# wrong constant name validate_float=
+# wrong constant name validate_float?
+# wrong constant name <static-init>
+# wrong constant name convert
+# wrong constant name namespace
+# wrong constant name namespace=
+# wrong constant name namespace?
+# wrong constant name validate_float
+# wrong constant name validate_float=
+# wrong constant name validate_float?
+# uninitialized constant ActiveSupport::NumberHelper::NumberToCurrencyConverter::DEFAULTS
+# wrong constant name convert
+# wrong constant name <static-init>
+# uninitialized constant ActiveSupport::NumberHelper::NumberToDelimitedConverter::DEFAULTS
+# wrong constant name convert
+# wrong constant name <static-init>
+# uninitialized constant ActiveSupport::NumberHelper::NumberToHumanConverter::DEFAULTS
+# wrong constant name convert
+# wrong constant name <static-init>
+# uninitialized constant ActiveSupport::NumberHelper::NumberToHumanSizeConverter::DEFAULTS
+# wrong constant name convert
+# wrong constant name <static-init>
+# uninitialized constant ActiveSupport::NumberHelper::NumberToPercentageConverter::DEFAULTS
+# wrong constant name convert
+# wrong constant name <static-init>
+# uninitialized constant ActiveSupport::NumberHelper::NumberToPhoneConverter::DEFAULTS
+# wrong constant name convert
+# wrong constant name <static-init>
+# uninitialized constant ActiveSupport::NumberHelper::NumberToRoundedConverter::DEFAULTS
+# wrong constant name convert
+# wrong constant name <static-init>
+# wrong constant name digit_count
+# wrong constant name initialize
+# wrong constant name options
+# wrong constant name round
+# wrong constant name <static-init>
+# wrong constant name initialize
+# wrong constant name <static-init>
+# uninitialized constant ActiveSupport::OrderedHash::Elem
+# uninitialized constant ActiveSupport::OrderedHash::K
+# uninitialized constant ActiveSupport::OrderedHash::V
+# wrong constant name encode_with
+# wrong constant name reject
+# wrong constant name select
+# wrong constant name to_yaml_type
+# wrong constant name <static-init>
+# uninitialized constant ActiveSupport::OrderedOptions::Elem
+# uninitialized constant ActiveSupport::OrderedOptions::K
+# uninitialized constant ActiveSupport::OrderedOptions::V
+# wrong constant name []
+# wrong constant name []=
+# wrong constant name _get
+# wrong constant name method_missing
+# wrong constant name <static-init>
+# wrong constant name raise
+# wrong constant name <static-init>
+# uninitialized constant ActiveSupport::Reloader::CALLBACK_FILTER_TYPES
+# uninitialized constant ActiveSupport::Reloader::Null
+# wrong constant name _class_unload_callbacks
+# wrong constant name _prepare_callbacks
+# wrong constant name _run_class_unload_callbacks
+# wrong constant name _run_prepare_callbacks
+# wrong constant name check
+# wrong constant name check=
+# wrong constant name check?
+# wrong constant name class_unload!
+# wrong constant name executor
+# wrong constant name executor=
+# wrong constant name executor?
+# wrong constant name release_unload_lock!
+# wrong constant name require_unload_lock!
+# wrong constant name <static-init>
+# wrong constant name _class_unload_callbacks
+# wrong constant name _class_unload_callbacks=
+# wrong constant name _prepare_callbacks
+# wrong constant name _prepare_callbacks=
+# wrong constant name after_class_unload
+# wrong constant name before_class_unload
+# wrong constant name check
+# wrong constant name check!
+# wrong constant name check=
+# wrong constant name check?
+# wrong constant name executor
+# wrong constant name executor=
+# wrong constant name executor?
+# wrong constant name prepare!
+# wrong constant name reload!
+# wrong constant name reloaded!
+# wrong constant name to_prepare
+# wrong constant name <Class:ClassMethods>
+# wrong constant name handler_for_rescue
+# wrong constant name rescue_with_handler
+# wrong constant name handler_for_rescue
+# wrong constant name rescue_from
+# wrong constant name rescue_with_handler
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name %
+# wrong constant name +
+# wrong constant name <<
+# uninitialized constant ActiveSupport::SafeBuffer::BLANK_RE
+# uninitialized constant ActiveSupport::SafeBuffer::ENCODED_BLANKS
+# wrong constant name <Class:SafeConcatError>
+# wrong constant name []
+# wrong constant name capitalize
+# wrong constant name capitalize!
+# wrong constant name chomp
+# wrong constant name chomp!
+# wrong constant name chop
+# wrong constant name chop!
+# wrong constant name clone_empty
+# wrong constant name concat
+# wrong constant name delete
+# wrong constant name delete!
+# wrong constant name downcase
+# wrong constant name downcase!
+# wrong constant name encode_with
+# wrong constant name gsub
+# wrong constant name gsub!
+# wrong constant name initialize
+# wrong constant name lstrip
+# wrong constant name lstrip!
+# wrong constant name next
+# wrong constant name next!
+# wrong constant name prepend
+# wrong constant name reverse
+# wrong constant name reverse!
+# wrong constant name rstrip
+# wrong constant name rstrip!
+# wrong constant name safe_concat
+# wrong constant name slice
+# wrong constant name slice!
+# wrong constant name squeeze
+# wrong constant name squeeze!
+# wrong constant name strip
+# wrong constant name strip!
+# wrong constant name sub
+# wrong constant name sub!
+# wrong constant name succ
+# wrong constant name succ!
+# wrong constant name swapcase
+# wrong constant name swapcase!
+# wrong constant name tr
+# wrong constant name tr!
+# wrong constant name tr_s
+# wrong constant name tr_s!
+# wrong constant name upcase
+# wrong constant name upcase!
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name finish
+# wrong constant name patterns
+# wrong constant name start
+# wrong constant name <Class:Formatter>
+# wrong constant name clear_tags!
+# wrong constant name flush
+# wrong constant name pop_tags
+# wrong constant name push_tags
+# wrong constant name tagged
+# wrong constant name call
+# wrong constant name clear_tags!
+# wrong constant name current_tags
+# wrong constant name pop_tags
+# wrong constant name push_tags
+# wrong constant name tagged
+# wrong constant name tags_text
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name new
+# uninitialized constant ActiveSupport::TestCase::CALLBACK_FILTER_TYPES
+# uninitialized constant ActiveSupport::TestCase::E
+# uninitialized constant ActiveSupport::TestCase::PASSTHROUGH_EXCEPTIONS
+# uninitialized constant ActiveSupport::TestCase::SIGNALS
+# uninitialized constant ActiveSupport::TestCase::TEARDOWN_METHODS
+# uninitialized constant ActiveSupport::TestCase::UNDEFINED
+# uninitialized constant ActiveSupport::TestCase::UNTRACKED
+# wrong constant name __callbacks
+# wrong constant name __callbacks?
+# wrong constant name _run_setup_callbacks
+# wrong constant name _run_teardown_callbacks
+# wrong constant name _setup_callbacks
+# wrong constant name _teardown_callbacks
+# wrong constant name assert_no_match
+# wrong constant name assert_not_empty
+# wrong constant name assert_not_equal
+# wrong constant name assert_not_in_delta
+# wrong constant name assert_not_in_epsilon
+# wrong constant name assert_not_includes
+# wrong constant name assert_not_instance_of
+# wrong constant name assert_not_kind_of
+# wrong constant name assert_not_nil
+# wrong constant name assert_not_operator
+# wrong constant name assert_not_predicate
+# wrong constant name assert_not_respond_to
+# wrong constant name assert_not_same
+# wrong constant name assert_raise
+# wrong constant name file_fixture_path
+# wrong constant name file_fixture_path?
+# wrong constant name method_name
+# wrong constant name <static-init>
+# wrong constant name __callbacks
+# wrong constant name __callbacks=
+# wrong constant name __callbacks?
+# wrong constant name _setup_callbacks
+# wrong constant name _setup_callbacks=
+# wrong constant name _teardown_callbacks
+# wrong constant name _teardown_callbacks=
+# wrong constant name file_fixture_path
+# wrong constant name file_fixture_path=
+# wrong constant name file_fixture_path?
+# wrong constant name test_order=
+# wrong constant name assert_changes
+# wrong constant name assert_difference
+# wrong constant name assert_no_changes
+# wrong constant name assert_no_difference
+# wrong constant name assert_not
+# wrong constant name assert_nothing_raised
+# wrong constant name <static-init>
+# wrong constant name assert_deprecated
+# wrong constant name assert_not_deprecated
+# wrong constant name collect_deprecations
+# wrong constant name <static-init>
+# wrong constant name file_fixture
+# wrong constant name <static-init>
+# wrong constant name after_teardown
+# wrong constant name before_setup
+# wrong constant name <static-init>
+# wrong constant name prepended
+# wrong constant name before_setup
+# wrong constant name tagged_logger=
+# wrong constant name <static-init>
+# wrong constant name after_teardown
+# wrong constant name freeze_time
+# wrong constant name travel
+# wrong constant name travel_back
+# wrong constant name travel_to
+# wrong constant name <static-init>
 # wrong constant name connect_internal
+# uninitialized constant Arel::Visitors::PostgreSQL::AND
+# uninitialized constant Arel::Visitors::PostgreSQL::COMMA
+# uninitialized constant Arel::Visitors::PostgreSQL::DISTINCT
+# uninitialized constant Arel::Visitors::PostgreSQL::GROUP_BY
+# uninitialized constant Arel::Visitors::PostgreSQL::ORDER_BY
+# uninitialized constant Arel::Visitors::PostgreSQL::SPACE
+# uninitialized constant Arel::Visitors::PostgreSQL::WHERE
+# uninitialized constant Arel::Visitors::PostgreSQL::WINDOW
 # undefined method `[]$2' for class `Array'
 # undefined method `[]=$2' for class `Array'
 # undefined method `concat$1' for class `Array'
@@ -161,6 +1533,9 @@
 # undefined method `shuffle!$1' for class `Array'
 # undefined method `slice$2' for class `Array'
 # undefined method `slice!$2' for class `Array'
+# undefined method `sum$2' for class `Array'
+# undefined method `to_s$1' for class `Array'
+# Did you mean?  to_s
 # wrong constant name []$2
 # wrong constant name []=$2
 # wrong constant name append
@@ -195,23 +1570,54 @@
 # wrong constant name shuffle!$1
 # wrong constant name slice$2
 # wrong constant name slice!$2
+# wrong constant name sum$2
 # wrong constant name to_csv
 # wrong constant name to_h
+# wrong constant name to_s$1
 # wrong constant name union
-# wrong constant name try_convert
+# wrong constant name wrap
 # wrong constant name <Class:BasicObject>
-# uninitialized constant Benchmark
-# uninitialized constant Benchmark
+# wrong constant name initialize
+# wrong constant name item
+# wrong constant name list
+# wrong constant name report
+# wrong constant name width
+# wrong constant name initialize
+# wrong constant name item
+# wrong constant name list
+# wrong constant name report
+# wrong constant name *
+# wrong constant name +
+# wrong constant name -
+# wrong constant name /
+# wrong constant name add
+# wrong constant name add!
+# wrong constant name cstime
+# wrong constant name cutime
+# wrong constant name format
+# wrong constant name initialize
+# wrong constant name label
+# wrong constant name memberwise
+# wrong constant name real
+# wrong constant name stime
+# wrong constant name to_a
+# wrong constant name total
+# wrong constant name utime
 # undefined method `_dump$1' for class `BigDecimal'
 # undefined method `div$2' for class `BigDecimal'
 # undefined method `power$2' for class `BigDecimal'
-# undefined method `to_s$1' for class `BigDecimal'
-# Did you mean?  to_s
+# uninitialized constant BigDecimal::EXABYTE
+# uninitialized constant BigDecimal::GIGABYTE
+# uninitialized constant BigDecimal::KILOBYTE
+# uninitialized constant BigDecimal::MEGABYTE
+# uninitialized constant BigDecimal::PETABYTE
+# uninitialized constant BigDecimal::TERABYTE
 # wrong constant name _dump$1
 # wrong constant name clone
 # wrong constant name div$2
 # wrong constant name power$2
-# wrong constant name to_s$1
+# wrong constant name to_d
+# wrong constant name to_digits
 # undefined singleton method `limit$1' for `BigDecimal'
 # undefined singleton method `mode$1' for `BigDecimal'
 # wrong constant name limit$1
@@ -308,6 +1714,13 @@
 # wrong constant name max_retries=
 # wrong constant name redirect_limit
 # wrong constant name redirect_limit=
+# uninitialized constant Bundler::GemHelper::DEFAULT
+# uninitialized constant Bundler::GemHelper::LN_SUPPORTED
+# uninitialized constant Bundler::GemHelper::LOW_METHODS
+# uninitialized constant Bundler::GemHelper::METHODS
+# uninitialized constant Bundler::GemHelper::OPT_TABLE
+# uninitialized constant Bundler::GemHelper::RUBY
+# uninitialized constant Bundler::GemHelper::VERSION
 # wrong constant name allowed_push_host
 # wrong constant name already_tagged?
 # wrong constant name base
@@ -455,9 +1868,7 @@
 # wrong constant name generate_bin
 # wrong constant name <static-init>
 # uninitialized constant Bundler::Plugin::Installer::Rubygems::API_REQUEST_LIMIT
-# Did you mean?  Bundler::Plugin::Installer::Rubygems::API_REQUEST_SIZE
 # uninitialized constant Bundler::Plugin::Installer::Rubygems::API_REQUEST_SIZE
-# Did you mean?  Bundler::Plugin::Installer::Rubygems::API_REQUEST_LIMIT
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name <static-init>
@@ -554,6 +1965,10 @@
 # wrong constant name empty?
 # wrong constant name for
 # wrong constant name for_many
+# wrong constant name <Class:HtmlExtension>
+# uninitialized constant CGI::RFC822_DAYS
+# uninitialized constant CGI::RFC822_MONTHS
+# uninitialized constant CGI::TABLE_FOR_ESCAPE_HTML__
 # wrong constant name a
 # wrong constant name base
 # wrong constant name blockquote
@@ -579,17 +1994,57 @@
 # wrong constant name <static-init>
 # uninitialized constant Chalk
 # uninitialized constant Chalk
+# uninitialized constant Chronic::RepeaterSeasonName::SEASONS
 # undefined method `initialize$2' for class `Class'
 # Did you mean?  initialize
+# uninitialized constant Class::DELEGATION_RESERVED_KEYWORDS
+# uninitialized constant Class::DELEGATION_RESERVED_METHOD_NAMES
+# uninitialized constant Class::RUBY_RESERVED_KEYWORDS
 # wrong constant name initialize$2
 # wrong constant name json_creatable?
 # wrong constant name polar
 # wrong constant name rect
 # wrong constant name rectangular
+# uninitialized constant Concurrent::AbstractExecutorService::DEBUG
+# uninitialized constant Concurrent::AbstractExecutorService::ERROR
+# uninitialized constant Concurrent::AbstractExecutorService::FATAL
+# uninitialized constant Concurrent::AbstractExecutorService::INFO
+# uninitialized constant Concurrent::AbstractExecutorService::UNKNOWN
+# uninitialized constant Concurrent::AbstractExecutorService::WARN
+# uninitialized constant Concurrent::RubyThreadPoolExecutor::DEBUG
+# uninitialized constant Concurrent::RubyThreadPoolExecutor::ERROR
+# uninitialized constant Concurrent::RubyThreadPoolExecutor::FALLBACK_POLICIES
+# uninitialized constant Concurrent::RubyThreadPoolExecutor::FATAL
+# uninitialized constant Concurrent::RubyThreadPoolExecutor::INFO
+# uninitialized constant Concurrent::RubyThreadPoolExecutor::UNKNOWN
+# uninitialized constant Concurrent::RubyThreadPoolExecutor::WARN
+# uninitialized constant Concurrent::TimerTask::DEBUG
+# uninitialized constant Concurrent::TimerTask::ERROR
+# uninitialized constant Concurrent::TimerTask::FALLBACK_POLICIES
+# uninitialized constant Concurrent::TimerTask::FATAL
+# uninitialized constant Concurrent::TimerTask::INFO
+# uninitialized constant Concurrent::TimerTask::UNKNOWN
+# uninitialized constant Concurrent::TimerTask::WARN
 # uninitialized constant Configatron
 # uninitialized constant Configatron
 # uninitialized constant Coverage
 # uninitialized constant Coverage
+# undefined method `initialize$1' for class `Date'
+# Did you mean?  initialize
+# undefined method `to_s$1' for class `Date'
+# Did you mean?  to_s
+# undefined method `to_time$1' for class `Date'
+# uninitialized constant Date::DAYS_INTO_WEEK
+# uninitialized constant Date::WEEKEND_DAYS
+# wrong constant name initialize$1
+# wrong constant name to_s$1
+# wrong constant name to_time$1
+# uninitialized constant Date::Infinity::EXABYTE
+# uninitialized constant Date::Infinity::GIGABYTE
+# uninitialized constant Date::Infinity::KILOBYTE
+# uninitialized constant Date::Infinity::MEGABYTE
+# uninitialized constant Date::Infinity::PETABYTE
+# uninitialized constant Date::Infinity::TERABYTE
 # wrong constant name initialize
 # undefined singleton method `_parse$1' for `Date'
 # wrong constant name _parse$1
@@ -648,6 +2103,11 @@
 # wrong constant name name
 # wrong constant name formatter
 # wrong constant name formatter=
+# wrong constant name <static-init>
+# wrong constant name uuid_from_hash
+# wrong constant name uuid_v3
+# wrong constant name uuid_v4
+# wrong constant name uuid_v5
 # undefined method `initialize$1' for class `Dir'
 # Did you mean?  initialize
 # wrong constant name children
@@ -680,6 +2140,9 @@
 # wrong constant name def_module
 # wrong constant name initialize$1
 # wrong constant name result_with_hash
+# wrong constant name html_escape_once
+# wrong constant name json_escape
+# wrong constant name unwrapped_html_escape
 # wrong constant name _dump
 # wrong constant name convert
 # wrong constant name convpath
@@ -793,6 +2256,8 @@
 # wrong constant name chunk_while
 # wrong constant name force
 # wrong constant name slice_when
+# undefined method `<<$1' for class `Enumerator::Yielder'
+# wrong constant name <<$1
 # wrong constant name EADV$1
 # wrong constant name EADV$1
 # wrong constant name <static-init>
@@ -980,7 +2445,6 @@
 # wrong constant name <Class:Test>
 # wrong constant name <Class:Typhoeus>
 # uninitialized constant Faraday::Adapter::EMHttp::CONTENT_LENGTH
-# Did you mean?  Faraday::Adapter::CONTENT_LENGTH
 # wrong constant name <Class:Manager>
 # wrong constant name <Class:Options>
 # wrong constant name create_request
@@ -1009,7 +2473,6 @@
 # wrong constant name <static-init>
 # wrong constant name setup_parallel_manager
 # uninitialized constant Faraday::Adapter::EMSynchrony::CONTENT_LENGTH
-# Did you mean?  Faraday::Adapter::CONTENT_LENGTH
 # wrong constant name <Class:ParallelManager>
 # wrong constant name create_request
 # wrong constant name add
@@ -1018,12 +2481,10 @@
 # wrong constant name <static-init>
 # wrong constant name setup_parallel_manager
 # uninitialized constant Faraday::Adapter::Excon::CONTENT_LENGTH
-# Did you mean?  Faraday::Adapter::CONTENT_LENGTH
 # wrong constant name create_connection
 # wrong constant name read_body
 # wrong constant name <static-init>
 # uninitialized constant Faraday::Adapter::HTTPClient::CONTENT_LENGTH
-# Did you mean?  Faraday::Adapter::CONTENT_LENGTH
 # wrong constant name client
 # wrong constant name configure_client
 # wrong constant name configure_proxy
@@ -1034,23 +2495,18 @@
 # wrong constant name ssl_verify_mode
 # wrong constant name <static-init>
 # uninitialized constant Faraday::Adapter::NetHttp::CONTENT_LENGTH
-# Did you mean?  Faraday::Adapter::CONTENT_LENGTH
 # wrong constant name <static-init>
 # uninitialized constant Faraday::Adapter::NetHttpPersistent::CONTENT_LENGTH
-# Did you mean?  Faraday::Adapter::CONTENT_LENGTH
 # uninitialized constant Faraday::Adapter::NetHttpPersistent::NET_HTTP_EXCEPTIONS
 # wrong constant name <static-init>
 # uninitialized constant Faraday::Adapter::Patron::CONTENT_LENGTH
-# Did you mean?  Faraday::Adapter::CONTENT_LENGTH
 # wrong constant name configure_ssl
 # wrong constant name <static-init>
 # uninitialized constant Faraday::Adapter::Rack::CONTENT_LENGTH
-# Did you mean?  Faraday::Adapter::CONTENT_LENGTH
 # wrong constant name execute_request
 # wrong constant name initialize
 # wrong constant name <static-init>
 # uninitialized constant Faraday::Adapter::Test::CONTENT_LENGTH
-# Did you mean?  Faraday::Adapter::CONTENT_LENGTH
 # wrong constant name <Class:Stub>
 # wrong constant name <Class:Stubs>
 # wrong constant name configure
@@ -1080,7 +2536,6 @@
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # uninitialized constant Faraday::Adapter::Typhoeus::CONTENT_LENGTH
-# Did you mean?  Faraday::Adapter::CONTENT_LENGTH
 # wrong constant name call
 # wrong constant name <static-init>
 # wrong constant name call
@@ -1133,6 +2588,7 @@
 # undefined singleton method `umask$1' for `File'
 # undefined singleton method `utime$1' for `File'
 # wrong constant name absolute_path$1
+# wrong constant name atomic_write
 # wrong constant name basename$1
 # wrong constant name chmod$1
 # wrong constant name chown$1
@@ -1145,6 +2601,7 @@
 # wrong constant name lchown$1
 # wrong constant name lutime
 # wrong constant name mkfifo
+# wrong constant name probe_stat_in
 # wrong constant name realdirpath$1
 # wrong constant name realpath$1
 # wrong constant name umask$1
@@ -1176,8 +2633,9 @@
 # wrong constant name writable?
 # wrong constant name writable_real?
 # wrong constant name zero?
+# uninitialized constant FileUtils::DryRun::LN_SUPPORTED
+# uninitialized constant FileUtils::DryRun::RUBY
 # uninitialized constant FileUtils::DryRun::VERSION
-# Did you mean?  FileUtils::VERSION
 # wrong constant name blockdev?
 # wrong constant name chardev?
 # wrong constant name chmod
@@ -1211,10 +2669,12 @@
 # wrong constant name symlink?
 # wrong constant name traverse
 # wrong constant name wrap_traverse
+# uninitialized constant FileUtils::NoWrite::LN_SUPPORTED
+# uninitialized constant FileUtils::NoWrite::RUBY
 # uninitialized constant FileUtils::NoWrite::VERSION
-# Did you mean?  FileUtils::VERSION
+# uninitialized constant FileUtils::Verbose::LN_SUPPORTED
+# uninitialized constant FileUtils::Verbose::RUBY
 # uninitialized constant FileUtils::Verbose::VERSION
-# Did you mean?  FileUtils::VERSION
 # undefined singleton method `cp_r$1' for `FileUtils'
 # undefined singleton method `mkdir_p$1' for `FileUtils'
 # wrong constant name cd
@@ -1269,7 +2729,14 @@
 # wrong constant name uptodate?
 # undefined method `rationalize$2' for class `Float'
 # Did you mean?  Rational
+# uninitialized constant Float::EXABYTE
+# uninitialized constant Float::GIGABYTE
+# uninitialized constant Float::KILOBYTE
+# uninitialized constant Float::MEGABYTE
+# uninitialized constant Float::PETABYTE
+# uninitialized constant Float::TERABYTE
 # wrong constant name rationalize$2
+# wrong constant name to_d
 # wrong constant name def_delegator
 # wrong constant name def_delegators
 # wrong constant name def_instance_delegator
@@ -1770,7 +3237,6 @@
 # wrong constant name <static-init>
 # wrong constant name initialize
 # wrong constant name path
-# wrong constant name present?
 # wrong constant name start
 # wrong constant name with_read_io
 # wrong constant name with_write_io
@@ -1781,7 +3247,6 @@
 # wrong constant name initialize
 # wrong constant name io
 # wrong constant name path
-# wrong constant name present?
 # wrong constant name start
 # wrong constant name with_read_io
 # wrong constant name with_write_io
@@ -2650,8 +4115,6 @@
 # wrong constant name update_cache?
 # wrong constant name uri
 # uninitialized constant Gem::Source::Git::FILES
-# Did you mean?  File
-#                Gem::Source::FILES
 # wrong constant name base_dir
 # wrong constant name cache
 # wrong constant name checkout
@@ -2673,27 +4136,20 @@
 # wrong constant name uri_hash
 # wrong constant name <static-init>
 # uninitialized constant Gem::Source::Installed::FILES
-# Did you mean?  File
-#                Gem::Source::FILES
 # wrong constant name download
 # wrong constant name initialize
 # wrong constant name <static-init>
 # uninitialized constant Gem::Source::Local::FILES
-# Did you mean?  File
-#                Gem::Source::FILES
 # wrong constant name download
 # wrong constant name fetch_spec
 # wrong constant name find_gem
 # wrong constant name initialize
 # wrong constant name <static-init>
 # uninitialized constant Gem::Source::Lock::FILES
-# Did you mean?  File
-#                Gem::Source::FILES
 # wrong constant name initialize
 # wrong constant name wrapped
 # wrong constant name <static-init>
 # uninitialized constant Gem::Source::SpecificFile::FILES
-# Did you mean?  Gem::Source::FILES
 # wrong constant name fetch_spec
 # wrong constant name initialize
 # wrong constant name load_specs
@@ -2701,8 +4157,6 @@
 # wrong constant name spec
 # wrong constant name <static-init>
 # uninitialized constant Gem::Source::Vendor::FILES
-# Did you mean?  File
-#                Gem::Source::FILES
 # wrong constant name initialize
 # wrong constant name <static-init>
 # wrong constant name <static-init>
@@ -3183,6 +4637,252 @@
 # wrong constant name transform_values!
 # wrong constant name update
 # wrong constant name try_convert
+# wrong constant name <Class:Backend>
+# wrong constant name <Class:Gettext>
+# wrong constant name <Class:Locale>
+# wrong constant name <Class:Middleware>
+# wrong constant name <Class:Tests>
+# wrong constant name <Class:Base>
+# wrong constant name <Class:Cache>
+# wrong constant name <Class:CacheFile>
+# wrong constant name <Class:Cascade>
+# wrong constant name <Class:Fallbacks>
+# wrong constant name <Class:Flatten>
+# wrong constant name <Class:Gettext>
+# wrong constant name <Class:InterpolationCompiler>
+# wrong constant name <Class:KeyValue>
+# wrong constant name <Class:Memoize>
+# wrong constant name <Class:Metadata>
+# wrong constant name <Class:Pluralization>
+# wrong constant name <Class:Simple>
+# wrong constant name <Class:Transliterator>
+# uninitialized constant I18n::Backend::Base::DEFAULT_REPLACEMENT_CHAR
+# wrong constant name available_locales
+# wrong constant name deep_interpolate
+# wrong constant name default
+# wrong constant name eager_load!
+# wrong constant name eager_loaded?
+# wrong constant name exists?
+# wrong constant name interpolate
+# wrong constant name load_file
+# wrong constant name load_json
+# wrong constant name load_rb
+# wrong constant name load_translations
+# wrong constant name load_yaml
+# wrong constant name load_yml
+# wrong constant name localize
+# wrong constant name lookup
+# wrong constant name pluralization_key
+# wrong constant name pluralize
+# wrong constant name reload!
+# wrong constant name resolve
+# wrong constant name store_translations
+# wrong constant name subtrees?
+# wrong constant name translate
+# wrong constant name translate_localization_format
+# wrong constant name <static-init>
+# wrong constant name _fetch
+# wrong constant name cache_key
+# wrong constant name fetch
+# wrong constant name translate
+# wrong constant name <static-init>
+# wrong constant name load_file
+# wrong constant name normalized_path
+# wrong constant name path_roots
+# wrong constant name path_roots=
+# wrong constant name <static-init>
+# wrong constant name lookup
+# wrong constant name <static-init>
+# wrong constant name exists?
+# wrong constant name extract_non_symbol_default!
+# wrong constant name translate
+# wrong constant name <static-init>
+# wrong constant name escape_default_separator
+# wrong constant name find_link
+# wrong constant name flatten_keys
+# wrong constant name flatten_translations
+# wrong constant name links
+# wrong constant name normalize_flat_keys
+# wrong constant name resolve_link
+# wrong constant name store_link
+# wrong constant name <static-init>
+# wrong constant name escape_default_separator
+# wrong constant name normalize_flat_keys
+# wrong constant name <Class:PoData>
+# wrong constant name load_po
+# wrong constant name normalize
+# wrong constant name normalize_pluralization
+# wrong constant name parse
+# uninitialized constant I18n::Backend::Gettext::PoData::Elem
+# uninitialized constant I18n::Backend::Gettext::PoData::K
+# uninitialized constant I18n::Backend::Gettext::PoData::V
+# wrong constant name set_comment
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <Class:Compiler>
+# wrong constant name compile_all_strings_in
+# wrong constant name interpolate
+# wrong constant name store_translations
+# wrong constant name compile_if_an_interpolation
+# wrong constant name compile_interpolation_token
+# wrong constant name compiled_interpolation_body
+# wrong constant name direct_key
+# wrong constant name escape_key_sym
+# wrong constant name escape_plain_str
+# wrong constant name handle_interpolation_token
+# wrong constant name interpolate_key
+# wrong constant name interpolate_or_raise_missing
+# wrong constant name interpolated_str?
+# wrong constant name missing_key
+# wrong constant name nil_key
+# wrong constant name reserved_key
+# wrong constant name tokenize
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# uninitialized constant I18n::Backend::KeyValue::DEFAULT_REPLACEMENT_CHAR
+# uninitialized constant I18n::Backend::KeyValue::FLATTEN_SEPARATOR
+# wrong constant name <Class:Implementation>
+# uninitialized constant I18n::Backend::KeyValue::SEPARATOR_ESCAPE_CHAR
+# wrong constant name <Class:SubtreeProxy>
+# uninitialized constant I18n::Backend::KeyValue::Implementation::DEFAULT_REPLACEMENT_CHAR
+# uninitialized constant I18n::Backend::KeyValue::Implementation::FLATTEN_SEPARATOR
+# uninitialized constant I18n::Backend::KeyValue::Implementation::SEPARATOR_ESCAPE_CHAR
+# wrong constant name available_locales
+# wrong constant name init_translations
+# wrong constant name initialize
+# wrong constant name initialized?
+# wrong constant name lookup
+# wrong constant name pluralize
+# wrong constant name store
+# wrong constant name store=
+# wrong constant name store_translations
+# wrong constant name subtrees?
+# wrong constant name translations
+# wrong constant name <static-init>
+# wrong constant name []
+# wrong constant name has_key?
+# wrong constant name initialize
+# wrong constant name instance_of?
+# wrong constant name is_a?
+# wrong constant name kind_of?
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name available_locales
+# wrong constant name eager_load!
+# wrong constant name lookup
+# wrong constant name memoized_lookup
+# wrong constant name reload!
+# wrong constant name reset_memoizations!
+# wrong constant name store_translations
+# wrong constant name <static-init>
+# wrong constant name interpolate
+# wrong constant name pluralize
+# wrong constant name translate
+# wrong constant name with_metadata
+# wrong constant name <static-init>
+# wrong constant name included
+# wrong constant name pluralize
+# wrong constant name pluralizer
+# wrong constant name pluralizers
+# wrong constant name <static-init>
+# uninitialized constant I18n::Backend::Simple::DEFAULT_REPLACEMENT_CHAR
+# wrong constant name <Class:Implementation>
+# uninitialized constant I18n::Backend::Simple::Implementation::DEFAULT_REPLACEMENT_CHAR
+# wrong constant name available_locales
+# wrong constant name eager_load!
+# wrong constant name init_translations
+# wrong constant name initialized?
+# wrong constant name lookup
+# wrong constant name reload!
+# wrong constant name store_translations
+# wrong constant name translations
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <Class:HashTransliterator>
+# wrong constant name <Class:ProcTransliterator>
+# wrong constant name transliterate
+# wrong constant name initialize
+# wrong constant name transliterate
+# wrong constant name <static-init>
+# wrong constant name initialize
+# wrong constant name transliterate
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name get
+# wrong constant name <static-init>
+# wrong constant name <Class:Helpers>
+# uninitialized constant I18n::Gettext::Helpers::N_
+# wrong constant name _
+# wrong constant name gettext
+# wrong constant name n_
+# wrong constant name ngettext
+# wrong constant name np_
+# wrong constant name npgettext
+# wrong constant name ns_
+# wrong constant name nsgettext
+# wrong constant name p_
+# wrong constant name pgettext
+# wrong constant name s_
+# wrong constant name sgettext
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name extract_scope
+# wrong constant name plural_keys
+# wrong constant name <Class:Fallbacks>
+# wrong constant name <Class:Tag>
+# uninitialized constant I18n::Locale::Fallbacks::Elem
+# uninitialized constant I18n::Locale::Fallbacks::K
+# uninitialized constant I18n::Locale::Fallbacks::V
+# wrong constant name []
+# wrong constant name compute
+# wrong constant name defaults
+# wrong constant name defaults=
+# wrong constant name initialize
+# wrong constant name map
+# wrong constant name <static-init>
+# wrong constant name <Class:Parents>
+# wrong constant name <Class:Rfc4646>
+# wrong constant name <Class:Simple>
+# wrong constant name parent
+# wrong constant name parents
+# wrong constant name self_and_parents
+# wrong constant name <static-init>
+# wrong constant name <Class:Parser>
+# wrong constant name to_sym
+# wrong constant name <static-init>
+# wrong constant name match
+# wrong constant name <static-init>
+# wrong constant name parser
+# wrong constant name parser=
+# wrong constant name tag
+# wrong constant name initialize
+# wrong constant name subtags
+# wrong constant name tag
+# wrong constant name to_a
+# wrong constant name to_sym
+# wrong constant name <static-init>
+# wrong constant name tag
+# wrong constant name <static-init>
+# wrong constant name implementation
+# wrong constant name implementation=
+# wrong constant name tag
+# wrong constant name <static-init>
+# wrong constant name call
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name <Class:Localization>
+# wrong constant name <static-init>
+# wrong constant name included
+# wrong constant name <static-init>
+# wrong constant name cache_key_digest
+# wrong constant name cache_key_digest=
+# wrong constant name cache_namespace
+# wrong constant name cache_namespace=
+# wrong constant name cache_store
+# wrong constant name cache_store=
+# wrong constant name fallbacks
+# wrong constant name fallbacks=
+# wrong constant name perform_caching?
 # undefined method `advise$1' for class `IO'
 # undefined method `each$2' for class `IO'
 # undefined method `each_line$2' for class `IO'
@@ -3300,6 +5000,12 @@
 # Did you mean?  Rational
 # undefined method `to_s$1' for class `Integer'
 # Did you mean?  to_s
+# uninitialized constant Integer::EXABYTE
+# uninitialized constant Integer::GIGABYTE
+# uninitialized constant Integer::KILOBYTE
+# uninitialized constant Integer::MEGABYTE
+# uninitialized constant Integer::PETABYTE
+# uninitialized constant Integer::TERABYTE
 # wrong constant name allbits?
 # wrong constant name anybits?
 # wrong constant name chr$2
@@ -3309,6 +5015,7 @@
 # wrong constant name pow
 # wrong constant name rationalize$2
 # wrong constant name to_bn
+# wrong constant name to_d
 # wrong constant name to_s$1
 # wrong constant name sqrt
 # wrong constant name <Class:Generator>
@@ -3338,12 +5045,9 @@
 # wrong constant name <static-init>
 # wrong constant name to_json
 # wrong constant name <static-init>
-# wrong constant name <Class:Extend>
 # wrong constant name to_json
 # wrong constant name to_json_raw
 # wrong constant name to_json_raw_object
-# wrong constant name json_create
-# wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name to_json
 # wrong constant name <static-init>
@@ -3444,6 +5148,8 @@
 # wrong constant name to_enum$2
 # wrong constant name yield_self
 # wrong constant name at_exit
+# wrong constant name load
+# wrong constant name require
 # wrong constant name key
 # wrong constant name receiver
 # wrong constant name path
@@ -3451,7 +5157,9 @@
 # wrong constant name reason
 # uninitialized constant Logger::LogDevice::SiD
 # undefined singleton method `dump$2' for `Marshal'
+# undefined singleton method `load$1' for `Marshal'
 # wrong constant name dump$2
+# wrong constant name load$1
 # wrong constant name restore
 # undefined method `[]$2' for class `MatchData'
 # wrong constant name []$2
@@ -3475,6 +5183,14 @@
 # wrong constant name source_location
 # wrong constant name super_method
 # wrong constant name unbind
+# uninitialized constant Minitest::Spec::E
+# uninitialized constant Minitest::Spec::PASSTHROUGH_EXCEPTIONS
+# uninitialized constant Minitest::Spec::SIGNALS
+# uninitialized constant Minitest::Spec::TEARDOWN_METHODS
+# uninitialized constant Minitest::Spec::UNDEFINED
+# uninitialized constant Minitest::Test::E
+# uninitialized constant Minitest::Test::SIGNALS
+# uninitialized constant Minitest::Test::UNDEFINED
 # undefined method `class_eval$2' for class `Module'
 # Did you mean?  class_eval
 # undefined method `class_variables$1' for class `Module'
@@ -3552,8 +5268,6 @@
 # wrong constant name wait_until
 # wrong constant name wait_while
 # wrong constant name extend_object
-# uninitialized constant Mutex_m
-# uninitialized constant Mutex_m
 # wrong constant name name
 # wrong constant name receiver
 # uninitialized constant Net::FTP
@@ -3561,21 +5275,15 @@
 # uninitialized constant Net::FTPConnectionError
 # uninitialized constant Net::FTPConnectionError
 # uninitialized constant Net::FTPError
-# Did you mean?  Net::HTTPError
 # uninitialized constant Net::FTPError
-# Did you mean?  Net::HTTPError
 # uninitialized constant Net::FTPPermError
-# Did you mean?  FiberError
 # uninitialized constant Net::FTPPermError
-# Did you mean?  FiberError
 # uninitialized constant Net::FTPProtoError
 # uninitialized constant Net::FTPProtoError
 # uninitialized constant Net::FTPReplyError
 # uninitialized constant Net::FTPReplyError
 # uninitialized constant Net::FTPTempError
-# Did you mean?  TypeError
 # uninitialized constant Net::FTPTempError
-# Did you mean?  TypeError
 # uninitialized constant Net::HTTP::DigestAuth
 # uninitialized constant Net::HTTP::DigestAuth
 # uninitialized constant Net::HTTP::Persistent
@@ -3587,21 +5295,13 @@
 # uninitialized constant Net::SMTPAuthenticationError
 # uninitialized constant Net::SMTPAuthenticationError
 # uninitialized constant Net::SMTPError
-# Did you mean?  Net::HTTPError
 # uninitialized constant Net::SMTPError
-# Did you mean?  Net::HTTPError
 # uninitialized constant Net::SMTPFatalError
-# Did you mean?  Net::ProtoFatalError
-#                Net::HTTPFatalError
 # uninitialized constant Net::SMTPFatalError
-# Did you mean?  Net::ProtoFatalError
-#                Net::HTTPFatalError
 # uninitialized constant Net::SMTPServerBusy
 # uninitialized constant Net::SMTPServerBusy
 # uninitialized constant Net::SMTPSyntaxError
-# Did you mean?  Net::ProtoSyntaxError
 # uninitialized constant Net::SMTPSyntaxError
-# Did you mean?  Net::ProtoSyntaxError
 # uninitialized constant Net::SMTPUnknownError
 # uninitialized constant Net::SMTPUnknownError
 # uninitialized constant Net::SMTPUnsupportedCommand
@@ -3609,24 +5309,125 @@
 # undefined method `rationalize$1' for class `NilClass'
 # Did you mean?  Rational
 # wrong constant name rationalize$1
+# wrong constant name to_d
 # wrong constant name to_i
 # wrong constant name args
 # wrong constant name private_call?
+# uninitialized constant Nokogiri::CSS::Parser::Racc_Main_Parsing_Routine
+# uninitialized constant Nokogiri::CSS::Parser::Racc_Runtime_Core_Id_C
+# uninitialized constant Nokogiri::CSS::Parser::Racc_Runtime_Core_Revision
+# uninitialized constant Nokogiri::CSS::Parser::Racc_Runtime_Core_Revision_C
+# uninitialized constant Nokogiri::CSS::Parser::Racc_Runtime_Core_Revision_R
+# uninitialized constant Nokogiri::CSS::Parser::Racc_Runtime_Core_Version
+# uninitialized constant Nokogiri::CSS::Parser::Racc_Runtime_Core_Version_C
+# uninitialized constant Nokogiri::CSS::Parser::Racc_Runtime_Core_Version_R
+# uninitialized constant Nokogiri::CSS::Parser::Racc_Runtime_Revision
+# uninitialized constant Nokogiri::CSS::Parser::Racc_Runtime_Type
+# uninitialized constant Nokogiri::CSS::Parser::Racc_Runtime_Version
+# uninitialized constant Nokogiri::CSS::Parser::Racc_YY_Parse_Method
+# wrong constant name <Class:Element>
+# uninitialized constant Nokogiri::XML::Document::ATTRIBUTE_DECL
+# uninitialized constant Nokogiri::XML::Document::ATTRIBUTE_NODE
+# uninitialized constant Nokogiri::XML::Document::CDATA_SECTION_NODE
+# uninitialized constant Nokogiri::XML::Document::COMMENT_NODE
+# uninitialized constant Nokogiri::XML::Document::DOCB_DOCUMENT_NODE
+# uninitialized constant Nokogiri::XML::Document::DOCUMENT_FRAG_NODE
+# uninitialized constant Nokogiri::XML::Document::DOCUMENT_NODE
+# uninitialized constant Nokogiri::XML::Document::DOCUMENT_TYPE_NODE
+# uninitialized constant Nokogiri::XML::Document::DTD_NODE
+# uninitialized constant Nokogiri::XML::Document::ELEMENT_DECL
+# uninitialized constant Nokogiri::XML::Document::ELEMENT_NODE
+# uninitialized constant Nokogiri::XML::Document::ENTITY_DECL
+# uninitialized constant Nokogiri::XML::Document::ENTITY_NODE
+# uninitialized constant Nokogiri::XML::Document::ENTITY_REF_NODE
+# uninitialized constant Nokogiri::XML::Document::HTML_DOCUMENT_NODE
+# uninitialized constant Nokogiri::XML::Document::LOOKS_LIKE_XPATH
+# uninitialized constant Nokogiri::XML::Document::NAMESPACE_DECL
+# uninitialized constant Nokogiri::XML::Document::NOTATION_NODE
+# uninitialized constant Nokogiri::XML::Document::PI_NODE
+# uninitialized constant Nokogiri::XML::Document::TEXT_NODE
+# uninitialized constant Nokogiri::XML::Document::XINCLUDE_END
+# uninitialized constant Nokogiri::XML::Document::XINCLUDE_START
+# uninitialized constant Nokogiri::XML::Element::ATTRIBUTE_DECL
+# uninitialized constant Nokogiri::XML::Element::ATTRIBUTE_NODE
+# uninitialized constant Nokogiri::XML::Element::CDATA_SECTION_NODE
+# uninitialized constant Nokogiri::XML::Element::COMMENT_NODE
+# uninitialized constant Nokogiri::XML::Element::DOCB_DOCUMENT_NODE
+# uninitialized constant Nokogiri::XML::Element::DOCUMENT_FRAG_NODE
+# uninitialized constant Nokogiri::XML::Element::DOCUMENT_NODE
+# uninitialized constant Nokogiri::XML::Element::DOCUMENT_TYPE_NODE
+# uninitialized constant Nokogiri::XML::Element::DTD_NODE
+# uninitialized constant Nokogiri::XML::Element::ELEMENT_DECL
+# uninitialized constant Nokogiri::XML::Element::ELEMENT_NODE
+# uninitialized constant Nokogiri::XML::Element::ENTITY_DECL
+# uninitialized constant Nokogiri::XML::Element::ENTITY_NODE
+# uninitialized constant Nokogiri::XML::Element::ENTITY_REF_NODE
+# uninitialized constant Nokogiri::XML::Element::Elem
+# uninitialized constant Nokogiri::XML::Element::HTML_DOCUMENT_NODE
+# uninitialized constant Nokogiri::XML::Element::IMPLIED_XPATH_CONTEXTS
+# uninitialized constant Nokogiri::XML::Element::LOOKS_LIKE_XPATH
+# uninitialized constant Nokogiri::XML::Element::NAMESPACE_DECL
+# uninitialized constant Nokogiri::XML::Element::NOTATION_NODE
+# uninitialized constant Nokogiri::XML::Element::PI_NODE
+# uninitialized constant Nokogiri::XML::Element::TEXT_NODE
+# uninitialized constant Nokogiri::XML::Element::XINCLUDE_END
+# uninitialized constant Nokogiri::XML::Element::XINCLUDE_START
+# wrong constant name <static-init>
+# uninitialized constant Nokogiri::XML::EntityDecl::ATTRIBUTE_DECL
+# uninitialized constant Nokogiri::XML::EntityDecl::ATTRIBUTE_NODE
+# uninitialized constant Nokogiri::XML::EntityDecl::CDATA_SECTION_NODE
+# uninitialized constant Nokogiri::XML::EntityDecl::COMMENT_NODE
+# uninitialized constant Nokogiri::XML::EntityDecl::DOCB_DOCUMENT_NODE
+# uninitialized constant Nokogiri::XML::EntityDecl::DOCUMENT_FRAG_NODE
+# uninitialized constant Nokogiri::XML::EntityDecl::DOCUMENT_NODE
+# uninitialized constant Nokogiri::XML::EntityDecl::DOCUMENT_TYPE_NODE
+# uninitialized constant Nokogiri::XML::EntityDecl::DTD_NODE
+# uninitialized constant Nokogiri::XML::EntityDecl::ELEMENT_DECL
+# uninitialized constant Nokogiri::XML::EntityDecl::ELEMENT_NODE
+# uninitialized constant Nokogiri::XML::EntityDecl::ENTITY_DECL
+# uninitialized constant Nokogiri::XML::EntityDecl::ENTITY_NODE
+# uninitialized constant Nokogiri::XML::EntityDecl::ENTITY_REF_NODE
+# uninitialized constant Nokogiri::XML::EntityDecl::HTML_DOCUMENT_NODE
+# uninitialized constant Nokogiri::XML::EntityDecl::IMPLIED_XPATH_CONTEXTS
+# uninitialized constant Nokogiri::XML::EntityDecl::LOOKS_LIKE_XPATH
+# uninitialized constant Nokogiri::XML::EntityDecl::NAMESPACE_DECL
+# uninitialized constant Nokogiri::XML::EntityDecl::NOTATION_NODE
+# uninitialized constant Nokogiri::XML::EntityDecl::PI_NODE
+# uninitialized constant Nokogiri::XML::EntityDecl::TEXT_NODE
+# uninitialized constant Nokogiri::XML::EntityDecl::XINCLUDE_END
+# uninitialized constant Nokogiri::XML::EntityDecl::XINCLUDE_START
+# uninitialized constant Nokogiri::XML::Node::LOOKS_LIKE_XPATH
+# uninitialized constant Nokogiri::XML::NodeSet::LOOKS_LIKE_XPATH
 # undefined method `ceil$2' for class `Numeric'
 # undefined method `floor$2' for class `Numeric'
 # undefined method `round$1' for class `Numeric'
 # undefined method `step$2' for class `Numeric'
 # undefined method `truncate$1' for class `Numeric'
+# wrong constant name byte
+# wrong constant name bytes
 # wrong constant name ceil$2
+# wrong constant name exabyte
+# wrong constant name exabytes
 # wrong constant name finite?
 # wrong constant name floor$2
+# wrong constant name gigabyte
+# wrong constant name gigabytes
 # wrong constant name infinite?
+# wrong constant name kilobyte
+# wrong constant name kilobytes
+# wrong constant name megabyte
+# wrong constant name megabytes
 # wrong constant name negative?
+# wrong constant name petabyte
+# wrong constant name petabytes
 # wrong constant name positive?
 # wrong constant name round$1
 # wrong constant name step$2
+# wrong constant name terabyte
+# wrong constant name terabytes
 # wrong constant name truncate$1
 # uninitialized constant RUBYGEMS_ACTIVATION_MONITOR
+# wrong constant name html_safe?
 # wrong constant name to_yaml
 # wrong constant name yaml_tag
 # wrong constant name <Class:Object>
@@ -3684,6 +5485,169 @@
 # wrong constant name ==
 # wrong constant name to_der
 # wrong constant name fips_mode
+# wrong constant name <Class:Acceptables>
+# wrong constant name <Class:AmbiguousArgument>
+# wrong constant name <Class:AmbiguousOption>
+# wrong constant name <Class:Arguable>
+# wrong constant name <Class:CompletingHash>
+# wrong constant name <Class:Completion>
+# wrong constant name <Class:InvalidArgument>
+# wrong constant name <Class:InvalidOption>
+# wrong constant name <Class:List>
+# wrong constant name <Class:MissingArgument>
+# wrong constant name <Class:NeedlessArgument>
+# wrong constant name <Class:OptionMap>
+# wrong constant name <Class:ParseError>
+# wrong constant name <Class:Switch>
+# wrong constant name abort
+# wrong constant name accept
+# wrong constant name add_officious
+# wrong constant name banner
+# wrong constant name banner=
+# wrong constant name base
+# wrong constant name candidate
+# wrong constant name compsys
+# wrong constant name def_head_option
+# wrong constant name def_option
+# wrong constant name def_tail_option
+# wrong constant name default_argv
+# wrong constant name default_argv=
+# wrong constant name define
+# wrong constant name define_head
+# wrong constant name define_tail
+# wrong constant name environment
+# wrong constant name getopts
+# wrong constant name help
+# wrong constant name inc
+# wrong constant name initialize
+# wrong constant name load
+# wrong constant name make_switch
+# wrong constant name new
+# wrong constant name on
+# wrong constant name on_head
+# wrong constant name on_tail
+# wrong constant name order
+# wrong constant name order!
+# wrong constant name parse
+# wrong constant name parse!
+# wrong constant name permute
+# wrong constant name permute!
+# wrong constant name program_name
+# wrong constant name program_name=
+# wrong constant name reject
+# wrong constant name release
+# wrong constant name release=
+# wrong constant name remove
+# wrong constant name separator
+# wrong constant name set_banner
+# wrong constant name set_program_name
+# wrong constant name set_summary_indent
+# wrong constant name set_summary_width
+# wrong constant name summarize
+# wrong constant name summary_indent
+# wrong constant name summary_indent=
+# wrong constant name summary_width
+# wrong constant name summary_width=
+# wrong constant name terminate
+# wrong constant name to_a
+# wrong constant name top
+# wrong constant name ver
+# wrong constant name version
+# wrong constant name version=
+# wrong constant name warn
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name getopts
+# wrong constant name initialize
+# wrong constant name options
+# wrong constant name options=
+# wrong constant name order!
+# wrong constant name parse!
+# wrong constant name permute!
+# wrong constant name <static-init>
+# wrong constant name extend_object
+# uninitialized constant OptionParser::CompletingHash::Elem
+# uninitialized constant OptionParser::CompletingHash::K
+# uninitialized constant OptionParser::CompletingHash::V
+# wrong constant name match
+# wrong constant name <static-init>
+# wrong constant name candidate
+# wrong constant name complete
+# wrong constant name convert
+# wrong constant name <static-init>
+# wrong constant name candidate
+# wrong constant name regexp
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name accept
+# wrong constant name add_banner
+# wrong constant name append
+# wrong constant name atype
+# wrong constant name complete
+# wrong constant name compsys
+# wrong constant name each_option
+# wrong constant name list
+# wrong constant name long
+# wrong constant name prepend
+# wrong constant name reject
+# wrong constant name search
+# wrong constant name short
+# wrong constant name summarize
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# uninitialized constant OptionParser::OptionMap::Elem
+# uninitialized constant OptionParser::OptionMap::K
+# uninitialized constant OptionParser::OptionMap::V
+# wrong constant name <static-init>
+# wrong constant name args
+# wrong constant name initialize
+# wrong constant name reason
+# wrong constant name reason=
+# wrong constant name recover
+# wrong constant name set_backtrace
+# wrong constant name set_option
+# wrong constant name <static-init>
+# wrong constant name filter_backtrace
+# wrong constant name <Class:NoArgument>
+# wrong constant name <Class:OptionalArgument>
+# wrong constant name <Class:PlacedArgument>
+# wrong constant name <Class:RequiredArgument>
+# wrong constant name add_banner
+# wrong constant name arg
+# wrong constant name block
+# wrong constant name compsys
+# wrong constant name conv
+# wrong constant name desc
+# wrong constant name initialize
+# wrong constant name long
+# wrong constant name match_nonswitch?
+# wrong constant name pattern
+# wrong constant name short
+# wrong constant name summarize
+# wrong constant name switch_name
+# wrong constant name parse
+# wrong constant name <static-init>
+# wrong constant name incompatible_argument_styles
+# wrong constant name parse
+# wrong constant name <static-init>
+# wrong constant name parse
+# wrong constant name <static-init>
+# wrong constant name parse
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name guess
+# wrong constant name incompatible_argument_styles
+# wrong constant name pattern
+# wrong constant name <static-init>
+# wrong constant name accept
+# wrong constant name getopts
+# wrong constant name inc
+# wrong constant name reject
+# wrong constant name terminate
+# wrong constant name top
+# wrong constant name with
 # uninitialized constant Opus
 # uninitialized constant Opus
 # uninitialized constant PP
@@ -3831,46 +5795,19 @@
 # wrong constant name symbol
 # wrong constant name symbolize
 # uninitialized constant Psych::ClassLoader::Restricted::BIG_DECIMAL
-# Did you mean?  BigDecimal
-#                Psych::ClassLoader::BIG_DECIMAL
 # uninitialized constant Psych::ClassLoader::Restricted::CACHE
-# Did you mean?  Psych::ClassLoader::CACHE
 # uninitialized constant Psych::ClassLoader::Restricted::COMPLEX
-# Did you mean?  Complex
-#                Psych::ClassLoader::COMPLEX
 # uninitialized constant Psych::ClassLoader::Restricted::DATE
-# Did you mean?  Date
-#                Data
-#                Psych::ClassLoader::DATE
 # uninitialized constant Psych::ClassLoader::Restricted::DATE_TIME
-# Did you mean?  DateTime
-#                Psych::ClassLoader::DATE_TIME
 # uninitialized constant Psych::ClassLoader::Restricted::EXCEPTION
-# Did you mean?  Psych::Exception
-#                Exception
-#                Psych::ClassLoader::EXCEPTION
 # uninitialized constant Psych::ClassLoader::Restricted::OBJECT
-# Did you mean?  Object
-#                Psych::ClassLoader::OBJECT
 # uninitialized constant Psych::ClassLoader::Restricted::PSYCH_OMAP
-# Did you mean?  Psych::ClassLoader::PSYCH_OMAP
 # uninitialized constant Psych::ClassLoader::Restricted::PSYCH_SET
-# Did you mean?  Psych::ClassLoader::PSYCH_SET
 # uninitialized constant Psych::ClassLoader::Restricted::RANGE
-# Did you mean?  Range
-#                Psych::ClassLoader::RANGE
 # uninitialized constant Psych::ClassLoader::Restricted::RATIONAL
-# Did you mean?  Rational
-#                Psych::ClassLoader::RATIONAL
 # uninitialized constant Psych::ClassLoader::Restricted::REGEXP
-# Did you mean?  Regexp
-#                Psych::ClassLoader::REGEXP
 # uninitialized constant Psych::ClassLoader::Restricted::STRUCT
-# Did you mean?  Struct
-#                Psych::ClassLoader::STRUCT
 # uninitialized constant Psych::ClassLoader::Restricted::SYMBOL
-# Did you mean?  Symbol
-#                Psych::ClassLoader::SYMBOL
 # wrong constant name initialize
 # wrong constant name <static-init>
 # wrong constant name <static-init>
@@ -4210,10 +6147,8 @@
 # wrong constant name remove_type
 # wrong constant name safe_load
 # wrong constant name to_json
-# uninitialized constant Racc
-# Did you mean?  Rack
-# uninitialized constant Racc
-# Did you mean?  Rack
+# wrong constant name <Class:CparseParams>
+# wrong constant name <static-init>
 # wrong constant name <Class:Cascade>
 # wrong constant name <Class:Chunked>
 # wrong constant name <Class:ConditionalGet>
@@ -4322,23 +6257,14 @@
 # wrong constant name chunkable_version?
 # wrong constant name initialize
 # uninitialized constant Rack::Chunked::Body::COMMON_SEP
-# Did you mean?  Rack::Chunked::COMMON_SEP
 # uninitialized constant Rack::Chunked::Body::DEFAULT_SEP
-# Did you mean?  Rack::Chunked::DEFAULT_SEP
 # uninitialized constant Rack::Chunked::Body::ESCAPE_HTML
-# Did you mean?  Rack::Chunked::ESCAPE_HTML
 # uninitialized constant Rack::Chunked::Body::ESCAPE_HTML_PATTERN
-# Did you mean?  Rack::Chunked::ESCAPE_HTML_PATTERN
 # uninitialized constant Rack::Chunked::Body::HTTP_STATUS_CODES
-# Did you mean?  Rack::Chunked::HTTP_STATUS_CODES
 # uninitialized constant Rack::Chunked::Body::NULL_BYTE
-# Did you mean?  Rack::Chunked::NULL_BYTE
 # uninitialized constant Rack::Chunked::Body::PATH_SEPS
-# Did you mean?  Rack::Chunked::PATH_SEPS
 # uninitialized constant Rack::Chunked::Body::STATUS_WITH_NO_ENTITY_BODY
-# Did you mean?  Rack::Chunked::STATUS_WITH_NO_ENTITY_BODY
 # uninitialized constant Rack::Chunked::Body::SYMBOL_TO_STATUS_CODE
-# Did you mean?  Rack::Chunked::SYMBOL_TO_STATUS_CODE
 # wrong constant name close
 # wrong constant name each
 # wrong constant name initialize
@@ -4520,7 +6446,6 @@
 # wrong constant name parse_uri_rfc2396
 # wrong constant name =~
 # uninitialized constant Rack::MockResponse::CHUNKED
-# Did you mean?  Rack::Chunked
 # wrong constant name errors
 # wrong constant name errors=
 # wrong constant name initialize
@@ -4729,30 +6654,10 @@
 # uninitialized constant Rack::Request::DEFAULT_PORTS
 # uninitialized constant Rack::Request::FORM_DATA_MEDIA_TYPES
 # uninitialized constant Rack::Request::HTTP_X_FORWARDED_HOST
-# Did you mean?  Rack::Request::HTTP_X_FORWARDED_SSL
-#                Rack::Request::HTTP_X_FORWARDED_PORT
-#                Rack::Request::HTTP_X_FORWARDED_PROTO
-#                Rack::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Rack::Request::HTTP_X_FORWARDED_PORT
-# Did you mean?  Rack::Request::HTTP_X_FORWARDED_SSL
-#                Rack::Request::HTTP_X_FORWARDED_HOST
-#                Rack::Request::HTTP_X_FORWARDED_PROTO
-#                Rack::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Rack::Request::HTTP_X_FORWARDED_PROTO
-# Did you mean?  Rack::Request::HTTP_X_FORWARDED_SSL
-#                Rack::Request::HTTP_X_FORWARDED_PORT
-#                Rack::Request::HTTP_X_FORWARDED_HOST
-#                Rack::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Rack::Request::HTTP_X_FORWARDED_SCHEME
-# Did you mean?  Rack::Request::HTTP_X_FORWARDED_SSL
-#                Rack::Request::HTTP_X_FORWARDED_PORT
-#                Rack::Request::HTTP_X_FORWARDED_HOST
-#                Rack::Request::HTTP_X_FORWARDED_PROTO
 # uninitialized constant Rack::Request::HTTP_X_FORWARDED_SSL
-# Did you mean?  Rack::Request::HTTP_X_FORWARDED_PORT
-#                Rack::Request::HTTP_X_FORWARDED_HOST
-#                Rack::Request::HTTP_X_FORWARDED_PROTO
-#                Rack::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Rack::Request::PARSEABLE_DATA_MEDIA_TYPES
 # wrong constant name call
 # wrong constant name initialize
@@ -4804,6 +6709,23 @@
 # wrong constant name initialize
 # wrong constant name remap
 # wrong constant name <static-init>
+# uninitialized constant Rake::DSL::DEFAULT
+# uninitialized constant Rake::DSL::LN_SUPPORTED
+# uninitialized constant Rake::DSL::LOW_METHODS
+# uninitialized constant Rake::DSL::METHODS
+# uninitialized constant Rake::DSL::OPT_TABLE
+# uninitialized constant Rake::DSL::RUBY
+# uninitialized constant Rake::DSL::VERSION
+# uninitialized constant Rake::FileUtilsExt::LN_SUPPORTED
+# uninitialized constant Rake::FileUtilsExt::LOW_METHODS
+# uninitialized constant Rake::FileUtilsExt::METHODS
+# uninitialized constant Rake::FileUtilsExt::OPT_TABLE
+# uninitialized constant Rake::FileUtilsExt::RUBY
+# uninitialized constant Rake::FileUtilsExt::VERSION
+# undefined method `initialize$1' for class `Random'
+# Did you mean?  initialize
+# uninitialized constant Random::ALPHANUMERIC
+# wrong constant name initialize$1
 # undefined method `rand$2' for module `Random::Formatter'
 # Did you mean?  rand
 # undefined method `random_number$2' for module `Random::Formatter'
@@ -4815,13 +6737,22 @@
 # undefined method `initialize$1' for class `Range'
 # Did you mean?  initialize
 # undefined method `last$2' for class `Range'
-# undefined method `step$2' for class `Range'
 # wrong constant name %
+# uninitialized constant Range::RANGE_FORMATS
 # wrong constant name entries
 # wrong constant name initialize$1
 # wrong constant name last$2
-# wrong constant name step$2
 # wrong constant name to_a
+# undefined method `rationalize$2' for class `Rational'
+# Did you mean?  Rational
+# uninitialized constant Rational::EXABYTE
+# uninitialized constant Rational::GIGABYTE
+# uninitialized constant Rational::KILOBYTE
+# uninitialized constant Rational::MEGABYTE
+# uninitialized constant Rational::PETABYTE
+# uninitialized constant Rational::TERABYTE
+# wrong constant name rationalize$2
+# wrong constant name to_d
 # wrong constant name expand
 # wrong constant name fire_update!
 # wrong constant name ruby
@@ -4838,6 +6769,8 @@
 # wrong constant name union
 # uninitialized constant Ripper
 # uninitialized constant Ripper
+# wrong constant name <Class:AbstractSyntaxTree>
+# wrong constant name <Class:MJIT>
 # wrong constant name <Class:Node>
 # wrong constant name children
 # wrong constant name first_column
@@ -4877,6 +6810,18 @@
 # wrong constant name resume
 # wrong constant name resolve_feature_path
 # wrong constant name stat
+# wrong constant name <Class:Blob>
+# uninitialized constant SQLite3::Blob::BLANK_RE
+# uninitialized constant SQLite3::Blob::ENCODED_BLANKS
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# uninitialized constant SQLite3::Database::AUTO_VACUUM_MODES
+# uninitialized constant SQLite3::Database::ENCODINGS
+# uninitialized constant SQLite3::Database::JOURNAL_MODES
+# uninitialized constant SQLite3::Database::LOCKING_MODES
+# uninitialized constant SQLite3::Database::SYNCHRONOUS_MODES
+# uninitialized constant SQLite3::Database::TEMP_STORE_MODES
+# uninitialized constant SQLite3::Database::WAL_CHECKPOINTS
 # wrong constant name <static-init>
 # wrong constant name bytes
 # wrong constant name ==
@@ -4916,36 +6861,15 @@
 # uninitialized constant Sinatra::Request::DEFAULT_PORTS
 # uninitialized constant Sinatra::Request::FORM_DATA_MEDIA_TYPES
 # uninitialized constant Sinatra::Request::HTTP_X_FORWARDED_HOST
-# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_SSL
-#                Sinatra::Request::HTTP_X_FORWARDED_PORT
-#                Sinatra::Request::HTTP_X_FORWARDED_PROTO
-#                Sinatra::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Sinatra::Request::HTTP_X_FORWARDED_PORT
-# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_SSL
-#                Sinatra::Request::HTTP_X_FORWARDED_HOST
-#                Sinatra::Request::HTTP_X_FORWARDED_PROTO
-#                Sinatra::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Sinatra::Request::HTTP_X_FORWARDED_PROTO
-# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_SSL
-#                Sinatra::Request::HTTP_X_FORWARDED_PORT
-#                Sinatra::Request::HTTP_X_FORWARDED_HOST
-#                Sinatra::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Sinatra::Request::HTTP_X_FORWARDED_SCHEME
-# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_SSL
-#                Sinatra::Request::HTTP_X_FORWARDED_PORT
-#                Sinatra::Request::HTTP_X_FORWARDED_HOST
-#                Sinatra::Request::HTTP_X_FORWARDED_PROTO
 # uninitialized constant Sinatra::Request::HTTP_X_FORWARDED_SSL
-# Did you mean?  Sinatra::Request::HTTP_X_FORWARDED_PORT
-#                Sinatra::Request::HTTP_X_FORWARDED_HOST
-#                Sinatra::Request::HTTP_X_FORWARDED_PROTO
-#                Sinatra::Request::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Sinatra::Request::PARSEABLE_DATA_MEDIA_TYPES
 # uninitialized constant Sinatra::Request::SCHEME_WHITELIST
 # uninitialized constant Sinatra::Response::CHUNKED
 # uninitialized constant Sinatra::ShowExceptions::CONTEXT
 # uninitialized constant Sinatra::TestHelpers::METHODS
-# Did you mean?  Method
 # wrong constant name <Class:Session>
 # wrong constant name app
 # wrong constant name app=
@@ -4988,11 +6912,16 @@
 # wrong constant name def_single_delegators
 # wrong constant name delegate
 # wrong constant name single_delegate
+# wrong constant name _dump
+# wrong constant name clone
+# wrong constant name dup
+# wrong constant name _load
+# wrong constant name clone
+# wrong constant name __init__
 # uninitialized constant Socket::APPEND
 # uninitialized constant Socket::BINARY
 # uninitialized constant Socket::CREAT
 # uninitialized constant Socket::DSYNC
-# Did you mean?  Socket::SYNC
 # uninitialized constant Socket::EXCL
 # uninitialized constant Socket::FNM_CASEFOLD
 # uninitialized constant Socket::FNM_DOTMATCH
@@ -5002,41 +6931,24 @@
 # uninitialized constant Socket::FNM_SHORTNAME
 # uninitialized constant Socket::FNM_SYSCASE
 # uninitialized constant Socket::LOCK_EX
-# Did you mean?  Socket::LOCK_NB
-#                Socket::LOCK_UN
-#                Socket::LOCK_SH
 # uninitialized constant Socket::LOCK_NB
-# Did you mean?  Socket::LOCK_UN
-#                Socket::LOCK_EX
-#                Socket::LOCK_SH
 # uninitialized constant Socket::LOCK_SH
-# Did you mean?  Socket::LOCK_NB
-#                Socket::LOCK_UN
-#                Socket::LOCK_EX
 # uninitialized constant Socket::LOCK_UN
-# Did you mean?  Socket::LOCK_NB
-#                Socket::LOCK_EX
-#                Socket::LOCK_SH
 # uninitialized constant Socket::NOCTTY
 # uninitialized constant Socket::NOFOLLOW
 # uninitialized constant Socket::NONBLOCK
 # uninitialized constant Socket::NULL
 # uninitialized constant Socket::RDONLY
-# Did you mean?  Socket::WRONLY
 # uninitialized constant Socket::RDWR
 # uninitialized constant Socket::SEEK_CUR
 # uninitialized constant Socket::SEEK_DATA
-# Did you mean?  Socket::SEEK_SET
 # uninitialized constant Socket::SEEK_END
 # uninitialized constant Socket::SEEK_HOLE
 # uninitialized constant Socket::SEEK_SET
 # uninitialized constant Socket::SHARE_DELETE
 # uninitialized constant Socket::SYNC
-# Did you mean?  Socket::DSYNC
 # uninitialized constant Socket::TRUNC
-# Did you mean?  TRUE
 # uninitialized constant Socket::WRONLY
-# Did you mean?  Socket::RDONLY
 # wrong constant name <Class:ConstantEntry>
 # wrong constant name all_module_aliases
 # wrong constant name all_module_names
@@ -5181,9 +7093,7 @@
 # wrong constant name <static-init>
 # wrong constant name header
 # uninitialized constant Sorbet::Private::Static
-# Did you mean?  Sorbet::Private::Status
 # uninitialized constant Sorbet::Private::Static
-# Did you mean?  Sorbet::Private::Status
 # wrong constant name <static-init>
 # wrong constant name done
 # wrong constant name say
@@ -5212,8 +7122,9 @@
 # undefined method `concat$1' for class `String'
 # undefined method `count$1' for class `String'
 # undefined method `delete$1' for class `String'
-# Did you mean?  DelegateClass
+# Did you mean?  delegate
 # undefined method `delete!$1' for class `String'
+# Did you mean?  delegate
 # undefined method `downcase$1' for class `String'
 # undefined method `downcase!$1' for class `String'
 # undefined method `each_line$2' for class `String'
@@ -5300,6 +7211,7 @@
 # wrong constant name sum$1
 # wrong constant name swapcase$1
 # wrong constant name swapcase!$1
+# wrong constant name to_d
 # wrong constant name to_i$1
 # wrong constant name undump
 # wrong constant name unicode_normalize
@@ -5502,9 +7414,116 @@
 # wrong constant name enclose
 # wrong constant name enclosed?
 # wrong constant name list
+# wrong constant name <Class:AtomicReferenceCacheBackend>
+# wrong constant name <Class:SynchronizedCacheBackend>
+# wrong constant name <Class:Util>
+# wrong constant name <Class:Node>
+# wrong constant name <Class:Table>
+# wrong constant name []
+# wrong constant name []=
+# wrong constant name clear
+# wrong constant name compute
+# wrong constant name compute_if_absent
+# wrong constant name compute_if_present
+# wrong constant name delete
+# wrong constant name delete_pair
+# wrong constant name each_pair
+# wrong constant name empty?
+# wrong constant name get_and_set
+# wrong constant name get_or_default
+# wrong constant name initialize
+# wrong constant name key?
+# wrong constant name merge_pair
+# wrong constant name replace_if_exists
+# wrong constant name replace_pair
+# wrong constant name size
+# wrong constant name initialize
+# wrong constant name key
+# wrong constant name key?
+# wrong constant name locked?
+# wrong constant name matches?
+# wrong constant name pure_hash
+# wrong constant name try_await_lock
+# wrong constant name try_lock_via_hash
+# wrong constant name unlock_via_hash
+# wrong constant name <static-init>
+# wrong constant name locked_hash?
+# uninitialized constant ThreadSafe::AtomicReferenceCacheBackend::Table::Elem
+# wrong constant name cas_new_node
+# wrong constant name delete_node_at
+# wrong constant name try_lock_via_hash
+# wrong constant name try_to_cas_in_computed
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# uninitialized constant ThreadSafe::SynchronizedCacheBackend::VERSION
+# wrong constant name lock
+# wrong constant name locked?
+# wrong constant name synchronize
+# wrong constant name try_lock
+# wrong constant name unlock
+# wrong constant name <static-init>
+# wrong constant name <Class:Adder>
+# wrong constant name <Class:AtomicReference>
+# wrong constant name <Class:CheapLockable>
+# wrong constant name <Class:PowerOfTwoTuple>
+# wrong constant name <Class:Striped64>
+# wrong constant name <Class:Volatile>
+# wrong constant name <Class:VolatileTuple>
+# wrong constant name <Class:XorShiftRandom>
+# uninitialized constant ThreadSafe::Util::Adder::THREAD_LOCAL_KEY
+# wrong constant name add
+# wrong constant name decrement
+# wrong constant name increment
+# wrong constant name reset
+# wrong constant name sum
+# wrong constant name <static-init>
+# wrong constant name compare_and_set
+# wrong constant name get
+# wrong constant name initialize
+# wrong constant name set
+# wrong constant name value
+# wrong constant name value=
+# wrong constant name <static-init>
+# wrong constant name cas_mutex
+# wrong constant name compare_and_set_mutex
+# wrong constant name lazy_set_mutex
+# wrong constant name mutex
+# wrong constant name mutex=
+# wrong constant name <static-init>
+# uninitialized constant ThreadSafe::Util::PowerOfTwoTuple::Elem
+# wrong constant name hash_to_index
+# wrong constant name next_in_size_table
+# wrong constant name volatile_get_by_hash
+# wrong constant name volatile_set_by_hash
+# wrong constant name <static-init>
+# wrong constant name <Class:Cell>
+# wrong constant name busy?
+# wrong constant name initialize
+# wrong constant name retry_update
+# wrong constant name cas
+# wrong constant name cas_computed
+# wrong constant name padding_
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name attr_volatile
+# wrong constant name <static-init>
+# uninitialized constant ThreadSafe::Util::VolatileTuple::Elem
+# wrong constant name cas
+# wrong constant name compare_and_set
+# wrong constant name each
+# wrong constant name initialize
+# wrong constant name size
+# wrong constant name volatile_get
+# wrong constant name volatile_set
+# wrong constant name <static-init>
+# wrong constant name get
+# wrong constant name xorshift
+# wrong constant name <static-init>
+# wrong constant name <static-init>
 # wrong constant name <Class:CSVTemplate>
 # wrong constant name <Class:ERBTemplate>
 # wrong constant name <Class:EtanniTemplate>
+# wrong constant name <Class:NokogiriTemplate>
 # wrong constant name <Class:PlainTemplate>
 # wrong constant name <Class:RDocTemplate>
 # wrong constant name <Class:SigilTemplate>
@@ -5523,6 +7542,11 @@
 # wrong constant name precompiled
 # wrong constant name precompiled_template
 # wrong constant name <static-init>
+# wrong constant name evaluate
+# wrong constant name precompiled_postamble
+# wrong constant name precompiled_preamble
+# wrong constant name precompiled_template
+# wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name allows_script?
 # wrong constant name markup
@@ -5532,6 +7556,20 @@
 # wrong constant name precompiled
 # wrong constant name precompiled_template
 # wrong constant name <static-init>
+# undefined method `getlocal$1' for class `Time'
+# undefined method `initialize$1' for class `Time'
+# Did you mean?  initialize
+# undefined method `localtime$1' for class `Time'
+# undefined method `round$1' for class `Time'
+# undefined method `to_s$1' for class `Time'
+# Did you mean?  to_s
+# uninitialized constant Time::DAYS_INTO_WEEK
+# uninitialized constant Time::WEEKEND_DAYS
+# wrong constant name getlocal$1
+# wrong constant name initialize$1
+# wrong constant name localtime$1
+# wrong constant name round$1
+# wrong constant name to_s$1
 # undefined singleton method `at$2' for `Time'
 # undefined singleton method `gm$1' for `Time'
 # undefined singleton method `local$1' for `Time'
@@ -5553,6 +7591,64 @@
 # wrong constant name event
 # wrong constant name instruction_sequence
 # wrong constant name parameters
+# uninitialized constant Trivia::Category::ACTIONS
+# uninitialized constant Trivia::Category::BLACKLISTED_CLASS_METHODS
+# uninitialized constant Trivia::Category::CALLBACKS
+# uninitialized constant Trivia::Category::CALLBACK_FILTER_TYPES
+# uninitialized constant Trivia::Category::CALL_COMPILABLE_REGEXP
+# wrong constant name <Class:GeneratedAssociationMethods>
+# uninitialized constant Trivia::Category::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant Trivia::Category::NAME_COMPILABLE_REGEXP
+# uninitialized constant Trivia::Category::UNASSIGNABLE_KEYS
+# wrong constant name after_add_for_clues
+# wrong constant name after_add_for_clues=
+# wrong constant name after_add_for_clues?
+# wrong constant name after_remove_for_clues
+# wrong constant name after_remove_for_clues=
+# wrong constant name after_remove_for_clues?
+# wrong constant name autosave_associated_records_for_clues
+# wrong constant name before_add_for_clues
+# wrong constant name before_add_for_clues=
+# wrong constant name before_add_for_clues?
+# wrong constant name before_remove_for_clues
+# wrong constant name before_remove_for_clues=
+# wrong constant name before_remove_for_clues?
+# wrong constant name validate_associated_records_for_clues
+# wrong constant name clue_ids
+# wrong constant name clue_ids=
+# wrong constant name clues
+# wrong constant name clues=
+# wrong constant name <static-init>
+# wrong constant name after_add_for_clues
+# wrong constant name after_add_for_clues=
+# wrong constant name after_add_for_clues?
+# wrong constant name after_remove_for_clues
+# wrong constant name after_remove_for_clues=
+# wrong constant name after_remove_for_clues?
+# wrong constant name before_add_for_clues
+# wrong constant name before_add_for_clues=
+# wrong constant name before_add_for_clues?
+# wrong constant name before_remove_for_clues
+# wrong constant name before_remove_for_clues=
+# wrong constant name before_remove_for_clues?
+# uninitialized constant Trivia::Clue::ACTIONS
+# uninitialized constant Trivia::Clue::BLACKLISTED_CLASS_METHODS
+# uninitialized constant Trivia::Clue::CALLBACKS
+# uninitialized constant Trivia::Clue::CALLBACK_FILTER_TYPES
+# uninitialized constant Trivia::Clue::CALL_COMPILABLE_REGEXP
+# wrong constant name <Class:GeneratedAssociationMethods>
+# uninitialized constant Trivia::Clue::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant Trivia::Clue::NAME_COMPILABLE_REGEXP
+# uninitialized constant Trivia::Clue::UNASSIGNABLE_KEYS
+# wrong constant name autosave_associated_records_for_category
+# wrong constant name belongs_to_counter_cache_after_update
+# wrong constant name build_category
+# wrong constant name category
+# wrong constant name category=
+# wrong constant name create_category
+# wrong constant name create_category!
+# wrong constant name reload_category
+# wrong constant name <static-init>
 # wrong constant name <Class:File>
 # wrong constant name decode
 # wrong constant name encode
@@ -5563,65 +7659,30 @@
 # wrong constant name typecode=
 # wrong constant name new2
 # uninitialized constant URI::File::ABS_PATH
-# Did you mean?  URI::ABS_PATH
 # uninitialized constant URI::File::ABS_URI
-# Did you mean?  URI::ABS_URI
 # uninitialized constant URI::File::ABS_URI_REF
-# Did you mean?  URI::ABS_URI_REF
 # uninitialized constant URI::File::DEFAULT_PARSER
-# Did you mean?  URI::File::DEFAULT_PORT
-#                URI::DEFAULT_PARSER
 # uninitialized constant URI::File::ESCAPED
-# Did you mean?  URI::File::Escape
-#                URI::Escape
-#                URI::ESCAPED
 # uninitialized constant URI::File::FRAGMENT
-# Did you mean?  URI::FRAGMENT
 # uninitialized constant URI::File::HOST
-# Did you mean?  URI::HOST
 # uninitialized constant URI::File::OPAQUE
-# Did you mean?  URI::OPAQUE
 # uninitialized constant URI::File::PORT
-# Did you mean?  URI::PORT
 # uninitialized constant URI::File::QUERY
-# Did you mean?  URI::QUERY
 # uninitialized constant URI::File::REGISTRY
-# Did you mean?  URI::REGISTRY
 # uninitialized constant URI::File::REL_PATH
-# Did you mean?  URI::REL_PATH
 # uninitialized constant URI::File::REL_URI
-# Did you mean?  URI::REL_URI
 # uninitialized constant URI::File::REL_URI_REF
-# Did you mean?  URI::REL_URI_REF
 # uninitialized constant URI::File::RFC3986_PARSER
-# Did you mean?  URI::File::RFC3986_Parser
-#                URI::RFC3986_Parser
-#                URI::RFC2396_Parser
-#                URI::File::RFC2396_Parser
-#                URI::RFC3986_PARSER
 # uninitialized constant URI::File::SCHEME
-# Did you mean?  URI::SCHEME
 # uninitialized constant URI::File::TBLDECWWWCOMP_
-# Did you mean?  URI::File::TBLENCWWWCOMP_
-#                URI::TBLDECWWWCOMP_
-#                URI::TBLENCWWWCOMP_
 # uninitialized constant URI::File::TBLENCWWWCOMP_
-# Did you mean?  URI::File::TBLDECWWWCOMP_
-#                URI::TBLDECWWWCOMP_
-#                URI::TBLENCWWWCOMP_
 # uninitialized constant URI::File::UNSAFE
-# Did you mean?  URI::UNSAFE
 # uninitialized constant URI::File::URI_REF
-# Did you mean?  URI::URI_REF
 # uninitialized constant URI::File::USERINFO
-# Did you mean?  URI::USERINFO
 # uninitialized constant URI::File::USE_REGISTRY
 # uninitialized constant URI::File::VERSION
-# Did you mean?  URI::VERSION
 # uninitialized constant URI::File::VERSION_CODE
-# Did you mean?  URI::VERSION_CODE
 # uninitialized constant URI::File::WEB_ENCODINGS_
-# Did you mean?  URI::WEB_ENCODINGS_
 # wrong constant name check_password
 # wrong constant name check_user
 # wrong constant name check_userinfo

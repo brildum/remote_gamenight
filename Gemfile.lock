@@ -1,11 +1,27 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activemodel (5.2.3)
+      activesupport (= 5.2.3)
+    activerecord (5.2.3)
+      activemodel (= 5.2.3)
+      activesupport (= 5.2.3)
+      arel (>= 9.0)
+    activesupport (5.2.3)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+    arel (9.0.0)
     backports (3.15.0)
     chronic (0.10.2)
+    concurrent-ruby (1.1.5)
     faraday (0.15.4)
       multipart-post (>= 1.2, < 3)
+    i18n (1.6.0)
+      concurrent-ruby (~> 1.0)
     mini_portile2 (2.4.0)
+    minitest (5.11.3)
     multi_json (1.13.1)
     multipart-post (2.1.1)
     mustermann (1.0.3)
@@ -33,12 +49,17 @@ GEM
       sorbet-static (= 0.4.4439)
     sorbet-runtime (0.4.4378)
     sorbet-static (0.4.4439-universal-darwin-16)
+    sqlite3 (1.4.1)
+    thread_safe (0.3.6)
     tilt (2.0.9)
+    tzinfo (1.2.5)
+      thread_safe (~> 0.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord (= 5.2.3)
   chronic
   faraday (= 0.15.4)
   nokogiri
@@ -48,6 +69,7 @@ DEPENDENCIES
   sinatra-contrib (= 2.0.5)
   sorbet
   sorbet-runtime
+  sqlite3
 
 BUNDLED WITH
    1.17.2

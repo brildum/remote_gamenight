@@ -11,6 +11,7 @@ class App < Sinatra::Application
   extend Sinatra::Helpers
 
   def self.init!(services)
+    @@services = services
     @@slack = SlackController.new(services)
   end
 

@@ -5,7 +5,7 @@
 require 'sorbet-runtime'
 require 'sinatra'
 
-require './lib/services'
+require './app/services'
 require './app/http'
 
 BOT_ID = 'BL3Q8JD98'
@@ -47,8 +47,24 @@ class SlackController
   def on_app_mention(event)
     return default_response if event['bot_id'] == BOT_ID
 
+    send_message = lambda do |msg|
+      @services.slack.send_message(event['channel'], msg)
+    end
+
     msg = parse_message(event['text'])
-    @services.slack.send_message(event['channel'], msg)
+    match = %r{^\/([a-z0-9_-]+)\s*(.*)$}i.match(msg)
+    if match.nil?
+      send_message.call('You need to specify a command, ie: "@remote_gamenight /command arg1 arg2..."')
+      return default_response
+    end
+
+    case cmd = match.captures[0]
+    when 'trivia'
+      clue = @services.trivia.random_clue
+      send_message.call("```#{clue.clue}\n\nCategory: #{clue.category.name}```")
+    else
+      send_message.call("Invalid command /#{cmd}")
+    end
 
     default_response
   end
@@ -57,9 +73,12 @@ class SlackController
   def on_message(event)
     return default_response if event['bot_id'] == BOT_ID
 
-    msg = parse_message(event['text'])
-    @services.slack.send_message(event['channel'], msg)
+    send_message = lambda do |msg|
+      @services.slack.send_message(event['channel'], msg)
+    end
 
+    msg = parse_message(event['text'])
+    send_message.call(msg)
     default_response
   end
 
