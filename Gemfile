@@ -13,8 +13,10 @@ group :development do
 end
 
 gem 'activerecord', '5.2.3'
+gem 'amatch'
 gem 'faraday', '0.15.4'
+gem 'pg'
+gem 'redis', '4.1.1'
 gem 'sinatra', '2.0.5'
 gem 'sinatra-contrib', '2.0.5'
 gem 'sorbet-runtime'
-gem 'sqlite3'

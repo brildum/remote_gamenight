@@ -54,14 +54,24 @@ class SlackController
     msg = parse_message(event['text'])
     match = %r{^\/([a-z0-9_-]+)\s*(.*)$}i.match(msg)
     if match.nil?
-      send_message.call('You need to specify a command, ie: "@remote_gamenight /command arg1 arg2..."')
+      send_message.call('You need to specify a command, ie: `@remote_gamenight /command arg1 arg2...`')
       return default_response
     end
 
+    game_id = event['channel']
+
     case cmd = match.captures[0]
     when 'trivia'
-      clue = @services.trivia.random_clue
+      clue = @services.trivia.next_clue(game_id)
       send_message.call("```#{clue.clue}\n\nCategory: #{clue.category.name}```")
+    when 'answer'
+      clue = @services.trivia.active_clue(game_id)
+      answer = (match.captures[1] || '').strip
+      if @services.trivia.check_answer(clue, answer)
+        send_message.call("```Correct!\n\n#{clue.answer}```")
+      else
+        send_message.call("```Incorrect!\n\n#{clue.answer}```")
+      end
     else
       send_message.call("Invalid command /#{cmd}")
     end

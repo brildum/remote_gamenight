@@ -806,9 +806,6 @@ module ActiveRecord::AttributeMethods::TimeZoneConversion::ClassMethods
   extend ::T::Sig
 end
 
-class ActiveRecord::AttributeMethods::TimeZoneConversion::TimeZoneConverter
-end
-
 module ActiveRecord::AttributeMethods::TimeZoneConversion
   extend ::T::Sig
 end
@@ -1346,6 +1343,9 @@ class ActiveRecord::ConnectionAdapters::TableDefinition
   def timestamps(**options); end
 end
 
+class ActiveRecord::ConnectionAdapters::TableDefinition
+end
+
 class ActiveRecord::ConnectionAdapters::Transaction
   def add_record(record); end
 
@@ -1577,9 +1577,6 @@ end
 module ActiveRecord::LegacyYamlAdapter
   extend ::T::Sig
   def self.convert(klass, coder); end
-end
-
-class ActiveRecord::Locking::LockingType
 end
 
 module ActiveRecord::Locking::Optimistic
@@ -2560,13 +2557,7 @@ module ActiveRecord::Type::Internal
   extend ::T::Sig
 end
 
-class ActiveRecord::Type::Serialized
-end
-
 ActiveRecord::Type::String = ActiveModel::Type::String
-
-class ActiveRecord::Type::Time::Value
-end
 
 module ActiveRecord::Type
   extend ::T::Sig
@@ -2633,6 +2624,14 @@ module ActiveSupport::Cache
   UNIVERSAL_OPTIONS = ::T.let(nil, ::T.untyped)
 end
 
+module ActiveSupport::Cache::ConnectionPoolLike
+  def with(); end
+end
+
+module ActiveSupport::Cache::ConnectionPoolLike
+  extend ::T::Sig
+end
+
 class ActiveSupport::Cache::Entry
   def dup_value!(); end
 
@@ -2689,6 +2688,36 @@ class ActiveSupport::Cache::NullStore
 end
 
 class ActiveSupport::Cache::NullStore
+end
+
+class ActiveSupport::Cache::RedisCacheStore
+  include ::ActiveSupport::Cache::Strategy::LocalCache
+  include ::ActiveSupport::Cache::RedisCacheStore::LocalCacheWithRaw
+  def initialize(namespace: T.unsafe(nil), compress: T.unsafe(nil), compress_threshold: T.unsafe(nil), expires_in: T.unsafe(nil), race_condition_ttl: T.unsafe(nil), error_handler: T.unsafe(nil), **redis_options); end
+
+  def max_key_bytesize(); end
+
+  def mget_capable?(); end
+
+  def mset_capable?(); end
+
+  def redis(); end
+
+  def redis_options(); end
+  DEFAULT_ERROR_HANDLER = ::T.let(nil, ::T.untyped)
+  DEFAULT_REDIS_OPTIONS = ::T.let(nil, ::T.untyped)
+  MAX_KEY_BYTESIZE = ::T.let(nil, ::T.untyped)
+end
+
+module ActiveSupport::Cache::RedisCacheStore::LocalCacheWithRaw
+end
+
+module ActiveSupport::Cache::RedisCacheStore::LocalCacheWithRaw
+  extend ::T::Sig
+end
+
+class ActiveSupport::Cache::RedisCacheStore
+  def self.build_redis(redis: T.unsafe(nil), url: T.unsafe(nil), **redis_options); end
 end
 
 class ActiveSupport::Cache::Store
@@ -4070,6 +4099,24 @@ class Addrinfo
 end
 
 class Addrinfo
+  extend ::T::Sig
+end
+
+module Amatch
+  VERSION = ::T.let(nil, ::T.untyped)
+  VERSION_ARRAY = ::T.let(nil, ::T.untyped)
+  VERSION_BUILD = ::T.let(nil, ::T.untyped)
+  VERSION_MAJOR = ::T.let(nil, ::T.untyped)
+  VERSION_MINOR = ::T.let(nil, ::T.untyped)
+end
+
+Amatch::DiceCoefficient = Amatch::PairDistance
+
+module Amatch::StringMethods
+  extend ::T::Sig
+end
+
+module Amatch
   extend ::T::Sig
 end
 
@@ -12468,110 +12515,12 @@ class IOError
 end
 
 class IPAddr
-  include ::Comparable
-  def &(other); end
-
-  def <<(num); end
-
-  def ==(other); end
-
-  def ===(other); end
-
-  def >>(num); end
-
-  def eql?(other); end
-
-  def family(); end
-
-  def hton(); end
-
-  def include?(other); end
-
-  def initialize(addr=T.unsafe(nil), family=T.unsafe(nil)); end
-
-  def ip6_arpa(); end
-
-  def ip6_int(); end
-
-  def ipv4?(); end
-
-  def ipv4_compat(); end
-
-  def ipv4_compat?(); end
-
-  def ipv4_mapped(); end
-
-  def ipv4_mapped?(); end
-
-  def ipv6?(); end
-
-  def link_local?(); end
-
-  def loopback?(); end
-
-  def mask(prefixlen); end
-
-  def mask!(mask); end
-
-  def native(); end
-
-  def prefix(); end
-
-  def prefix=(prefix); end
-
-  def private?(); end
-
-  def reverse(); end
-
-  def set(addr, *family); end
-
-  def succ(); end
-
-  def to_i(); end
-
-  def to_range(); end
-
-  def to_string(); end
-
-  def |(other); end
-
-  def ~(); end
   IN4MASK = ::T.let(nil, ::T.untyped)
   IN6FORMAT = ::T.let(nil, ::T.untyped)
   IN6MASK = ::T.let(nil, ::T.untyped)
   RE_IPV4ADDRLIKE = ::T.let(nil, ::T.untyped)
   RE_IPV6ADDRLIKE_COMPRESSED = ::T.let(nil, ::T.untyped)
   RE_IPV6ADDRLIKE_FULL = ::T.let(nil, ::T.untyped)
-end
-
-class IPAddr::AddressFamilyError
-end
-
-class IPAddr::AddressFamilyError
-end
-
-class IPAddr::Error
-end
-
-class IPAddr::Error
-end
-
-class IPAddr::InvalidAddressError
-end
-
-class IPAddr::InvalidAddressError
-end
-
-class IPAddr::InvalidPrefixError
-end
-
-class IPAddr::InvalidPrefixError
-end
-
-class IPAddr
-  def self.new_ntoh(addr); end
-
-  def self.ntop(addr); end
 end
 
 class IPSocket
@@ -13644,6 +13593,8 @@ class Object
   STDERR = ::T.let(nil, ::T.untyped)
   STDIN = ::T.let(nil, ::T.untyped)
   STDOUT = ::T.let(nil, ::T.untyped)
+  STOPWORDS = ::T.let(nil, ::T.untyped)
+  STOPWORDS_RAW = ::T.let(nil, ::T.untyped)
   TOPLEVEL_BINDING = ::T.let(nil, ::T.untyped)
 end
 
@@ -14749,6 +14700,1965 @@ class OptionParser
   def self.top(); end
 
   def self.with(*args, &block); end
+end
+
+module PG
+  include ::PG::Constants
+  ERROR_CLASSES = ::T.let(nil, ::T.untyped)
+  REVISION = ::T.let(nil, ::T.untyped)
+  VERSION = ::T.let(nil, ::T.untyped)
+end
+
+class PG::ActiveSqlTransaction
+end
+
+class PG::ActiveSqlTransaction
+end
+
+class PG::AdminShutdown
+end
+
+class PG::AdminShutdown
+end
+
+class PG::AmbiguousAlias
+end
+
+class PG::AmbiguousAlias
+end
+
+class PG::AmbiguousColumn
+end
+
+class PG::AmbiguousColumn
+end
+
+class PG::AmbiguousFunction
+end
+
+class PG::AmbiguousFunction
+end
+
+class PG::AmbiguousParameter
+end
+
+class PG::AmbiguousParameter
+end
+
+class PG::ArraySubscriptError
+end
+
+class PG::ArraySubscriptError
+end
+
+class PG::AssertFailure
+end
+
+class PG::AssertFailure
+end
+
+class PG::BadCopyFileFormat
+end
+
+class PG::BadCopyFileFormat
+end
+
+class PG::BasicTypeMapForQueries
+  DEFAULT_ARRAY_TYPE_MAP = ::T.let(nil, ::T.untyped)
+  DEFAULT_TYPE_MAP = ::T.let(nil, ::T.untyped)
+end
+
+module PG::BasicTypeRegistry
+  CODERS_BY_NAME = ::T.let(nil, ::T.untyped)
+  ValidDirections = ::T.let(nil, ::T.untyped)
+  ValidFormats = ::T.let(nil, ::T.untyped)
+end
+
+class PG::BasicTypeRegistry::CoderMap
+  DONT_QUOTE_TYPES = ::T.let(nil, ::T.untyped)
+end
+
+module PG::BasicTypeRegistry
+  extend ::T::Sig
+end
+
+class PG::BinaryDecoder::Boolean
+  include ::PG::Coder::BinaryFormatting
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::BinaryDecoder::Boolean
+end
+
+class PG::BinaryDecoder::Bytea
+  include ::PG::Coder::BinaryFormatting
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::BinaryDecoder::Bytea
+end
+
+class PG::BinaryDecoder::Float
+  include ::PG::Coder::BinaryFormatting
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::BinaryDecoder::Float
+end
+
+class PG::BinaryDecoder::Integer
+  include ::PG::Coder::BinaryFormatting
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::BinaryDecoder::Integer
+end
+
+class PG::BinaryDecoder::String
+  include ::PG::Coder::BinaryFormatting
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::BinaryDecoder::String
+end
+
+class PG::BinaryDecoder::Timestamp
+  include ::PG::Coder::BinaryFormatting
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::BinaryDecoder::Timestamp
+end
+
+class PG::BinaryDecoder::TimestampLocal
+end
+
+class PG::BinaryDecoder::TimestampUtc
+end
+
+class PG::BinaryDecoder::TimestampUtcToLocal
+end
+
+class PG::BinaryDecoder::ToBase64
+  include ::PG::Coder::BinaryFormatting
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::BinaryDecoder::ToBase64
+end
+
+module PG::BinaryDecoder
+  extend ::T::Sig
+end
+
+module PG::BinaryEncoder
+end
+
+class PG::BinaryEncoder::Boolean
+  include ::PG::Coder::BinaryFormatting
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::BinaryEncoder::Boolean
+end
+
+class PG::BinaryEncoder::Bytea
+  include ::PG::Coder::BinaryFormatting
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::BinaryEncoder::Bytea
+end
+
+class PG::BinaryEncoder::FromBase64
+  include ::PG::Coder::BinaryFormatting
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::BinaryEncoder::FromBase64
+end
+
+class PG::BinaryEncoder::Int2
+  include ::PG::Coder::BinaryFormatting
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::BinaryEncoder::Int2
+end
+
+class PG::BinaryEncoder::Int4
+  include ::PG::Coder::BinaryFormatting
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::BinaryEncoder::Int4
+end
+
+class PG::BinaryEncoder::Int8
+  include ::PG::Coder::BinaryFormatting
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::BinaryEncoder::Int8
+end
+
+class PG::BinaryEncoder::String
+  include ::PG::Coder::BinaryFormatting
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::BinaryEncoder::String
+end
+
+module PG::BinaryEncoder
+  extend ::T::Sig
+end
+
+class PG::BranchTransactionAlreadyActive
+end
+
+class PG::BranchTransactionAlreadyActive
+end
+
+class PG::CannotCoerce
+end
+
+class PG::CannotCoerce
+end
+
+class PG::CannotConnectNow
+end
+
+class PG::CannotConnectNow
+end
+
+class PG::CantChangeRuntimeParam
+end
+
+class PG::CantChangeRuntimeParam
+end
+
+class PG::CardinalityViolation
+end
+
+class PG::CardinalityViolation
+end
+
+class PG::CaseNotFound
+end
+
+class PG::CaseNotFound
+end
+
+class PG::CharacterNotInRepertoire
+end
+
+class PG::CharacterNotInRepertoire
+end
+
+class PG::CheckViolation
+end
+
+class PG::CheckViolation
+end
+
+class PG::Coder
+  FORMAT_ERROR_MASK = ::T.let(nil, ::T.untyped)
+  FORMAT_ERROR_TO_PARTIAL = ::T.let(nil, ::T.untyped)
+  FORMAT_ERROR_TO_RAISE = ::T.let(nil, ::T.untyped)
+  FORMAT_ERROR_TO_STRING = ::T.let(nil, ::T.untyped)
+  TIMESTAMP_APP_LOCAL = ::T.let(nil, ::T.untyped)
+  TIMESTAMP_APP_UTC = ::T.let(nil, ::T.untyped)
+  TIMESTAMP_DB_LOCAL = ::T.let(nil, ::T.untyped)
+  TIMESTAMP_DB_UTC = ::T.let(nil, ::T.untyped)
+end
+
+module PG::Coder::BinaryFormatting
+  Params = ::T.let(nil, ::T.untyped)
+end
+
+module PG::Coder::BinaryFormatting
+  extend ::T::Sig
+end
+
+class PG::CollationMismatch
+end
+
+class PG::CollationMismatch
+end
+
+class PG::CompositeDecoder
+end
+
+class PG::CompositeDecoder
+end
+
+class PG::CompositeEncoder
+end
+
+class PG::CompositeEncoder
+end
+
+class PG::ConfigFileError
+end
+
+class PG::ConfigFileError
+end
+
+class PG::ConfigurationLimitExceeded
+end
+
+class PG::ConfigurationLimitExceeded
+end
+
+class PG::Connection
+  include ::PG::Constants
+  CONNECT_ARGUMENT_ORDER = ::T.let(nil, ::T.untyped)
+  REDIRECT_METHODS = ::T.let(nil, ::T.untyped)
+end
+
+class PG::ConnectionBad
+end
+
+class PG::ConnectionBad
+end
+
+class PG::ConnectionDoesNotExist
+end
+
+class PG::ConnectionDoesNotExist
+end
+
+class PG::ConnectionException
+end
+
+class PG::ConnectionException
+end
+
+class PG::ConnectionFailure
+end
+
+class PG::ConnectionFailure
+end
+
+module PG::Constants
+  CONNECTION_AUTH_OK = ::T.let(nil, ::T.untyped)
+  CONNECTION_AWAITING_RESPONSE = ::T.let(nil, ::T.untyped)
+  CONNECTION_BAD = ::T.let(nil, ::T.untyped)
+  CONNECTION_MADE = ::T.let(nil, ::T.untyped)
+  CONNECTION_NEEDED = ::T.let(nil, ::T.untyped)
+  CONNECTION_OK = ::T.let(nil, ::T.untyped)
+  CONNECTION_SETENV = ::T.let(nil, ::T.untyped)
+  CONNECTION_SSL_STARTUP = ::T.let(nil, ::T.untyped)
+  CONNECTION_STARTED = ::T.let(nil, ::T.untyped)
+  INVALID_OID = ::T.let(nil, ::T.untyped)
+  INV_READ = ::T.let(nil, ::T.untyped)
+  INV_WRITE = ::T.let(nil, ::T.untyped)
+  InvalidOid = ::T.let(nil, ::T.untyped)
+  PGRES_BAD_RESPONSE = ::T.let(nil, ::T.untyped)
+  PGRES_COMMAND_OK = ::T.let(nil, ::T.untyped)
+  PGRES_COPY_BOTH = ::T.let(nil, ::T.untyped)
+  PGRES_COPY_IN = ::T.let(nil, ::T.untyped)
+  PGRES_COPY_OUT = ::T.let(nil, ::T.untyped)
+  PGRES_EMPTY_QUERY = ::T.let(nil, ::T.untyped)
+  PGRES_FATAL_ERROR = ::T.let(nil, ::T.untyped)
+  PGRES_NONFATAL_ERROR = ::T.let(nil, ::T.untyped)
+  PGRES_POLLING_FAILED = ::T.let(nil, ::T.untyped)
+  PGRES_POLLING_OK = ::T.let(nil, ::T.untyped)
+  PGRES_POLLING_READING = ::T.let(nil, ::T.untyped)
+  PGRES_POLLING_WRITING = ::T.let(nil, ::T.untyped)
+  PGRES_SINGLE_TUPLE = ::T.let(nil, ::T.untyped)
+  PGRES_TUPLES_OK = ::T.let(nil, ::T.untyped)
+  PG_DIAG_COLUMN_NAME = ::T.let(nil, ::T.untyped)
+  PG_DIAG_CONSTRAINT_NAME = ::T.let(nil, ::T.untyped)
+  PG_DIAG_CONTEXT = ::T.let(nil, ::T.untyped)
+  PG_DIAG_DATATYPE_NAME = ::T.let(nil, ::T.untyped)
+  PG_DIAG_INTERNAL_POSITION = ::T.let(nil, ::T.untyped)
+  PG_DIAG_INTERNAL_QUERY = ::T.let(nil, ::T.untyped)
+  PG_DIAG_MESSAGE_DETAIL = ::T.let(nil, ::T.untyped)
+  PG_DIAG_MESSAGE_HINT = ::T.let(nil, ::T.untyped)
+  PG_DIAG_MESSAGE_PRIMARY = ::T.let(nil, ::T.untyped)
+  PG_DIAG_SCHEMA_NAME = ::T.let(nil, ::T.untyped)
+  PG_DIAG_SEVERITY = ::T.let(nil, ::T.untyped)
+  PG_DIAG_SOURCE_FILE = ::T.let(nil, ::T.untyped)
+  PG_DIAG_SOURCE_FUNCTION = ::T.let(nil, ::T.untyped)
+  PG_DIAG_SOURCE_LINE = ::T.let(nil, ::T.untyped)
+  PG_DIAG_SQLSTATE = ::T.let(nil, ::T.untyped)
+  PG_DIAG_STATEMENT_POSITION = ::T.let(nil, ::T.untyped)
+  PG_DIAG_TABLE_NAME = ::T.let(nil, ::T.untyped)
+  PQERRORS_DEFAULT = ::T.let(nil, ::T.untyped)
+  PQERRORS_TERSE = ::T.let(nil, ::T.untyped)
+  PQERRORS_VERBOSE = ::T.let(nil, ::T.untyped)
+  PQPING_NO_ATTEMPT = ::T.let(nil, ::T.untyped)
+  PQPING_NO_RESPONSE = ::T.let(nil, ::T.untyped)
+  PQPING_OK = ::T.let(nil, ::T.untyped)
+  PQPING_REJECT = ::T.let(nil, ::T.untyped)
+  PQTRANS_ACTIVE = ::T.let(nil, ::T.untyped)
+  PQTRANS_IDLE = ::T.let(nil, ::T.untyped)
+  PQTRANS_INERROR = ::T.let(nil, ::T.untyped)
+  PQTRANS_INTRANS = ::T.let(nil, ::T.untyped)
+  PQTRANS_UNKNOWN = ::T.let(nil, ::T.untyped)
+  SEEK_CUR = ::T.let(nil, ::T.untyped)
+  SEEK_END = ::T.let(nil, ::T.untyped)
+  SEEK_SET = ::T.let(nil, ::T.untyped)
+end
+
+module PG::Constants
+  extend ::T::Sig
+end
+
+class PG::CopyDecoder
+  include ::PG::Coder::BinaryFormatting
+end
+
+class PG::CopyDecoder
+end
+
+class PG::CopyEncoder
+  include ::PG::Coder::BinaryFormatting
+end
+
+class PG::CopyEncoder
+end
+
+class PG::CrashShutdown
+end
+
+class PG::CrashShutdown
+end
+
+class PG::DataCorrupted
+end
+
+class PG::DataCorrupted
+end
+
+class PG::DataException
+end
+
+class PG::DataException
+end
+
+class PG::DatabaseDropped
+end
+
+class PG::DatabaseDropped
+end
+
+class PG::DatatypeMismatch
+end
+
+class PG::DatatypeMismatch
+end
+
+class PG::DatetimeFieldOverflow
+end
+
+class PG::DatetimeFieldOverflow
+end
+
+class PG::DependentObjectsStillExist
+end
+
+class PG::DependentObjectsStillExist
+end
+
+class PG::DependentPrivilegeDescriptorsStillExist
+end
+
+class PG::DependentPrivilegeDescriptorsStillExist
+end
+
+class PG::DiagnosticsException
+end
+
+class PG::DiagnosticsException
+end
+
+class PG::DiskFull
+end
+
+class PG::DiskFull
+end
+
+class PG::DivisionByZero
+end
+
+class PG::DivisionByZero
+end
+
+class PG::DuplicateAlias
+end
+
+class PG::DuplicateAlias
+end
+
+class PG::DuplicateColumn
+end
+
+class PG::DuplicateColumn
+end
+
+class PG::DuplicateCursor
+end
+
+class PG::DuplicateCursor
+end
+
+class PG::DuplicateDatabase
+end
+
+class PG::DuplicateDatabase
+end
+
+class PG::DuplicateFile
+end
+
+class PG::DuplicateFile
+end
+
+class PG::DuplicateFunction
+end
+
+class PG::DuplicateFunction
+end
+
+class PG::DuplicateObject
+end
+
+class PG::DuplicateObject
+end
+
+class PG::DuplicatePstatement
+end
+
+class PG::DuplicatePstatement
+end
+
+class PG::DuplicateSchema
+end
+
+class PG::DuplicateSchema
+end
+
+class PG::DuplicateTable
+end
+
+class PG::DuplicateTable
+end
+
+class PG::EREContainingSqlNotPermitted
+end
+
+class PG::EREContainingSqlNotPermitted
+end
+
+class PG::EREModifyingSqlDataNotPermitted
+end
+
+class PG::EREModifyingSqlDataNotPermitted
+end
+
+class PG::EREProhibitedSqlStatementAttempted
+end
+
+class PG::EREProhibitedSqlStatementAttempted
+end
+
+class PG::EREReadingSqlDataNotPermitted
+end
+
+class PG::EREReadingSqlDataNotPermitted
+end
+
+class PG::ERIEEventTriggerProtocolViolated
+end
+
+class PG::ERIEEventTriggerProtocolViolated
+end
+
+class PG::ERIEInvalidSqlstateReturned
+end
+
+class PG::ERIEInvalidSqlstateReturned
+end
+
+class PG::ERIENullValueNotAllowed
+end
+
+class PG::ERIENullValueNotAllowed
+end
+
+class PG::ERIESrfProtocolViolated
+end
+
+class PG::ERIESrfProtocolViolated
+end
+
+class PG::ERIETriggerProtocolViolated
+end
+
+class PG::ERIETriggerProtocolViolated
+end
+
+class PG::ErrorInAssignment
+end
+
+class PG::ErrorInAssignment
+end
+
+class PG::EscapeCharacterConflict
+end
+
+class PG::EscapeCharacterConflict
+end
+
+class PG::ExclusionViolation
+end
+
+class PG::ExclusionViolation
+end
+
+class PG::ExternalRoutineException
+end
+
+class PG::ExternalRoutineException
+end
+
+class PG::ExternalRoutineInvocationException
+end
+
+class PG::ExternalRoutineInvocationException
+end
+
+class PG::FdwColumnNameNotFound
+end
+
+class PG::FdwColumnNameNotFound
+end
+
+class PG::FdwDynamicParameterValueNeeded
+end
+
+class PG::FdwDynamicParameterValueNeeded
+end
+
+class PG::FdwError
+end
+
+class PG::FdwError
+end
+
+class PG::FdwFunctionSequenceError
+end
+
+class PG::FdwFunctionSequenceError
+end
+
+class PG::FdwInconsistentDescriptorInformation
+end
+
+class PG::FdwInconsistentDescriptorInformation
+end
+
+class PG::FdwInvalidAttributeValue
+end
+
+class PG::FdwInvalidAttributeValue
+end
+
+class PG::FdwInvalidColumnName
+end
+
+class PG::FdwInvalidColumnName
+end
+
+class PG::FdwInvalidColumnNumber
+end
+
+class PG::FdwInvalidColumnNumber
+end
+
+class PG::FdwInvalidDataType
+end
+
+class PG::FdwInvalidDataType
+end
+
+class PG::FdwInvalidDataTypeDescriptors
+end
+
+class PG::FdwInvalidDataTypeDescriptors
+end
+
+class PG::FdwInvalidDescriptorFieldIdentifier
+end
+
+class PG::FdwInvalidDescriptorFieldIdentifier
+end
+
+class PG::FdwInvalidHandle
+end
+
+class PG::FdwInvalidHandle
+end
+
+class PG::FdwInvalidOptionIndex
+end
+
+class PG::FdwInvalidOptionIndex
+end
+
+class PG::FdwInvalidOptionName
+end
+
+class PG::FdwInvalidOptionName
+end
+
+class PG::FdwInvalidStringFormat
+end
+
+class PG::FdwInvalidStringFormat
+end
+
+class PG::FdwInvalidStringLengthOrBufferLength
+end
+
+class PG::FdwInvalidStringLengthOrBufferLength
+end
+
+class PG::FdwInvalidUseOfNullPointer
+end
+
+class PG::FdwInvalidUseOfNullPointer
+end
+
+class PG::FdwNoSchemas
+end
+
+class PG::FdwNoSchemas
+end
+
+class PG::FdwOptionNameNotFound
+end
+
+class PG::FdwOptionNameNotFound
+end
+
+class PG::FdwOutOfMemory
+end
+
+class PG::FdwOutOfMemory
+end
+
+class PG::FdwReplyHandle
+end
+
+class PG::FdwReplyHandle
+end
+
+class PG::FdwSchemaNotFound
+end
+
+class PG::FdwSchemaNotFound
+end
+
+class PG::FdwTableNotFound
+end
+
+class PG::FdwTableNotFound
+end
+
+class PG::FdwTooManyHandles
+end
+
+class PG::FdwTooManyHandles
+end
+
+class PG::FdwUnableToCreateExecution
+end
+
+class PG::FdwUnableToCreateExecution
+end
+
+class PG::FdwUnableToCreateReply
+end
+
+class PG::FdwUnableToCreateReply
+end
+
+class PG::FdwUnableToEstablishConnection
+end
+
+class PG::FdwUnableToEstablishConnection
+end
+
+class PG::FeatureNotSupported
+end
+
+class PG::FeatureNotSupported
+end
+
+class PG::FloatingPointException
+end
+
+class PG::FloatingPointException
+end
+
+class PG::ForeignKeyViolation
+end
+
+class PG::ForeignKeyViolation
+end
+
+class PG::GeneratedAlways
+end
+
+class PG::GeneratedAlways
+end
+
+class PG::GroupingError
+end
+
+class PG::GroupingError
+end
+
+class PG::HeldCursorRequiresSameIsolationLevel
+end
+
+class PG::HeldCursorRequiresSameIsolationLevel
+end
+
+class PG::IdleInTransactionSessionTimeout
+end
+
+class PG::IdleInTransactionSessionTimeout
+end
+
+class PG::InFailedSqlTransaction
+end
+
+class PG::InFailedSqlTransaction
+end
+
+class PG::InappropriateAccessModeForBranchTransaction
+end
+
+class PG::InappropriateAccessModeForBranchTransaction
+end
+
+class PG::InappropriateIsolationLevelForBranchTransaction
+end
+
+class PG::InappropriateIsolationLevelForBranchTransaction
+end
+
+class PG::IndeterminateCollation
+end
+
+class PG::IndeterminateCollation
+end
+
+class PG::IndeterminateDatatype
+end
+
+class PG::IndeterminateDatatype
+end
+
+class PG::IndexCorrupted
+end
+
+class PG::IndexCorrupted
+end
+
+class PG::IndicatorOverflow
+end
+
+class PG::IndicatorOverflow
+end
+
+class PG::InsufficientPrivilege
+end
+
+class PG::InsufficientPrivilege
+end
+
+class PG::InsufficientResources
+end
+
+class PG::InsufficientResources
+end
+
+class PG::IntegrityConstraintViolation
+end
+
+class PG::IntegrityConstraintViolation
+end
+
+class PG::InternalError
+end
+
+class PG::InternalError
+end
+
+class PG::IntervalFieldOverflow
+end
+
+class PG::IntervalFieldOverflow
+end
+
+class PG::InvalidArgumentForLog
+end
+
+class PG::InvalidArgumentForLog
+end
+
+class PG::InvalidArgumentForNthValue
+end
+
+class PG::InvalidArgumentForNthValue
+end
+
+class PG::InvalidArgumentForNtile
+end
+
+class PG::InvalidArgumentForNtile
+end
+
+class PG::InvalidArgumentForPowerFunction
+end
+
+class PG::InvalidArgumentForPowerFunction
+end
+
+class PG::InvalidArgumentForWidthBucketFunction
+end
+
+class PG::InvalidArgumentForWidthBucketFunction
+end
+
+class PG::InvalidAuthorizationSpecification
+end
+
+class PG::InvalidAuthorizationSpecification
+end
+
+class PG::InvalidBinaryRepresentation
+end
+
+class PG::InvalidBinaryRepresentation
+end
+
+class PG::InvalidCatalogName
+end
+
+class PG::InvalidCatalogName
+end
+
+class PG::InvalidChangeOfResultFields
+end
+
+class PG::InvalidChangeOfResultFields
+end
+
+class PG::InvalidCharacterValueForCast
+end
+
+class PG::InvalidCharacterValueForCast
+end
+
+class PG::InvalidColumnDefinition
+end
+
+class PG::InvalidColumnDefinition
+end
+
+class PG::InvalidColumnReference
+end
+
+class PG::InvalidColumnReference
+end
+
+class PG::InvalidCursorDefinition
+end
+
+class PG::InvalidCursorDefinition
+end
+
+class PG::InvalidCursorName
+end
+
+class PG::InvalidCursorName
+end
+
+class PG::InvalidCursorState
+end
+
+class PG::InvalidCursorState
+end
+
+class PG::InvalidDatabaseDefinition
+end
+
+class PG::InvalidDatabaseDefinition
+end
+
+class PG::InvalidDatetimeFormat
+end
+
+class PG::InvalidDatetimeFormat
+end
+
+class PG::InvalidEscapeCharacter
+end
+
+class PG::InvalidEscapeCharacter
+end
+
+class PG::InvalidEscapeOctet
+end
+
+class PG::InvalidEscapeOctet
+end
+
+class PG::InvalidEscapeSequence
+end
+
+class PG::InvalidEscapeSequence
+end
+
+class PG::InvalidForeignKey
+end
+
+class PG::InvalidForeignKey
+end
+
+class PG::InvalidFunctionDefinition
+end
+
+class PG::InvalidFunctionDefinition
+end
+
+class PG::InvalidGrantOperation
+end
+
+class PG::InvalidGrantOperation
+end
+
+class PG::InvalidGrantor
+end
+
+class PG::InvalidGrantor
+end
+
+class PG::InvalidIndicatorParameterValue
+end
+
+class PG::InvalidIndicatorParameterValue
+end
+
+class PG::InvalidName
+end
+
+class PG::InvalidName
+end
+
+class PG::InvalidObjectDefinition
+end
+
+class PG::InvalidObjectDefinition
+end
+
+class PG::InvalidParameterValue
+end
+
+class PG::InvalidParameterValue
+end
+
+class PG::InvalidPassword
+end
+
+class PG::InvalidPassword
+end
+
+class PG::InvalidPrecedingOrFollowingSize
+end
+
+class PG::InvalidPrecedingOrFollowingSize
+end
+
+class PG::InvalidPstatementDefinition
+end
+
+class PG::InvalidPstatementDefinition
+end
+
+class PG::InvalidRecursion
+end
+
+class PG::InvalidRecursion
+end
+
+class PG::InvalidRegularExpression
+end
+
+class PG::InvalidRegularExpression
+end
+
+class PG::InvalidResultStatus
+end
+
+class PG::InvalidResultStatus
+end
+
+class PG::InvalidRoleSpecification
+end
+
+class PG::InvalidRoleSpecification
+end
+
+class PG::InvalidRowCountInLimitClause
+end
+
+class PG::InvalidRowCountInLimitClause
+end
+
+class PG::InvalidRowCountInResultOffsetClause
+end
+
+class PG::InvalidRowCountInResultOffsetClause
+end
+
+class PG::InvalidSchemaDefinition
+end
+
+class PG::InvalidSchemaDefinition
+end
+
+class PG::InvalidSchemaName
+end
+
+class PG::InvalidSchemaName
+end
+
+class PG::InvalidSqlStatementName
+end
+
+class PG::InvalidSqlStatementName
+end
+
+class PG::InvalidTableDefinition
+end
+
+class PG::InvalidTableDefinition
+end
+
+class PG::InvalidTablesampleArgument
+end
+
+class PG::InvalidTablesampleArgument
+end
+
+class PG::InvalidTablesampleRepeat
+end
+
+class PG::InvalidTablesampleRepeat
+end
+
+class PG::InvalidTextRepresentation
+end
+
+class PG::InvalidTextRepresentation
+end
+
+class PG::InvalidTimeZoneDisplacementValue
+end
+
+class PG::InvalidTimeZoneDisplacementValue
+end
+
+class PG::InvalidTransactionInitiation
+end
+
+class PG::InvalidTransactionInitiation
+end
+
+class PG::InvalidTransactionState
+end
+
+class PG::InvalidTransactionState
+end
+
+class PG::InvalidTransactionTermination
+end
+
+class PG::InvalidTransactionTermination
+end
+
+class PG::InvalidUseOfEscapeCharacter
+end
+
+class PG::InvalidUseOfEscapeCharacter
+end
+
+class PG::InvalidXmlComment
+end
+
+class PG::InvalidXmlComment
+end
+
+class PG::InvalidXmlContent
+end
+
+class PG::InvalidXmlContent
+end
+
+class PG::InvalidXmlDocument
+end
+
+class PG::InvalidXmlDocument
+end
+
+class PG::InvalidXmlProcessingInstruction
+end
+
+class PG::InvalidXmlProcessingInstruction
+end
+
+class PG::IoError
+end
+
+class PG::IoError
+end
+
+class PG::LEInvalidSpecification
+end
+
+class PG::LEInvalidSpecification
+end
+
+class PG::LocatorException
+end
+
+class PG::LocatorException
+end
+
+class PG::LockFileExists
+end
+
+class PG::LockFileExists
+end
+
+class PG::LockNotAvailable
+end
+
+class PG::LockNotAvailable
+end
+
+class PG::MostSpecificTypeMismatch
+end
+
+class PG::MostSpecificTypeMismatch
+end
+
+class PG::NameTooLong
+end
+
+class PG::NameTooLong
+end
+
+class PG::NoActiveSqlTransaction
+end
+
+class PG::NoActiveSqlTransaction
+end
+
+class PG::NoActiveSqlTransactionForBranchTransaction
+end
+
+class PG::NoActiveSqlTransactionForBranchTransaction
+end
+
+class PG::NoDataFound
+end
+
+class PG::NoDataFound
+end
+
+class PG::NoResultError
+end
+
+class PG::NoResultError
+end
+
+class PG::NonstandardUseOfEscapeCharacter
+end
+
+class PG::NonstandardUseOfEscapeCharacter
+end
+
+class PG::NotAnXmlDocument
+end
+
+class PG::NotAnXmlDocument
+end
+
+class PG::NotNullViolation
+end
+
+class PG::NotNullViolation
+end
+
+class PG::NullValueNoIndicatorParameter
+end
+
+class PG::NullValueNoIndicatorParameter
+end
+
+class PG::NullValueNotAllowed
+end
+
+class PG::NullValueNotAllowed
+end
+
+class PG::NumericValueOutOfRange
+end
+
+class PG::NumericValueOutOfRange
+end
+
+class PG::ObjectInUse
+end
+
+class PG::ObjectInUse
+end
+
+class PG::ObjectNotInPrerequisiteState
+end
+
+class PG::ObjectNotInPrerequisiteState
+end
+
+class PG::OperatorIntervention
+end
+
+class PG::OperatorIntervention
+end
+
+class PG::OutOfMemory
+end
+
+class PG::OutOfMemory
+end
+
+class PG::PlpgsqlError
+end
+
+class PG::PlpgsqlError
+end
+
+class PG::ProgramLimitExceeded
+end
+
+class PG::ProgramLimitExceeded
+end
+
+class PG::ProtocolViolation
+end
+
+class PG::ProtocolViolation
+end
+
+class PG::QueryCanceled
+end
+
+class PG::QueryCanceled
+end
+
+class PG::RaiseException
+end
+
+class PG::RaiseException
+end
+
+class PG::ReadOnlySqlTransaction
+end
+
+class PG::ReadOnlySqlTransaction
+end
+
+class PG::ReservedName
+end
+
+class PG::ReservedName
+end
+
+class PG::RestrictViolation
+end
+
+class PG::RestrictViolation
+end
+
+class PG::Result
+  include ::Enumerable
+  include ::PG::Constants
+end
+
+class PG::SEInvalidSpecification
+end
+
+class PG::SEInvalidSpecification
+end
+
+class PG::SREFunctionExecutedNoReturnStatement
+end
+
+class PG::SREFunctionExecutedNoReturnStatement
+end
+
+class PG::SREModifyingSqlDataNotPermitted
+end
+
+class PG::SREModifyingSqlDataNotPermitted
+end
+
+class PG::SREProhibitedSqlStatementAttempted
+end
+
+class PG::SREProhibitedSqlStatementAttempted
+end
+
+class PG::SREReadingSqlDataNotPermitted
+end
+
+class PG::SREReadingSqlDataNotPermitted
+end
+
+class PG::SavepointException
+end
+
+class PG::SavepointException
+end
+
+class PG::SchemaAndDataStatementMixingNotSupported
+end
+
+class PG::SchemaAndDataStatementMixingNotSupported
+end
+
+class PG::SequenceGeneratorLimitExceeded
+end
+
+class PG::SequenceGeneratorLimitExceeded
+end
+
+class PG::ServerError
+end
+
+class PG::ServerError
+end
+
+class PG::SimpleCoder
+end
+
+class PG::SimpleCoder
+end
+
+class PG::SimpleDecoder
+end
+
+class PG::SimpleDecoder
+end
+
+class PG::SimpleEncoder
+end
+
+class PG::SimpleEncoder
+end
+
+class PG::SnapshotTooOld
+end
+
+class PG::SnapshotTooOld
+end
+
+class PG::SqlRoutineException
+end
+
+class PG::SqlRoutineException
+end
+
+class PG::SqlStatementNotYetComplete
+end
+
+class PG::SqlStatementNotYetComplete
+end
+
+class PG::SqlclientUnableToEstablishSqlconnection
+end
+
+class PG::SqlclientUnableToEstablishSqlconnection
+end
+
+class PG::SqlserverRejectedEstablishmentOfSqlconnection
+end
+
+class PG::SqlserverRejectedEstablishmentOfSqlconnection
+end
+
+class PG::StackedDiagnosticsAccessedWithoutActiveHandler
+end
+
+class PG::StackedDiagnosticsAccessedWithoutActiveHandler
+end
+
+class PG::StatementTooComplex
+end
+
+class PG::StatementTooComplex
+end
+
+class PG::StringDataLengthMismatch
+end
+
+class PG::StringDataLengthMismatch
+end
+
+class PG::StringDataRightTruncation
+end
+
+class PG::StringDataRightTruncation
+end
+
+class PG::SubstringError
+end
+
+class PG::SubstringError
+end
+
+class PG::SyntaxError
+end
+
+class PG::SyntaxError
+end
+
+class PG::SyntaxErrorOrAccessRuleViolation
+end
+
+class PG::SyntaxErrorOrAccessRuleViolation
+end
+
+class PG::SystemError
+end
+
+class PG::SystemError
+end
+
+class PG::TRDeadlockDetected
+end
+
+class PG::TRDeadlockDetected
+end
+
+class PG::TRIntegrityConstraintViolation
+end
+
+class PG::TRIntegrityConstraintViolation
+end
+
+class PG::TRSerializationFailure
+end
+
+class PG::TRSerializationFailure
+end
+
+class PG::TRStatementCompletionUnknown
+end
+
+class PG::TRStatementCompletionUnknown
+end
+
+class PG::TextDecoder::Array
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::TextDecoder::Array
+end
+
+class PG::TextDecoder::Boolean
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::TextDecoder::Boolean
+end
+
+class PG::TextDecoder::Bytea
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::TextDecoder::Bytea
+end
+
+class PG::TextDecoder::CopyRow
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::TextDecoder::CopyRow
+end
+
+class PG::TextDecoder::Date
+  ISO_DATE = ::T.let(nil, ::T.untyped)
+end
+
+class PG::TextDecoder::Float
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::TextDecoder::Float
+end
+
+class PG::TextDecoder::FromBase64
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::TextDecoder::FromBase64
+end
+
+class PG::TextDecoder::Identifier
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::TextDecoder::Identifier
+end
+
+class PG::TextDecoder::Inet
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::TextDecoder::Inet
+end
+
+class PG::TextDecoder::Integer
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::TextDecoder::Integer
+end
+
+class PG::TextDecoder::JSON
+end
+
+class PG::TextDecoder::Numeric
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::TextDecoder::Numeric
+end
+
+class PG::TextDecoder::String
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::TextDecoder::String
+end
+
+class PG::TextDecoder::Timestamp
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::TextDecoder::Timestamp
+end
+
+class PG::TextDecoder::TimestampLocal
+end
+
+class PG::TextDecoder::TimestampUtc
+end
+
+class PG::TextDecoder::TimestampUtcToLocal
+end
+
+PG::TextDecoder::TimestampWithTimeZone = PG::TextDecoder::Timestamp
+
+PG::TextDecoder::TimestampWithoutTimeZone = PG::TextDecoder::TimestampLocal
+
+module PG::TextDecoder
+  extend ::T::Sig
+end
+
+class PG::TextEncoder::Array
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::TextEncoder::Array
+end
+
+class PG::TextEncoder::Boolean
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::TextEncoder::Boolean
+end
+
+class PG::TextEncoder::Bytea
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::TextEncoder::Bytea
+end
+
+class PG::TextEncoder::CopyRow
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::TextEncoder::CopyRow
+end
+
+class PG::TextEncoder::Date
+  STRFTIME_ISO_DATE = ::T.let(nil, ::T.untyped)
+end
+
+class PG::TextEncoder::Float
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::TextEncoder::Float
+end
+
+class PG::TextEncoder::Identifier
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::TextEncoder::Identifier
+end
+
+class PG::TextEncoder::Inet
+end
+
+class PG::TextEncoder::Integer
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::TextEncoder::Integer
+end
+
+class PG::TextEncoder::JSON
+end
+
+class PG::TextEncoder::Numeric
+end
+
+class PG::TextEncoder::QuotedLiteral
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::TextEncoder::QuotedLiteral
+end
+
+class PG::TextEncoder::String
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::TextEncoder::String
+end
+
+class PG::TextEncoder::TimestampUtc
+  STRFTIME_ISO_DATETIME_WITHOUT_TIMEZONE_UTC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::TextEncoder::TimestampWithTimeZone
+  STRFTIME_ISO_DATETIME_WITH_TIMEZONE = ::T.let(nil, ::T.untyped)
+end
+
+class PG::TextEncoder::TimestampWithoutTimeZone
+  STRFTIME_ISO_DATETIME_WITHOUT_TIMEZONE = ::T.let(nil, ::T.untyped)
+end
+
+class PG::TextEncoder::ToBase64
+  CFUNC = ::T.let(nil, ::T.untyped)
+end
+
+class PG::TextEncoder::ToBase64
+end
+
+module PG::TextEncoder
+  extend ::T::Sig
+end
+
+class PG::TooManyArguments
+end
+
+class PG::TooManyArguments
+end
+
+class PG::TooManyColumns
+end
+
+class PG::TooManyColumns
+end
+
+class PG::TooManyConnections
+end
+
+class PG::TooManyConnections
+end
+
+class PG::TooManyRows
+end
+
+class PG::TooManyRows
+end
+
+class PG::TransactionResolutionUnknown
+end
+
+class PG::TransactionResolutionUnknown
+end
+
+class PG::TransactionRollback
+end
+
+class PG::TransactionRollback
+end
+
+class PG::TriggeredActionException
+end
+
+class PG::TriggeredActionException
+end
+
+class PG::TriggeredDataChangeViolation
+end
+
+class PG::TriggeredDataChangeViolation
+end
+
+class PG::TrimError
+end
+
+class PG::TrimError
+end
+
+class PG::Tuple
+  include ::Enumerable
+end
+
+module PG::TypeMap::DefaultTypeMappable
+  extend ::T::Sig
+end
+
+class PG::TypeMapAllStrings
+end
+
+class PG::TypeMapAllStrings
+end
+
+class PG::TypeMapByClass
+  include ::PG::TypeMap::DefaultTypeMappable
+end
+
+class PG::TypeMapByColumn
+  include ::PG::TypeMap::DefaultTypeMappable
+end
+
+class PG::TypeMapByMriType
+  include ::PG::TypeMap::DefaultTypeMappable
+end
+
+class PG::TypeMapByOid
+  include ::PG::TypeMap::DefaultTypeMappable
+end
+
+class PG::TypeMapInRuby
+  include ::PG::TypeMap::DefaultTypeMappable
+end
+
+class PG::UnableToSend
+end
+
+class PG::UnableToSend
+end
+
+class PG::UndefinedColumn
+end
+
+class PG::UndefinedColumn
+end
+
+class PG::UndefinedFile
+end
+
+class PG::UndefinedFile
+end
+
+class PG::UndefinedFunction
+end
+
+class PG::UndefinedFunction
+end
+
+class PG::UndefinedObject
+end
+
+class PG::UndefinedObject
+end
+
+class PG::UndefinedParameter
+end
+
+class PG::UndefinedParameter
+end
+
+class PG::UndefinedTable
+end
+
+class PG::UndefinedTable
+end
+
+class PG::UniqueViolation
+end
+
+class PG::UniqueViolation
+end
+
+class PG::UnterminatedCString
+end
+
+class PG::UnterminatedCString
+end
+
+class PG::UntranslatableCharacter
+end
+
+class PG::UntranslatableCharacter
+end
+
+class PG::WindowingError
+end
+
+class PG::WindowingError
+end
+
+class PG::WithCheckOptionViolation
+end
+
+class PG::WithCheckOptionViolation
+end
+
+class PG::WrongObjectType
+end
+
+class PG::WrongObjectType
+end
+
+class PG::ZeroLengthCharacterString
+end
+
+class PG::ZeroLengthCharacterString
+end
+
+module PG
+  extend ::T::Sig
 end
 
 ParseError = Racc::ParseError
@@ -17227,6 +19137,455 @@ module RbConfig
   def self.ruby(); end
 end
 
+class Redis
+  include ::ActiveSupport::Cache::ConnectionPoolLike
+  Boolify = ::T.let(nil, ::T.untyped)
+  BoolifySet = ::T.let(nil, ::T.untyped)
+  Floatify = ::T.let(nil, ::T.untyped)
+  FloatifyPairs = ::T.let(nil, ::T.untyped)
+  Hashify = ::T.let(nil, ::T.untyped)
+  HashifyClusterNodeInfo = ::T.let(nil, ::T.untyped)
+  HashifyClusterNodes = ::T.let(nil, ::T.untyped)
+  HashifyClusterSlaves = ::T.let(nil, ::T.untyped)
+  HashifyClusterSlots = ::T.let(nil, ::T.untyped)
+  HashifyInfo = ::T.let(nil, ::T.untyped)
+  HashifyStreamEntries = ::T.let(nil, ::T.untyped)
+  HashifyStreamPendingDetails = ::T.let(nil, ::T.untyped)
+  HashifyStreamPendings = ::T.let(nil, ::T.untyped)
+  HashifyStreams = ::T.let(nil, ::T.untyped)
+  Noop = ::T.let(nil, ::T.untyped)
+  VERSION = ::T.let(nil, ::T.untyped)
+end
+
+class Redis::Client
+  DEFAULTS = ::T.let(nil, ::T.untyped)
+end
+
+module Redis::Cluster::CommandLoader
+  extend ::T::Sig
+end
+
+module Redis::Cluster::KeySlotConverter
+  HASH_SLOTS = ::T.let(nil, ::T.untyped)
+  XMODEM_CRC16_LOOKUP = ::T.let(nil, ::T.untyped)
+end
+
+module Redis::Cluster::KeySlotConverter
+  extend ::T::Sig
+end
+
+class Redis::Cluster::Node
+  ROLE_SLAVE = ::T.let(nil, ::T.untyped)
+end
+
+module Redis::Cluster::NodeKey
+  DEFAULT_SCHEME = ::T.let(nil, ::T.untyped)
+  DELIMITER = ::T.let(nil, ::T.untyped)
+  SECURE_SCHEME = ::T.let(nil, ::T.untyped)
+end
+
+module Redis::Cluster::NodeKey
+  extend ::T::Sig
+end
+
+module Redis::Cluster::NodeLoader
+  extend ::T::Sig
+end
+
+class Redis::Cluster::Option
+  DEFAULT_SCHEME = ::T.let(nil, ::T.untyped)
+  SECURE_SCHEME = ::T.let(nil, ::T.untyped)
+  VALID_SCHEMES = ::T.let(nil, ::T.untyped)
+end
+
+class Redis::Cluster::Slot
+  ROLE_SLAVE = ::T.let(nil, ::T.untyped)
+end
+
+module Redis::Cluster::SlotLoader
+  extend ::T::Sig
+end
+
+module Redis::Connection::CommandHelper
+  COMMAND_DELIMITER = ::T.let(nil, ::T.untyped)
+end
+
+module Redis::Connection::CommandHelper
+  extend ::T::Sig
+end
+
+class Redis::Connection::Ruby
+  ASTERISK = ::T.let(nil, ::T.untyped)
+  COLON = ::T.let(nil, ::T.untyped)
+  DOLLAR = ::T.let(nil, ::T.untyped)
+  MINUS = ::T.let(nil, ::T.untyped)
+  PLUS = ::T.let(nil, ::T.untyped)
+end
+
+module Redis::Connection::SocketMixin
+  CRLF = ::T.let(nil, ::T.untyped)
+end
+
+module Redis::Connection::SocketMixin
+  extend ::T::Sig
+end
+
+module Redis::Connection
+  extend ::T::Sig
+end
+
+class Redis::Distributed
+  include ::ActiveSupport::Cache::ConnectionPoolLike
+  def [](key); end
+
+  def []=(key, value); end
+
+  def _bpop(cmd, args); end
+
+  def _eval(cmd, args); end
+
+  def add_node(options); end
+
+  def append(key, value); end
+
+  def bgsave(); end
+
+  def bitcount(key, start=T.unsafe(nil), stop=T.unsafe(nil)); end
+
+  def bitop(operation, destkey, *keys); end
+
+  def bitpos(key, bit, start=T.unsafe(nil), stop=T.unsafe(nil)); end
+
+  def blpop(*args); end
+
+  def brpop(*args); end
+
+  def brpoplpush(source, destination, options=T.unsafe(nil)); end
+
+  def dbsize(); end
+
+  def decr(key); end
+
+  def decrby(key, decrement); end
+
+  def del(*args); end
+
+  def discard(); end
+
+  def dump(key); end
+
+  def echo(value); end
+
+  def ensure_same_node(command, keys); end
+
+  def eval(*args); end
+
+  def evalsha(*args); end
+
+  def exec(); end
+
+  def exists(key); end
+
+  def expire(key, seconds); end
+
+  def expireat(key, unix_time); end
+
+  def flushall(); end
+
+  def flushdb(); end
+
+  def get(key); end
+
+  def getbit(key, offset); end
+
+  def getrange(key, start, stop); end
+
+  def getset(key, value); end
+
+  def hdel(key, *fields); end
+
+  def hexists(key, field); end
+
+  def hget(key, field); end
+
+  def hgetall(key); end
+
+  def hincrby(key, field, increment); end
+
+  def hincrbyfloat(key, field, increment); end
+
+  def hkeys(key); end
+
+  def hlen(key); end
+
+  def hmget(key, *fields); end
+
+  def hmset(key, *attrs); end
+
+  def hset(key, field, value); end
+
+  def hsetnx(key, field, value); end
+
+  def hvals(key); end
+
+  def incr(key); end
+
+  def incrby(key, increment); end
+
+  def incrbyfloat(key, increment); end
+
+  def info(cmd=T.unsafe(nil)); end
+
+  def initialize(node_configs, options=T.unsafe(nil)); end
+
+  def key_tag(key); end
+
+  def keys(glob=T.unsafe(nil)); end
+
+  def lastsave(); end
+
+  def lindex(key, index); end
+
+  def linsert(key, where, pivot, value); end
+
+  def llen(key); end
+
+  def lpop(key); end
+
+  def lpush(key, value); end
+
+  def lpushx(key, value); end
+
+  def lrange(key, start, stop); end
+
+  def lrem(key, count, value); end
+
+  def lset(key, index, value); end
+
+  def ltrim(key, start, stop); end
+
+  def mapped_hmget(key, *fields); end
+
+  def mapped_hmset(key, hash); end
+
+  def mapped_mget(*keys); end
+
+  def mapped_mset(hash); end
+
+  def mapped_msetnx(hash); end
+
+  def mget(*keys); end
+
+  def migrate(key, options); end
+
+  def monitor(); end
+
+  def move(key, db); end
+
+  def mset(*args); end
+
+  def msetnx(*args); end
+
+  def multi(); end
+
+  def node_for(key); end
+
+  def node_index_for(key); end
+
+  def nodes(); end
+
+  def on_each_node(command, *args); end
+
+  def persist(key); end
+
+  def pexpire(key, milliseconds); end
+
+  def pexpireat(key, ms_unix_time); end
+
+  def pfadd(key, member); end
+
+  def pfcount(*keys); end
+
+  def pfmerge(dest_key, *source_key); end
+
+  def ping(); end
+
+  def pipelined(); end
+
+  def psetex(key, ttl, value); end
+
+  def psubscribe(*channels, &block); end
+
+  def pttl(key); end
+
+  def publish(channel, message); end
+
+  def punsubscribe(*channels); end
+
+  def quit(); end
+
+  def randomkey(); end
+
+  def rename(old_name, new_name); end
+
+  def renamenx(old_name, new_name); end
+
+  def restore(key, ttl, serialized_value, options=T.unsafe(nil)); end
+
+  def ring(); end
+
+  def rpop(key); end
+
+  def rpoplpush(source, destination); end
+
+  def rpush(key, value); end
+
+  def rpushx(key, value); end
+
+  def sadd(key, member); end
+
+  def save(); end
+
+  def scard(key); end
+
+  def script(subcommand, *args); end
+
+  def sdiff(*keys); end
+
+  def sdiffstore(destination, *keys); end
+
+  def select(db); end
+
+  def set(key, value, options=T.unsafe(nil)); end
+
+  def setbit(key, offset, value); end
+
+  def setex(key, ttl, value); end
+
+  def setnx(key, value); end
+
+  def setrange(key, offset, value); end
+
+  def sinter(*keys); end
+
+  def sinterstore(destination, *keys); end
+
+  def sismember(key, member); end
+
+  def smembers(key); end
+
+  def smove(source, destination, member); end
+
+  def sort(key, options=T.unsafe(nil)); end
+
+  def spop(key, count=T.unsafe(nil)); end
+
+  def srandmember(key, count=T.unsafe(nil)); end
+
+  def srem(key, member); end
+
+  def sscan(key, cursor, options=T.unsafe(nil)); end
+
+  def sscan_each(key, options=T.unsafe(nil), &block); end
+
+  def strlen(key); end
+
+  def subscribe(channel, *channels, &block); end
+
+  def subscribed?(); end
+
+  def sunion(*keys); end
+
+  def sunionstore(destination, *keys); end
+
+  def time(); end
+
+  def ttl(key); end
+
+  def type(key); end
+
+  def unlink(*args); end
+
+  def unsubscribe(*channels); end
+
+  def unwatch(); end
+
+  def watch(*keys); end
+
+  def zadd(key, *args); end
+
+  def zcard(key); end
+
+  def zcount(key, min, max); end
+
+  def zincrby(key, increment, member); end
+
+  def zinterstore(destination, keys, options=T.unsafe(nil)); end
+
+  def zrange(key, start, stop, options=T.unsafe(nil)); end
+
+  def zrangebyscore(key, min, max, options=T.unsafe(nil)); end
+
+  def zrank(key, member); end
+
+  def zrem(key, member); end
+
+  def zremrangebyrank(key, start, stop); end
+
+  def zremrangebyscore(key, min, max); end
+
+  def zrevrange(key, start, stop, options=T.unsafe(nil)); end
+
+  def zrevrangebyscore(key, max, min, options=T.unsafe(nil)); end
+
+  def zrevrank(key, member); end
+
+  def zscore(key, member); end
+
+  def zunionstore(destination, keys, options=T.unsafe(nil)); end
+end
+
+class Redis::Distributed::CannotDistribute
+  def initialize(command); end
+end
+
+class Redis::Distributed::CannotDistribute
+end
+
+class Redis::Distributed
+end
+
+class Redis::Future
+  FutureNotReady = ::T.let(nil, ::T.untyped)
+end
+
+class Redis::HashRing
+  def add_node(node); end
+
+  def get_node(key); end
+
+  def get_node_pos(key); end
+
+  def initialize(nodes=T.unsafe(nil), replicas=T.unsafe(nil)); end
+
+  def iter_nodes(key); end
+
+  def nodes(); end
+
+  def remove_node(node); end
+
+  def replicas(); end
+
+  def ring(); end
+
+  def sorted_keys(); end
+  POINTS_PER_SERVER = ::T.let(nil, ::T.untyped)
+end
+
+class Redis::HashRing
+  def self.binary_search(ary, value, &block); end
+end
+
 class Regexp
   include ::ActiveSupport::ToJsonWithActiveSupportEncoder
   def match?(*_); end
@@ -17342,142 +19701,6 @@ class RubyVM
 end
 
 class RuntimeError
-  extend ::T::Sig
-end
-
-module SQLite3
-  SQLITE_VERSION = ::T.let(nil, ::T.untyped)
-  SQLITE_VERSION_NUMBER = ::T.let(nil, ::T.untyped)
-  VERSION = ::T.let(nil, ::T.untyped)
-end
-
-class SQLite3::Blob
-end
-
-class SQLite3::Blob
-end
-
-module SQLite3::Constants::ColumnType
-  BLOB = ::T.let(nil, ::T.untyped)
-  FLOAT = ::T.let(nil, ::T.untyped)
-  INTEGER = ::T.let(nil, ::T.untyped)
-  NULL = ::T.let(nil, ::T.untyped)
-  TEXT = ::T.let(nil, ::T.untyped)
-end
-
-module SQLite3::Constants::ColumnType
-  extend ::T::Sig
-end
-
-module SQLite3::Constants::ErrorCode
-  ABORT = ::T.let(nil, ::T.untyped)
-  AUTH = ::T.let(nil, ::T.untyped)
-  BUSY = ::T.let(nil, ::T.untyped)
-  CANTOPEN = ::T.let(nil, ::T.untyped)
-  CONSTRAINT = ::T.let(nil, ::T.untyped)
-  CORRUPT = ::T.let(nil, ::T.untyped)
-  DONE = ::T.let(nil, ::T.untyped)
-  EMPTY = ::T.let(nil, ::T.untyped)
-  ERROR = ::T.let(nil, ::T.untyped)
-  FULL = ::T.let(nil, ::T.untyped)
-  INTERNAL = ::T.let(nil, ::T.untyped)
-  INTERRUPT = ::T.let(nil, ::T.untyped)
-  IOERR = ::T.let(nil, ::T.untyped)
-  LOCKED = ::T.let(nil, ::T.untyped)
-  MISMATCH = ::T.let(nil, ::T.untyped)
-  MISUSE = ::T.let(nil, ::T.untyped)
-  NOLFS = ::T.let(nil, ::T.untyped)
-  NOMEM = ::T.let(nil, ::T.untyped)
-  NOTFOUND = ::T.let(nil, ::T.untyped)
-  OK = ::T.let(nil, ::T.untyped)
-  PERM = ::T.let(nil, ::T.untyped)
-  PROTOCOL = ::T.let(nil, ::T.untyped)
-  READONLY = ::T.let(nil, ::T.untyped)
-  ROW = ::T.let(nil, ::T.untyped)
-  SCHEMA = ::T.let(nil, ::T.untyped)
-  TOOBIG = ::T.let(nil, ::T.untyped)
-end
-
-module SQLite3::Constants::ErrorCode
-  extend ::T::Sig
-end
-
-module SQLite3::Constants::Open
-  AUTOPROXY = ::T.let(nil, ::T.untyped)
-  CREATE = ::T.let(nil, ::T.untyped)
-  DELETEONCLOSE = ::T.let(nil, ::T.untyped)
-  EXCLUSIVE = ::T.let(nil, ::T.untyped)
-  FULLMUTEX = ::T.let(nil, ::T.untyped)
-  MAIN_DB = ::T.let(nil, ::T.untyped)
-  MAIN_JOURNAL = ::T.let(nil, ::T.untyped)
-  MASTER_JOURNAL = ::T.let(nil, ::T.untyped)
-  MEMORY = ::T.let(nil, ::T.untyped)
-  NOMUTEX = ::T.let(nil, ::T.untyped)
-  PRIVATECACHE = ::T.let(nil, ::T.untyped)
-  READONLY = ::T.let(nil, ::T.untyped)
-  READWRITE = ::T.let(nil, ::T.untyped)
-  SHAREDCACHE = ::T.let(nil, ::T.untyped)
-  SUBJOURNAL = ::T.let(nil, ::T.untyped)
-  TEMP_DB = ::T.let(nil, ::T.untyped)
-  TEMP_JOURNAL = ::T.let(nil, ::T.untyped)
-  TRANSIENT_DB = ::T.let(nil, ::T.untyped)
-  URI = ::T.let(nil, ::T.untyped)
-  WAL = ::T.let(nil, ::T.untyped)
-end
-
-module SQLite3::Constants::Open
-  extend ::T::Sig
-end
-
-module SQLite3::Constants::TextRep
-  ANY = ::T.let(nil, ::T.untyped)
-  DETERMINISTIC = ::T.let(nil, ::T.untyped)
-  UTF16 = ::T.let(nil, ::T.untyped)
-  UTF16BE = ::T.let(nil, ::T.untyped)
-  UTF16LE = ::T.let(nil, ::T.untyped)
-  UTF8 = ::T.let(nil, ::T.untyped)
-end
-
-module SQLite3::Constants::TextRep
-  extend ::T::Sig
-end
-
-module SQLite3::Constants
-  extend ::T::Sig
-end
-
-class SQLite3::Database
-  NULL_TRANSLATOR = ::T.let(nil, ::T.untyped)
-end
-
-module SQLite3::Pragmas
-  AUTO_VACUUM_MODES = ::T.let(nil, ::T.untyped)
-  ENCODINGS = ::T.let(nil, ::T.untyped)
-  JOURNAL_MODES = ::T.let(nil, ::T.untyped)
-  LOCKING_MODES = ::T.let(nil, ::T.untyped)
-  SYNCHRONOUS_MODES = ::T.let(nil, ::T.untyped)
-  TEMP_STORE_MODES = ::T.let(nil, ::T.untyped)
-  WAL_CHECKPOINTS = ::T.let(nil, ::T.untyped)
-end
-
-module SQLite3::Pragmas
-  extend ::T::Sig
-end
-
-module SQLite3::VersionProxy
-  BUILD = ::T.let(nil, ::T.untyped)
-  MAJOR = ::T.let(nil, ::T.untyped)
-  MINOR = ::T.let(nil, ::T.untyped)
-  STRING = ::T.let(nil, ::T.untyped)
-  TINY = ::T.let(nil, ::T.untyped)
-  VERSION = ::T.let(nil, ::T.untyped)
-end
-
-module SQLite3::VersionProxy
-  extend ::T::Sig
-end
-
-module SQLite3
   extend ::T::Sig
 end
 
