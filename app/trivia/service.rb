@@ -3,6 +3,7 @@
 # typed: false
 
 require 'amatch'
+require 'sorbet-runtime'
 
 require './app/clients'
 

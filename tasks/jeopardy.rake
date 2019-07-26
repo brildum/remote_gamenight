@@ -84,12 +84,13 @@ end
 def insert_clues(args)
   require 'csv'
 
+  environment = ENV['RACK_ENV'] || 'production'
+
   require './app/services'
-  require './app/trivia/models'
-  services = Services.new
+  services = Services.new(environment)
 
   count = 0
-  CSV.foreach(args.filename) do |row|
+  CSV.foreach(File.expand_path(args.filename)) do |row|
     Trivia::Clue.new(
       category: Trivia::Category.find_or_create_by!(name: row[0].downcase),
       value: row[1].to_i,
