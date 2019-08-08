@@ -292,64 +292,6 @@ class PG::CompositeCoder < PG::Coder
   def needs_quotation?; end
   def to_h; end
 end
-class IPAddr
-  def &(other); end
-  def <<(num); end
-  def <=>(other); end
-  def ==(other); end
-  def ===(other); end
-  def >>(num); end
-  def _ipv4_compat?; end
-  def _reverse; end
-  def _to_string(addr); end
-  def addr_mask(addr); end
-  def coerce_other(other); end
-  def eql?(other); end
-  def family; end
-  def hash; end
-  def hton; end
-  def in6_addr(left); end
-  def in_addr(addr); end
-  def include?(other); end
-  def initialize(addr = nil, family = nil); end
-  def inspect; end
-  def ip6_arpa; end
-  def ip6_int; end
-  def ipv4?; end
-  def ipv4_compat; end
-  def ipv4_compat?; end
-  def ipv4_mapped; end
-  def ipv4_mapped?; end
-  def ipv6?; end
-  def link_local?; end
-  def loopback?; end
-  def mask!(mask); end
-  def mask(prefixlen); end
-  def native; end
-  def prefix; end
-  def prefix=(prefix); end
-  def private?; end
-  def reverse; end
-  def self.new_ntoh(addr); end
-  def self.ntop(addr); end
-  def set(addr, *family); end
-  def succ; end
-  def to_i; end
-  def to_range; end
-  def to_s; end
-  def to_string; end
-  def |(other); end
-  def ~; end
-  include Comparable
-end
-class IPAddr::Error < ArgumentError
-end
-class IPAddr::InvalidAddressError < IPAddr::Error
-end
-class IPAddr::AddressFamilyError < IPAddr::Error
-end
-class IPAddr::InvalidPrefixError < IPAddr::InvalidAddressError
-end
 class PG::CopyCoder < PG::Coder
   def delimiter; end
   def delimiter=(arg0); end

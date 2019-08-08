@@ -10,11 +10,12 @@ group :development do
   gem 'rack-test'
   gem 'rake'
   gem 'sorbet'
+  gem 'pry-byebug'
 end
 
 gem 'activerecord', '5.2.3'
 gem 'amatch'
-gem 'faraday', '0.15.4'
+gem 'excon'
 gem 'pg'
 gem 'redis', '4.1.1'
 gem 'sinatra', '2.0.5'

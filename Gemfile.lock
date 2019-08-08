@@ -17,25 +17,32 @@ GEM
       tins (~> 1.0)
     arel (9.0.0)
     backports (3.15.0)
+    byebug (11.0.1)
     chronic (0.10.2)
+    coderay (1.1.2)
     concurrent-ruby (1.1.5)
-    faraday (0.15.4)
-      multipart-post (>= 1.2, < 3)
+    excon (0.66.0)
     i18n (1.6.0)
       concurrent-ruby (~> 1.0)
     kgio (2.11.2)
+    method_source (0.9.2)
     mini_portile2 (2.4.0)
     minitest (5.11.3)
     mize (0.3.5)
       protocol
     multi_json (1.13.1)
-    multipart-post (2.1.1)
     mustermann (1.0.3)
     nokogiri (1.10.3)
       mini_portile2 (~> 2.4.0)
     pg (1.1.4)
     protocol (1.0.1)
       ruby_parser (~> 3.0)
+    pry (0.12.2)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
+    pry-byebug (3.7.0)
+      byebug (~> 11.0)
+      pry (~> 0.10)
     rack (2.0.7)
     rack-protection (2.0.5)
       rack
@@ -79,9 +86,10 @@ DEPENDENCIES
   activerecord (= 5.2.3)
   amatch
   chronic
-  faraday (= 0.15.4)
+  excon
   nokogiri
   pg
+  pry-byebug
   rack-test
   rake
   redis (= 4.1.1)

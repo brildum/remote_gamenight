@@ -1132,7 +1132,7 @@ class ActiveRecord::Type::Time < ActiveModel::Type::Time
   def serialize(value); end
   include ActiveRecord::Type::Internal::Timezone
 end
-class ActiveRecord::Type::Time::Value < Anonymous_Delegator_20
+class ActiveRecord::Type::Time::Value < Anonymous_Delegator_15
 end
 class ActiveRecord::Type::Text < ActiveModel::Type::String
   def type; end
@@ -1141,7 +1141,7 @@ class ActiveRecord::Type::UnsignedInteger < ActiveModel::Type::Integer
   def max_value; end
   def min_value; end
 end
-class ActiveRecord::Type::Serialized < Anonymous_Delegator_21
+class ActiveRecord::Type::Serialized < Anonymous_Delegator_16
   def accessor; end
   def assert_valid_value(value); end
   def changed_in_place?(raw_old_value, value); end
@@ -1668,7 +1668,7 @@ module ActiveRecord::Locking::Optimistic::ClassMethods
   def reset_locking_column; end
   def update_counters(id, counters); end
 end
-class ActiveRecord::Locking::LockingType < Anonymous_Delegator_22
+class ActiveRecord::Locking::LockingType < Anonymous_Delegator_17
   def deserialize(value); end
   def encode_with(coder); end
   def init_with(coder); end
@@ -1733,7 +1733,7 @@ end
 module ActiveRecord::AttributeMethods::TimeZoneConversion
   extend ActiveSupport::Concern
 end
-class ActiveRecord::AttributeMethods::TimeZoneConversion::TimeZoneConverter < Anonymous_Delegator_23
+class ActiveRecord::AttributeMethods::TimeZoneConversion::TimeZoneConverter < Anonymous_Delegator_18
   def cast(value); end
   def convert_time_to_time_zone(value); end
   def deserialize(value); end
@@ -2673,9 +2673,9 @@ class ActiveRecord::Base
   include ActiveRecord::Validations
   include ActiveSupport::Callbacks
   include ActiveSupport::Callbacks
-  include Anonymous_ActiveRecord_AttributeMethods_GeneratedAttributeMethods_24
+  include Anonymous_ActiveRecord_AttributeMethods_GeneratedAttributeMethods_19
 end
-module Anonymous_ActiveRecord_AttributeMethods_GeneratedAttributeMethods_24
+module Anonymous_ActiveRecord_AttributeMethods_GeneratedAttributeMethods_19
 end
 module ActiveRecord::Base::GeneratedAssociationMethods
 end

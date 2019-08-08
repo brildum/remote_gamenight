@@ -3,15 +3,17 @@
 
 require 'sinatra'
 
-require './app/slack_controller'
+require './app/config'
+require './app/slack/controller'
 
 # App defines the HTTP server
 class App < Sinatra::Base
   include Sinatra::Helpers
 
-  def self.init!(_environment, services)
+  def self.init!(config, services)
+    @@config = config
     @@services = services
-    @@slack = SlackController.new(services)
+    @@slack = Slack::Controller.new(config, services)
   end
 
   def self.connect!
@@ -30,7 +32,20 @@ class App < Sinatra::Base
     body 'OK!'
   end
 
-  post '/hooks/slack' do
+  get '/slack/install' do
+    params = URI.encode_www_form({
+      client_id: Secrets::SLACK_CLIENT_ID,
+      scope: 'bot',
+      redirect_uri: "#{@@config.get('website')}/slack/init"
+    })
+    redirect "https://slack.com/oauth/authorize?#{params}", 302
+  end
+
+  get '/slack/init' do
+    @@slack.init(request.params['code'])
+  end
+
+  post '/slack/hook' do
     payload = JSON.parse(request.body.read)
     @@slack.hook(payload)
   end

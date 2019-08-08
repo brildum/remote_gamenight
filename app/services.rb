@@ -4,19 +4,17 @@
 
 require './app/clients'
 require './app/trivia/service'
-require './lib/slack'
 
 # Services provides access to all services/clients
 class Services
-  attr_reader :logger, :redis, :slack, :trivia
+  attr_reader :clients, :trivia
 
-  def initialize(environment)
-    @environment = environment
+  def initialize(config)
+    @config = config
     db_connect!
-    @clients = Clients.new(environment)
+    @clients = Clients.new(@config)
     @logger = @clients.logger
     @redis = @clients.redis
-    @slack = Slack.new
     @trivia = Trivia::Service.new(@clients)
   end
 
@@ -38,7 +36,7 @@ class Services
       host: 'localhost',
       username: 'gamenight',
       password: Secrets::DB_PASSWORD,
-      database: @environment == 'production' ? 'gamenight_prod' : 'gamenight_dev'
+      database: @config.get('dbname')
     )
   end
 end

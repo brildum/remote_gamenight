@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# typed: false
+# typed: true
 
 require 'amatch'
 require 'sorbet-runtime'
@@ -17,8 +17,8 @@ module Trivia
 
     sig { params(clients: Clients).void }
     def initialize(clients)
-      @clients = clients
-      @num_clues = Clue.count
+      @clients = T.let(clients, Clients)
+      @num_clues = T.let(Clue.count, Integer)
     end
 
     sig { params(game_id: String).returns(Clue) }
@@ -62,7 +62,7 @@ module Trivia
     private
 
     def tokenize(text)
-      text.downcase.gsub(/[^a-z0-9\s]+/, '').split.filter { |x| STOPWORDS[x].nil? }
+      text.downcase.gsub(/[^a-z0-9\s]+/, '').split.filter { |x| !STOPWORDS.key?(x) }
     end
 
     sig { params(game_id: String).returns(String) }
