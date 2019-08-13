@@ -1579,9 +1579,3 @@ class Concurrent::Promises::ScheduledPromise < Concurrent::Promises::InnerPromis
   def inspect; end
   def intended_time; end
 end
-class Concurrent::SynchronizedDelegator < SimpleDelegator
-  def initialize(obj); end
-  def method_missing(method, *args, &block); end
-  def setup; end
-  def teardown; end
-end

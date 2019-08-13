@@ -545,3 +545,178 @@ class Redis::Subscription
   def subscribe(&block); end
   def unsubscribe(&block); end
 end
+class Redis::HashRing
+  def add_node(node); end
+  def get_node(key); end
+  def get_node_pos(key); end
+  def initialize(nodes = nil, replicas = nil); end
+  def iter_nodes(key); end
+  def nodes; end
+  def remove_node(node); end
+  def replicas; end
+  def ring; end
+  def self.binary_search(ary, value, &block); end
+  def sorted_keys; end
+end
+class Redis::Distributed
+  def [](key); end
+  def []=(key, value); end
+  def _bpop(cmd, args); end
+  def _eval(cmd, args); end
+  def add_node(options); end
+  def append(key, value); end
+  def bgsave; end
+  def bitcount(key, start = nil, stop = nil); end
+  def bitop(operation, destkey, *keys); end
+  def bitpos(key, bit, start = nil, stop = nil); end
+  def blpop(*args); end
+  def brpop(*args); end
+  def brpoplpush(source, destination, options = nil); end
+  def dbsize; end
+  def decr(key); end
+  def decrby(key, decrement); end
+  def del(*args); end
+  def discard; end
+  def dump(key); end
+  def dup; end
+  def echo(value); end
+  def ensure_same_node(command, keys); end
+  def eval(*args); end
+  def evalsha(*args); end
+  def exec; end
+  def exists(key); end
+  def expire(key, seconds); end
+  def expireat(key, unix_time); end
+  def flushall; end
+  def flushdb; end
+  def get(key); end
+  def getbit(key, offset); end
+  def getrange(key, start, stop); end
+  def getset(key, value); end
+  def hdel(key, *fields); end
+  def hexists(key, field); end
+  def hget(key, field); end
+  def hgetall(key); end
+  def hincrby(key, field, increment); end
+  def hincrbyfloat(key, field, increment); end
+  def hkeys(key); end
+  def hlen(key); end
+  def hmget(key, *fields); end
+  def hmset(key, *attrs); end
+  def hset(key, field, value); end
+  def hsetnx(key, field, value); end
+  def hvals(key); end
+  def incr(key); end
+  def incrby(key, increment); end
+  def incrbyfloat(key, increment); end
+  def info(cmd = nil); end
+  def initialize(node_configs, options = nil); end
+  def inspect; end
+  def key_tag(key); end
+  def keys(glob = nil); end
+  def lastsave; end
+  def lindex(key, index); end
+  def linsert(key, where, pivot, value); end
+  def llen(key); end
+  def lpop(key); end
+  def lpush(key, value); end
+  def lpushx(key, value); end
+  def lrange(key, start, stop); end
+  def lrem(key, count, value); end
+  def lset(key, index, value); end
+  def ltrim(key, start, stop); end
+  def mapped_hmget(key, *fields); end
+  def mapped_hmset(key, hash); end
+  def mapped_mget(*keys); end
+  def mapped_mset(hash); end
+  def mapped_msetnx(hash); end
+  def mget(*keys); end
+  def migrate(key, options); end
+  def monitor; end
+  def move(key, db); end
+  def mset(*args); end
+  def msetnx(*args); end
+  def multi; end
+  def node_for(key); end
+  def node_index_for(key); end
+  def nodes; end
+  def on_each_node(command, *args); end
+  def persist(key); end
+  def pexpire(key, milliseconds); end
+  def pexpireat(key, ms_unix_time); end
+  def pfadd(key, member); end
+  def pfcount(*keys); end
+  def pfmerge(dest_key, *source_key); end
+  def ping; end
+  def pipelined; end
+  def psetex(key, ttl, value); end
+  def psubscribe(*channels, &block); end
+  def pttl(key); end
+  def publish(channel, message); end
+  def punsubscribe(*channels); end
+  def quit; end
+  def randomkey; end
+  def rename(old_name, new_name); end
+  def renamenx(old_name, new_name); end
+  def restore(key, ttl, serialized_value, options = nil); end
+  def ring; end
+  def rpop(key); end
+  def rpoplpush(source, destination); end
+  def rpush(key, value); end
+  def rpushx(key, value); end
+  def sadd(key, member); end
+  def save; end
+  def scard(key); end
+  def script(subcommand, *args); end
+  def sdiff(*keys); end
+  def sdiffstore(destination, *keys); end
+  def select(db); end
+  def set(key, value, options = nil); end
+  def setbit(key, offset, value); end
+  def setex(key, ttl, value); end
+  def setnx(key, value); end
+  def setrange(key, offset, value); end
+  def sinter(*keys); end
+  def sinterstore(destination, *keys); end
+  def sismember(key, member); end
+  def smembers(key); end
+  def smove(source, destination, member); end
+  def sort(key, options = nil); end
+  def spop(key, count = nil); end
+  def srandmember(key, count = nil); end
+  def srem(key, member); end
+  def sscan(key, cursor, options = nil); end
+  def sscan_each(key, options = nil, &block); end
+  def strlen(key); end
+  def subscribe(channel, *channels, &block); end
+  def subscribed?; end
+  def sunion(*keys); end
+  def sunionstore(destination, *keys); end
+  def time; end
+  def ttl(key); end
+  def type(key); end
+  def unlink(*args); end
+  def unsubscribe(*channels); end
+  def unwatch; end
+  def watch(*keys); end
+  def zadd(key, *args); end
+  def zcard(key); end
+  def zcount(key, min, max); end
+  def zincrby(key, increment, member); end
+  def zinterstore(destination, keys, options = nil); end
+  def zrange(key, start, stop, options = nil); end
+  def zrangebyscore(key, min, max, options = nil); end
+  def zrank(key, member); end
+  def zrem(key, member); end
+  def zremrangebyrank(key, start, stop); end
+  def zremrangebyscore(key, min, max); end
+  def zrevrange(key, start, stop, options = nil); end
+  def zrevrangebyscore(key, max, min, options = nil); end
+  def zrevrank(key, member); end
+  def zscore(key, member); end
+  def zunionstore(destination, keys, options = nil); end
+end
+class Redis::Distributed::CannotDistribute < RuntimeError
+  def initialize(command); end
+  def message; end
+end

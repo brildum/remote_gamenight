@@ -3,11 +3,8 @@ require 'bundler'
 Bundler.require
 
 require './app/app'
-require './app/services'
+require './environment'
 
-environment = ENV['RACK_ENV'] || 'production'
-
-config = environment == 'production' ? Config::Prod : Config::Dev
-services = Services.new(config)
-App.init!(config, services)
+env = Environment.new
+App.init!(env.config, env.services)
 run App

@@ -456,7 +456,7 @@ class T::Props::Decorator
   def all_props(*args, &blk); end
   def array_subdoc_type(*args, &blk); end
   def check_prop_type(*args, &blk); end
-  def convert_type_to_class(*args, &blk); end
+  def convert_type_to_class(arg0, &blk); end
   def decorated_class; end
   def define_foreign_method(*args, &blk); end
   def define_getter_and_setter(*args, &blk); end

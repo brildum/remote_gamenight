@@ -59,3 +59,28 @@ module MultiJson::OptionsCache
   def write(cache, key); end
   extend MultiJson::OptionsCache
 end
+class MultiJson::Adapter
+  def self.allocate; end
+  def self.blank?(input); end
+  def self.cached_dump_options(options); end
+  def self.cached_load_options(options); end
+  def self.defaults(action, value); end
+  def self.dump(object, options = nil); end
+  def self.instance; end
+  def self.load(string, options = nil); end
+  def self.new(*arg0); end
+  extend MultiJson::Options
+  extend Singleton::SingletonClassMethods
+  include Singleton
+end
+module MultiJson::Adapters
+end
+class MultiJson::Adapters::JsonCommon < MultiJson::Adapter
+  def dump(object, options = nil); end
+  def load(string, options = nil); end
+  def self.default_load_options; end
+  def self.instance; end
+end
+class MultiJson::Adapters::JsonGem < MultiJson::Adapters::JsonCommon
+  def self.instance; end
+end
