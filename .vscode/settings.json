@@ -1,0 +1,7 @@
+{
+  "triggerTaskOnSave.on": true,
+  "triggerTaskOnSave.selectedTask": "sorbet",
+  "triggerTaskOnSave.tasks": {
+    "build": ["**/*.rb"]
+  }
+}

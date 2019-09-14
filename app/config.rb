@@ -1,5 +1,4 @@
 # frozen_string_literal: true
-
 # typed: true
 
 require 'sorbet-runtime'
@@ -13,7 +12,7 @@ module Config
     sig do
       params(
         overrides: T::Hash[String, T.untyped],
-        inherit: T.nilable(Data)
+        inherit: T.nilable(Data),
       ).void
     end
     def initialize(overrides, inherit: nil)
@@ -38,16 +37,16 @@ module Config
 
   Prod = Data.new({
     'website' => 'https://www.partygamesbot.com',
-    'dbname'  => 'gamenight_prod',
-    'botname' => '@partygames'
+    'dbname' => 'gamenight_prod',
+    'botname' => '@partygames',
   })
 
   Dev = Data.new(
     {
-      'website' => 'https://771c4571.ngrok.io',
-      'dbname'  => 'gamenight_dev',
-      'botname' => '@devpartygames'
+      'website' => 'https://f28893db.ngrok.io',
+      'dbname' => 'gamenight_dev',
+      'botname' => '@devpartygames',
     },
-    inherit: Prod
+    inherit: Prod,
   )
 end

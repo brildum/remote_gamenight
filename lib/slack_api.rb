@@ -38,7 +38,7 @@ class SlackAPI
       redirect_uri: @redirect_uri
     }
     response = post_form('oauth.access', payload)
-    response.body
+    JSON.parse(response.body)
   end
 
   sig { params(token: String, channel: String, msg: String).void }
@@ -52,22 +52,20 @@ class SlackAPI
     @logger.debug "chat.postMessage response: #{response.body}"
   end
 
-  private
-
   sig do
     params(
       endpoint: String,
-      body: T::Hash[T.any(String, Symbol), T.untyped]
+      body: T::Hash[T.any(String, Symbol), T.untyped],
     )
-    .returns(Excon::Response)
+      .returns(Excon::Response)
   end
-  def post_form(endpoint, body)
+  private def post_form(endpoint, body)
     response = @conn.post(
       path: "/api/#{endpoint}",
       headers: {
         'Content-Type' => 'application/x-www-form-urlencoded'
       },
-      body: URI.encode_www_form(body)
+      body: URI.encode_www_form(body),
     )
 
     raise Error, "invalid response #{response.status} for #{response.path}" if response.status != 200
@@ -79,11 +77,11 @@ class SlackAPI
     params(
       endpoint: String,
       body: T.untyped,
-      access_token: T.nilable(String)
+      access_token: T.nilable(String),
     )
-    .returns(Excon::Response)
+      .returns(Excon::Response)
   end
-  def post_json(endpoint, body, access_token: nil)
+  private def post_json(endpoint, body, access_token: nil)
     headers = {
       'Content-Type' => 'application/json'
     }
@@ -92,7 +90,7 @@ class SlackAPI
     response = @conn.post(
       path: "/api/#{endpoint}",
       headers: headers,
-      body: body.to_json
+      body: body.to_json,
     )
 
     raise Error, "invalid response #{response.status} for #{response.path}" if response.status != 200

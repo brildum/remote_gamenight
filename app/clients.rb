@@ -16,6 +16,7 @@ class Clients
 
   def initialize(config)
     @logger = Logger.new(STDERR)
+    @logger.level = :info
     @redis = Redis.new
     @slack = SlackAPI.new(@logger, "#{config.get('website')}/slack/init")
   end

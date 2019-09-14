@@ -1,0 +1,18 @@
+Metrics/LineLength:
+  Max: 120
+Metrics/MethodLength:
+  Max: 60
+Metrics/ClassLength:
+  Max: 600
+
+Layout/EmptyLineAfterMagicComment:
+  Enabled: false
+Layout/IndentFirstHashElement:
+  Enabled: false
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+Style/AccessModifierDeclarations:
+  EnforcedStyle: inline
