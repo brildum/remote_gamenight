@@ -43,6 +43,11 @@ class App < Sinatra::Base
 
   get '/slack/init' do
     @@slack.init(request.params['code'])
+    redirect '/slack/installed', 302
+  end
+
+  get '/slack/installed' do
+    body 'Success!'
   end
 
   post '/slack/hook' do
