@@ -18,11 +18,11 @@ class SlackAPI
   def initialize(logger, redirect_uri)
     @logger = logger
     @redirect_uri = redirect_uri
-    @conn = T.let(Excon.new('https://slack.com', persistent: true), Excon::Connection)
+    @conn = T.let(Excon.new('https://slack.com', persistent: false), Excon::Connection)
   end
 
   def connect!
-    @conn = Excon.new('https://slack.com', persistent: true)
+    @conn = Excon.new('https://slack.com', persistent: false)
   end
 
   def disconnect!
@@ -35,7 +35,7 @@ class SlackAPI
       client_id: Secrets::SLACK_CLIENT_ID,
       client_secret: Secrets::SLACK_CLIENT_SECRET,
       code: code,
-      redirect_uri: @redirect_uri
+      redirect_uri: @redirect_uri,
     }
     response = post_form('oauth.access', payload)
     JSON.parse(response.body)
@@ -46,7 +46,7 @@ class SlackAPI
     payload = {
       token: token,
       channel: channel,
-      text: msg
+      text: msg,
     }
     response = post_json('chat.postMessage', payload, access_token: token)
     @logger.debug "chat.postMessage response: #{response.body}"
@@ -63,7 +63,7 @@ class SlackAPI
     response = @conn.post(
       path: "/api/#{endpoint}",
       headers: {
-        'Content-Type' => 'application/x-www-form-urlencoded'
+        'Content-Type' => 'application/x-www-form-urlencoded',
       },
       body: URI.encode_www_form(body),
     )
@@ -83,7 +83,7 @@ class SlackAPI
   end
   private def post_json(endpoint, body, access_token: nil)
     headers = {
-      'Content-Type' => 'application/json'
+      'Content-Type' => 'application/json',
     }
     headers['Authorization'] = "Bearer #{access_token}" unless access_token.nil?
 

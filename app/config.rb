@@ -43,7 +43,7 @@ module Config
 
   Dev = Data.new(
     {
-      'website' => 'https://f28893db.ngrok.io',
+      'website' => 'http://2059a78c.ngrok.io',
       'dbname' => 'gamenight_dev',
       'botname' => '@devpartygames',
     },

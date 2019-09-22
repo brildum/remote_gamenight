@@ -314,7 +314,12 @@ module Slack
           messager: messager,
         ).activate_game
       else
-        messager.send(:invalid_game_requested, 'Invalid game specified! Valid options are [trivia]')
+        msg = <<~DOC
+          Invalid game specified! Valid options are:
+
+          - trivia
+        DOC
+        messager.send(:invalid_game_requested, msg)
       end
     end
 

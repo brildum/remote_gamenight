@@ -71,9 +71,11 @@ module Trivia
         check_active_clue_answers
       elsif since_last_clue < 45
         logger.info "syncing game #{@game.id}; #{since_last_clue}s since last clue, noop"
-      else
+      elsif @game.num_clues < 15
         logger.info "syncing game #{@game.id}; generating next clue"
         generate_next_clue(first: false)
+      else
+        end_game
       end
     end
 
@@ -132,6 +134,38 @@ module Trivia
         #{results.join("\n")}
       DOC
       @messager.send(:trivia_answer_results, msg)
+    end
+
+    sig { void }
+    private def end_game
+      @services.trivia.delete_game(@game)
+
+      teams = @game.teams.each_with_object({}) { |team, h| h[team] = true }
+
+      results = []
+
+      prev_rank = 0
+      prev_score = T.let(nil, T.nilable(Integer))
+      @game.scores.sort_by { |_k, v| v }.reverse.each do |team, score|
+        teams.delete(team)
+        rank = (prev_score.nil? || score < prev_score) ? prev_rank + 1 : prev_rank
+        prev_score = score
+        prev_rank = rank
+        results << "- ##{rank} [ #{score} ] #{team}"
+      end
+
+      # if a team doesn't have a score, we give them 0 at the end
+      rank = (prev_score.nil? || prev_score > 0) ? prev_rank + 1 : prev_rank
+      teams.keys.each do |team|
+        results << "- ##{rank} [ 0 ] #{team}"
+      end
+
+      msg = <<~DOC
+        The game has ended! Here are the results:
+
+        #{results.join("\n")}
+      DOC
+      @messager.send(:trivia_game_ended_results, msg)
     end
 
     sig do
