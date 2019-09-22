@@ -10,6 +10,8 @@ require './app/clients'
 require_relative './models'
 require_relative './nlp'
 
+REDIS_KEY_TTL = 12 * 60 * 60 # 12 hours
+
 module Trivia
   # Game defines data that represents game state
   class Game < T::Struct
@@ -110,7 +112,7 @@ module Trivia
       else
         @clients.redis.hset(all_active_games_key, game.id, game.id)
       end
-      result = @clients.redis.set(game_key(game.id), game.to_json)
+      result = @clients.redis.setex(game_key(game.id), REDIS_KEY_TTL, game.to_json)
       raise StandardError, 'failed to save game to redis' unless result == 'OK'
     end
 
@@ -133,8 +135,6 @@ module Trivia
         team: team_name,
       )
 
-      @clients.redis.hset(game_teams_key(game.id), team_name, users.to_json)
-
       users.each do |user|
         old_team_reg = get_team_for_user(user)
         if old_team_reg
@@ -151,9 +151,14 @@ module Trivia
           end
         end
 
-        result = @clients.redis.set(user_registration_key(user), team_reg.to_json)
+        result = @clients.redis.setex(user_registration_key(user), REDIS_KEY_TTL, team_reg.to_json)
         raise StandardError, 'failed to write user team_registration in redis' unless result == 'OK'
       end
+
+      teams_added = @clients.redis.hset(game_teams_key(game.id), team_name, users.to_json)
+      raise StandardError, 'failed to add team to game' unless teams_added
+
+      @clients.redis.expire(game_teams_key(game.id), REDIS_KEY_TTL)
     end
 
     sig { params(user: String).returns(T.nilable(TeamRegistration)) }
@@ -184,6 +189,7 @@ module Trivia
     end
     def add_answer(game:, team:, answer:)
       @clients.redis.hset(answers_key(game.id), team, answer)
+      @clients.redis.expire(answers_key(game.id), REDIS_KEY_TTL)
     end
 
     sig { params(game: Game).returns(T::Hash[String, String]) }

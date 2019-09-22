@@ -143,37 +143,15 @@ module Slack
         return
       end
 
-      begin
-        command = Command.parse(parse_message(slack_team.slack_bot_id, event['text']))
-      rescue InvalidCommandError
-        msg = <<~DOC
-          You need to submit your answers with:
-
-          !answer Mark Twain
-        DOC
-        messager.send(:invalid_message_cmd, msg)
-        return
-      end
-
-      case command.cmd
-      when 'answer'
-        Trivia::GameController.new(
-          config: @config,
-          services: @services,
-          game: game,
-          messager: messager,
-        ).receive_answer(
-          team: team_reg.team,
-          answer: command.args.join(' '),
-        )
-      else
-        msg = <<~DOC
-          You need to submit your answers with:
-
-          !answer Mark Twain
-        DOC
-        messager.send(:invalid_message_cmd, msg)
-      end
+      Trivia::GameController.new(
+        config: @config,
+        services: @services,
+        game: game,
+        messager: messager,
+      ).receive_answer(
+        team: team_reg.team,
+        answer: event['text'],
+      )
     end
 
     sig { void }

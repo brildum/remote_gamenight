@@ -54,6 +54,7 @@ module Trivia
     end
     def receive_answer(team:, answer:)
       @services.trivia.add_answer(game: @game, team: team, answer: answer)
+      @messager.send(:trivia_received_answer, "Answer submitted! \"#{answer}\"")
     end
 
     sig { void }
