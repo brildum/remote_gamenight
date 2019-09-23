@@ -41,15 +41,24 @@ class SlackAPI
     JSON.parse(response.body)
   end
 
-  sig { params(token: String, channel: String, msg: String).void }
-  def send_message(token, channel, msg)
+  sig do
+    params(
+      bot_token: String,
+      channel: String,
+      blocks: T::Array[T.untyped],
+      attachments: T::Array[T.untyped],
+    )
+      .void
+  end
+  def send_message(bot_token:, channel:, blocks:, attachments:)
     payload = {
-      token: token,
+      token: bot_token,
       channel: channel,
-      text: msg,
+      blocks: blocks,
+      attachments: attachments,
     }
-    response = post_json('chat.postMessage', payload, access_token: token)
-    @logger.debug "chat.postMessage response: #{response.body}"
+    response = post_json('chat.postMessage', payload, access_token: bot_token)
+    @logger.info "chat.postMessage response: #{response.body}"
   end
 
   sig do

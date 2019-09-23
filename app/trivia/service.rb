@@ -10,7 +10,7 @@ require './app/clients'
 require_relative './models'
 require_relative './nlp'
 
-REDIS_KEY_TTL = 12 * 60 * 60 # 12 hours
+REDIS_KEY_TTL = T.let(12 * 60 * 60, Integer) # 12 hours
 
 module Trivia
   # Game defines data that represents game state
@@ -120,6 +120,7 @@ module Trivia
     def delete_game(game)
       @clients.redis.hdel(all_active_games_key, game.id)
       @clients.redis.del(game_key(game.id))
+      @clients.redis.del(game_teams_key(game.id))
     end
 
     sig do

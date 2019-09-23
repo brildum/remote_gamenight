@@ -74,7 +74,7 @@ module Slack
       begin
         command = Command.parse(parse_message(team.slack_bot_id, event['text']))
       rescue Slack::InvalidCommandError
-        msg = "You need to specify a command, ie: #{@config.get('botname')} !command arg1 arg2..."
+        msg = "You need to specify a command, such as:\n\n`#{@config.get('botname')} !command arg1 arg2...`"
         messager.send(:invalid_cmd, msg)
         return
       end
@@ -109,6 +109,7 @@ module Slack
           Trivia::GameController.new(
             config: @config,
             services: @services,
+            team: team,
             game: game,
             messager: messager,
           ).on_command(command.cmd, command.args)
@@ -146,6 +147,7 @@ module Slack
       Trivia::GameController.new(
         config: @config,
         services: @services,
+        team: slack_team,
         game: game,
         messager: messager,
       ).receive_answer(
@@ -170,6 +172,7 @@ module Slack
         Trivia::GameController.new(
           config: @config,
           services: @services,
+          team: team,
           game: game,
           messager: messager,
         ).sync_game
@@ -188,7 +191,7 @@ module Slack
         msg = <<~DOC
           You cannot create a team before a game has started. Try:
 
-          #{@config.get('botname')} !play <game>
+          `#{@config.get('botname')} !play <game>`
         DOC
         messager.send(:team_cmd_no_game, msg)
         return
@@ -203,7 +206,7 @@ module Slack
         msg = <<~DOC
           You must specify some users when creating a team.
 
-          #{@config.get('botname')} !team @user1 @user2 My Team Name
+          `#{@config.get('botname')} !team @user1 @user2 My Team Name`
         DOC
         messager.send(:team_cmd_no_users, msg)
         return
@@ -215,7 +218,12 @@ module Slack
         team_name: team,
         users: users,
       )
-      msg = "The team \"#{team}\" has been created. Good luck!\n\n#{users.join("\n")}"
+      msg = <<~DOC
+        Good luck!
+
+        *#{team}*
+        #{users.map { |x| "- #{x}" }.join("\n")}
+      DOC
       messager.send(:team_success, msg)
     end
 
@@ -231,7 +239,7 @@ module Slack
         msg = <<~DOC
           You cannot view teams before a game has started. Try:
 
-          #{@config.get('botname')} !play <game>
+          `#{@config.get('botname')} !play <game>`
         DOC
         messager.send(:teams_cmd_invalid, msg)
         return
@@ -239,10 +247,13 @@ module Slack
 
       teams_output = []
       @services.trivia.get_teams_for_game(game).each do |team, users|
-        teams_output << "- #{team}: #{users.join(', ')}"
+        teams_output << "- *#{team}*: #{users.join(', ')}"
+      end
+      if teams_output.blank?
+        teams_output << '*There are no teams yet!*'
       end
       msg = <<~DOC
-        Teams:
+        The teams registered to play are:
 
         #{teams_output.join("\n")}
       DOC
@@ -264,7 +275,7 @@ module Slack
         msg = <<~DOC
           A game is already in progress! To start a new game, use:
 
-          #{@config.get('botname')} !play <game> force
+          `#{@config.get('botname')} !play <game> force`
         DOC
         messager.send(:game_already_started, msg)
         return
@@ -288,6 +299,7 @@ module Slack
         Trivia::GameController.new(
           config: @config,
           services: @services,
+          team: team,
           game: game,
           messager: messager,
         ).activate_game

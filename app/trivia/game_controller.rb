@@ -16,14 +16,16 @@ module Trivia
       params(
         config: Config::Data,
         services: Services,
+        team: Slack::Team,
         game: Game,
         messager: Slack::Messager,
       )
         .void
     end
-    def initialize(config:, services:, game:, messager:)
+    def initialize(config:, services:, team:, game:, messager:)
       @config = T.let(config, Config::Data)
       @services = T.let(services, Services)
+      @team = T.let(team, Slack::Team)
       @game = T.let(game, Game)
       @messager = T.let(messager, Slack::Messager)
     end
@@ -31,17 +33,34 @@ module Trivia
     sig { void }
     def activate_game
       @services.trivia.save_game(@game)
-      msg = <<~DOC
-        A new Trivia Game is starting.
 
-        You can create or join a team by using the !team command:
+      team_help = <<~DOC
+        You can create or join a team by using the *!team* command:
 
-        #{@config.get('botname')} !team My Team Name @user1 @user2 @user3
-
-        When all the teams are ready, start the game with the !start command:
-
-        #{@config.get('botname')} !start
+        `#{@config.get('botname')} !team My Team Name @user1 @user2 @user3`
       DOC
+
+      start_help = <<~DOC
+        When all the teams are ready, start the game with the *!start* command:
+
+        `#{@config.get('botname')} !start`
+      DOC
+
+      msg = Slack::Message.new(
+        blocks: [
+          Slack::Message::Block.new(text: 'A new Trivia game is starting.'),
+        ],
+        attachments: [
+          Slack::Message::Attachment.new(
+            color: nil,
+            text: team_help,
+          ),
+          Slack::Message::Attachment.new(
+            color: nil,
+            text: start_help,
+          ),
+        ],
+      )
       @messager.send(:game_starting, msg)
     end
 
@@ -54,7 +73,18 @@ module Trivia
     end
     def receive_answer(team:, answer:)
       @services.trivia.add_answer(game: @game, team: team, answer: answer)
-      @messager.send(:trivia_received_answer, "Answer submitted! \"#{answer}\"")
+      msg = Slack::Message.new(
+        blocks: [
+          Slack::Message::Block.new(text: 'Answer submitted!'),
+        ],
+        attachments: [
+          Slack::Message::Attachment.new(
+            color: nil,
+            text: answer,
+          ),
+        ],
+      )
+      @messager.send(:trivia_received_answer, msg)
     end
 
     sig { void }
@@ -98,15 +128,24 @@ module Trivia
           'Your next clue:'
         end
 
-      msg = <<~DOC
-        #{intro}
+      text = <<~DOC
+        *#{clue.clue}*
 
-        #{clue.clue}
+        *Category: #{clue.category.name}*
 
-        Category: #{clue.category.name}
-
-        Answers must be submitted within 30s via Direct Message.
+        _Answers must be submitted within 30s via DM to <@#{@team.slack_bot_id}>_
       DOC
+      msg = Slack::Message.new(
+        blocks: [
+          Slack::Message::Block.new(text: intro),
+        ],
+        attachments: [
+          Slack::Message::Attachment.new(
+            color: nil,
+            text: text,
+          ),
+        ],
+      )
       @messager.send(:trivia_next_clue, msg)
     end
 
@@ -115,25 +154,43 @@ module Trivia
       clue = @services.trivia.get_clue(T.must(@game.active_clue))
       answers = @services.trivia.get_answers(@game)
 
-      results = []
+      scores = T.let({}, T::Hash[String, Integer])
       @game.teams.each do |team|
         answer = answers[team] || ''
         score = check_answer(clue, answer) ? clue.value : 0
+        scores[team] = score
         current_score = (@game.scores[team] || 0) + score
         @game.scores[team] = current_score
-        results << "- #{team}: #{current_score} [ +#{score} ]\n  Answer: #{answer}\n"
+      end
+
+      results = T.let([], T::Array[Slack::Message::Attachment])
+      game_results.each do |game_result|
+        answer_score = scores[game_result.team] || 0
+        answer_text = answers[game_result.team] || 'N/A'
+        result_text = <<~DOC
+          *##{game_result.rank}) #{game_result.team}*: #{game_result.score} _(+#{answer_score})_
+          Answer: #{answer_text}
+        DOC
+        results << Slack::Message::Attachment.new(
+          color: answer_score > 0 ? 'good' : 'danger',
+          text: result_text,
+        )
       end
 
       @game.answers_checked = true
       @services.trivia.save_game(@game)
 
-      msg = <<~DOC
+      text = <<~DOC
         The answer is:
 
-        #{clue.answer}
-
-        #{results.join("\n")}
+        *#{clue.answer}*
       DOC
+      msg = Slack::Message.new(
+        blocks: [
+          Slack::Message::Block.new(text: text),
+        ],
+        attachments: results,
+      )
       @messager.send(:trivia_answer_results, msg)
     end
 
@@ -141,32 +198,44 @@ module Trivia
     private def end_game
       @services.trivia.delete_game(@game)
 
-      teams = @game.teams.each_with_object({}) { |team, h| h[team] = true }
+      results = T.let([], T::Array[Slack::Message::Attachment])
+      game_results.each do |game_result|
+        results << Slack::Message::Attachment.new(
+          color: game_result.rank == 1 ? 'good' : nil,
+          text: "*##{game_result.rank}) #{game_result.team}*\nScore: #{game_result.score}",
+        )
+      end
 
-      results = []
+      msg = Slack::Message.new(
+        blocks: [
+          Slack::Message::Block.new(text: 'The game has ended! Here are the results:'),
+        ],
+        attachments: results,
+      )
+      @messager.send(:trivia_game_ended_results, msg)
+    end
 
+    # GameResult provides a snapshot into the current game results
+    class GameResult < T::Struct
+      prop :team, String
+      prop :rank, Integer
+      prop :score, Integer
+    end
+
+    sig { returns(T::Array[GameResult]) }
+    private def game_results
       prev_rank = 0
       prev_score = T.let(nil, T.nilable(Integer))
-      @game.scores.sort_by { |_k, v| v }.reverse.each do |team, score|
-        teams.delete(team)
+      @game.scores.sort_by { |_k, v| v }.reverse.map do |team, score|
         rank = (prev_score.nil? || score < prev_score) ? prev_rank + 1 : prev_rank
         prev_score = score
         prev_rank = rank
-        results << "- ##{rank} [ #{score} ] #{team}"
+        GameResult.new(
+          team: team,
+          rank: rank,
+          score: score,
+        )
       end
-
-      # if a team doesn't have a score, we give them 0 at the end
-      rank = (prev_score.nil? || prev_score > 0) ? prev_rank + 1 : prev_rank
-      teams.keys.each do |team|
-        results << "- ##{rank} [ 0 ] #{team}"
-      end
-
-      msg = <<~DOC
-        The game has ended! Here are the results:
-
-        #{results.join("\n")}
-      DOC
-      @messager.send(:trivia_game_ended_results, msg)
     end
 
     sig do
@@ -194,7 +263,7 @@ module Trivia
         msg = <<~DOC
           You must have at least 1 team registered to play. You can register with:
 
-          #{@config.get('botname')} !team My Team Name @user1 @user2
+          `#{@config.get('botname')} !team My Team Name @user1 @user2`
         DOC
         @messager.send(:trivia_invalid_start_teams, msg)
         return
@@ -220,7 +289,8 @@ module Trivia
       real = real_tokens.join(' ').strip
       possible = possible_tokens.join(' ').strip
 
-      return false if possible.blank?
+      real = clue.answer if real.blank?
+      possible = possible_answer if possible.blank?
 
       value = real.jarowinkler_similar(possible)
       logger.debug "#{real} vs #{possible} [jarowinkler:#{value}]"
