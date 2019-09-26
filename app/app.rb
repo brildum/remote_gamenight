@@ -1,7 +1,8 @@
-# Disable types because sinatra is not does not play nicely with Sorbet (yet)
+# frozen_string_literal: true
 # typed: false
 
-require 'sinatra'
+require 'sinatra/base'
+require 'sinatra/content_for'
 
 require './app/config'
 require './app/slack/controller'
@@ -9,6 +10,7 @@ require './app/slack/controller'
 # App defines the HTTP server
 class App < Sinatra::Base
   include Sinatra::Helpers
+  include Sinatra::ContentFor
 
   def self.init!(config, services)
     @@config = config
@@ -24,19 +26,22 @@ class App < Sinatra::Base
     @@services.disconnect!
   end
 
+  set :views, -> { File.join(settings.root, '..', 'templates') }
+
   configure :development do
-    register Sinatra::Reloader
+    set :static, true
+    set :public_folder, -> { File.join(settings.root, '..', 'static') }
   end
 
   get '/' do
-    body 'OK!'
+    erb :home, layout: :layout
   end
 
   get '/slack/install' do
     params = URI.encode_www_form({
       client_id: Secrets::SLACK_CLIENT_ID,
       scope: 'bot',
-      redirect_uri: "#{@@config.get('website')}/slack/init"
+      redirect_uri: "#{@@config.get('website')}/slack/init",
     })
     redirect "https://slack.com/oauth/authorize?#{params}", 302
   end
@@ -47,7 +52,7 @@ class App < Sinatra::Base
   end
 
   get '/slack/installed' do
-    body 'Success!'
+    erb :slack_installed, layout: :layout
   end
 
   post '/slack/hook' do
@@ -56,6 +61,6 @@ class App < Sinatra::Base
   end
 
   not_found do
-    body 'Page Not Found'
+    erb :not_found, layout: :layout
   end
 end

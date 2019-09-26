@@ -1,0 +1,88 @@
+<% content_for :title do %>
+  PartyGamesBot - Remote team building on Slack
+<% end %>
+
+<% content_for :content do %>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">PartyGamesBot</h1>
+      <h2 class="display-5">Remote team building via party games in Slack</h1>
+      <hr class="my-4">
+      <a href="/slack/install" class="btn btn-primary btn-lg">Add To Slack</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h3 class="display-5">Why play party games on Slack?</h3>
+        <ul class="mt-4">
+          <li>
+            Building strong interpersonal relationships is difficult for remote teams.
+          </li>
+          <li class="mt-2">
+            Playing fun &amp; competitive party games allows relationships
+            and comoraderie to build natually.
+          </li>
+          <li class="mt-2">
+            Playing in Slack makes it easy to integrate into your workflow
+            and invite participants.
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="d-flex flex-column h-100 justify-content-center align-items-center mt-2">
+          <img src="/static/img/game_started_simple.png" class="w-75"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 mt-4">
+        <h3 class="display-5">How does it work?</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 my-2 d-flex align-items-stretch">
+        <div class="card w-100 p-4">
+          <h4 class="display-5">
+            Choose a game
+          </h4>
+          <p>
+            <code>
+              @partygames !play trivia
+            </code>
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 my-2 d-flex align-items-stretch">
+        <div class="card w-100 p-4">
+          <h4 class="display-5">
+            Join a team
+          </h4>
+          <p>
+            <code>
+              @partygames !team My Team Name @teammate1 @teammate2
+            </code>
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 my-2 d-flex align-items-stretch">
+        <div class="card w-100 p-4">
+          <h4 class="display-5">
+            Start playing
+          </h4>
+          <p>
+            <code>
+              @partygames !start
+            </code>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+<% end %>
