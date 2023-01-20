@@ -14,7 +14,7 @@ group :development do
   gem 'sorbet'
 end
 
-gem 'activerecord', '5.2.3'
+gem 'activerecord', '6.1.7.1'
 gem 'amatch'
 gem 'excon'
 gem 'pg'
